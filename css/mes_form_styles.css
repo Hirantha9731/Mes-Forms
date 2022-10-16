@@ -1,0 +1,137 @@
+.border_right_0{
+    border-right: 0 !important;
+}
+
+.border_left_0{
+    border-left: 0 !important;
+}
+
+.border_bottom_0{
+    border-bottom: 0 !important;
+}
+
+.border_top_0{
+    border-top: 0 !important;
+}
+
+.border_bottom_1{
+    border-bottom: solid black 1px !important;
+}
+
+p{
+    text-align: justify;
+}
+
+ul li{
+    text-align: justify;
+    list-style-type: disc;
+}
+
+ol{
+    padding-left:11px;
+}
+
+ol li{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+ol li::marker {
+    font-weight: bold;
+}
+
+
+.section_header{
+    background-color: #08a4e4;
+    color: #ffffff;
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+
+.section_sub_header{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 15px;
+    border-top: solid black 1px;
+    text-decoration: underline;
+}
+
+
+.section_sub_text{
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    padding: 10px;
+}
+
+.section_sub_text_bold{
+    border-top: solid black 1px;
+    border-right: solid black 1px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.applicant_table{
+    border: solid black 1px ;
+    padding: 10px;
+}
+
+.table_header,table th{
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.text_vertical_align{
+    vertical-align: middle;
+}
+
+.page_content_wrapper{
+    font-size: 12px;
+    color: black;
+    border: solid black 1px;
+}
+
+.page_content{
+    padding: 10px;
+    text-align: justify;
+}
+
+.mid_heading{
+    text-align: center;
+    margin-bottom: -10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.input_group{
+
+}
+
+.input_group label,
+.input_group input[type="text"],
+.input_group input[type="date"],
+.input_group select{
+    width: 100%;
+}
+
+.input_group input[type="text"],
+.input_group input[type="date"],
+.input_group select{
+    margin-top: 2px;
+    border: solid 1px #999999;
+    border-radius: 0;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.select_option{
+    height: 28px;
+    width: 100%;
+}
+
+
