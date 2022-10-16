@@ -18,6 +18,11 @@
     border-bottom: solid black 1px !important;
 }
 
+.padding_lr_0{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
 p{
     text-align: justify;
 }
@@ -65,7 +70,7 @@ ol li::marker {
 .section_sub_text{
     border-top: solid black 1px;
     border-right: solid black 1px;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .section_sub_text_bold{
@@ -76,8 +81,13 @@ ol li::marker {
 }
 
 .applicant_table{
-    border: solid black 1px ;
+    /* border: solid black 1px ; */
+    border-bottom: solid black 1px;
     padding: 10px;
+}
+
+.applicant_table:last-child{
+    border-bottom: none;
 }
 
 .table_header,table th{
