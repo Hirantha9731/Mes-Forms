@@ -45,6 +45,14 @@ ol li::marker {
     font-weight: bold;
 }
 
+.page_header_row .page_header{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5ee215;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .section_header{
     background-color: #08a4e4;
@@ -129,6 +137,10 @@ ol li::marker {
     width: 100%;
 }
 
+.input_group label{
+    margin-bottom: 0px;
+}
+
 .input_group input[type="text"],
 .input_group input[type="date"],
 .input_group select{
@@ -137,6 +149,20 @@ ol li::marker {
     border-radius: 0;
     line-height: 24px;
     font-size: 12px;
+}
+
+.checkBox_wrp{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.checkBox_wrp input[type = "checkbox"]{
+    margin-right:  8px;
+    vertical-align: sub;
+}
+
+.checkBox_wrp label{
+    margin-bottom: 0px;
 }
 
 .select_option{
