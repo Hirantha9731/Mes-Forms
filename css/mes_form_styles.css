@@ -141,19 +141,20 @@ ol li::marker {
     text-align: justify;
 }
 
-<<<<<<< Updated upstream
+
 .page_content:after {
     clear: both;
 }
 
 .page_content:before{
-display: table;
-content: " ";
-=======
+    display: table;
+    content: " ";
+}
+
 .mid_checkbox_content{
     padding-left: 30px;
     text-align: justify;
->>>>>>> Stashed changes
+
 }
 
 .mid_heading{
