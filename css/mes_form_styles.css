@@ -1,3 +1,11 @@
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+
+.mt-2, .my-2 {
+    margin-top: 0.5rem!important;
+}
+
 .border_right_0{
     border-right: 0 !important;
 }
