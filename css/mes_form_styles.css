@@ -6,6 +6,10 @@
     margin-top: 0.5rem!important;
 }
 
+.text_right_align{
+    text-align: right;
+}
+
 .border_right_0{
     border-right: 0 !important;
 }
@@ -42,6 +46,8 @@
 p{
     text-align: justify;
 }
+
+
 
 ul li{
     text-align: justify;
@@ -135,6 +141,7 @@ ol li::marker {
     text-align: justify;
 }
 
+<<<<<<< Updated upstream
 .page_content:after {
     clear: both;
 }
@@ -142,6 +149,11 @@ ol li::marker {
 .page_content:before{
 display: table;
 content: " ";
+=======
+.mid_checkbox_content{
+    padding-left: 30px;
+    text-align: justify;
+>>>>>>> Stashed changes
 }
 
 .mid_heading{
@@ -195,4 +207,16 @@ content: " ";
     width: 100%;
 }
 
+#textbox {
+    display: block;
+    float: left;
+    width: 150px;
+    height: 20px;
+}
+
+#textbox {
+    background-color: white;
+    border: solid black 1px;
+    margin-left: 5px;
+}
 
