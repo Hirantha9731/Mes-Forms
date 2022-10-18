@@ -26,6 +26,14 @@
     border-bottom: solid black 1px !important;
 }
 
+.padding_L_0{
+    padding-left: 0px !important;
+}
+
+.padding_R_0{
+    padding-right: 0px !important;
+}
+
 .padding_lr_0{
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -125,6 +133,15 @@ ol li::marker {
 .page_content{
     padding: 10px;
     text-align: justify;
+}
+
+.page_content:after {
+    clear: both;
+}
+
+.page_content:before{
+display: table;
+content: " ";
 }
 
 .mid_heading{
