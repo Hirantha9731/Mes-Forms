@@ -6,6 +6,14 @@
     margin-top: 0.5rem!important;
 }
 
+.mb-2{
+    margin-bottom: 0.5rem !important;
+}
+
+.ml-10{
+    margin-left: 10px !important;
+}
+
 .text_right_align{
     text-align: right;
 }
@@ -26,8 +34,16 @@
     border-top: 0 !important;
 }
 
+.border_left_1{
+    border-left:solid black 1px !important ;
+}
+
 .border_bottom_1{
     border-bottom: solid black 1px !important;
+}
+
+.border_top_1{
+    border-top: solid black 1px !important;
 }
 
 .padding_L_0{
@@ -47,7 +63,10 @@ p{
     text-align: justify;
 }
 
-
+.para_heading{
+    font-weight: bold;
+    font-size: 14px;
+}
 
 ul li{
     text-align: justify;
@@ -187,6 +206,21 @@ ol li::marker {
     border-radius: 0;
     line-height: 24px;
     font-size: 12px;
+    background-color: #e0e4fc;
+}
+
+.input_group select:focus{
+    background-color:white;
+}
+
+
+.input_group select option{
+    background-color:white;
+}
+
+.input_group input[type="date"],
+.input_group input[type="text"]:focus {
+    background-color:white;
 }
 
 .checkBox_wrp{
@@ -211,13 +245,42 @@ ol li::marker {
 #textbox {
     display: block;
     float: left;
-    width: 150px;
+    width: 180px;
     height: 20px;
 }
 
 #textbox {
-    background-color: white;
+    background-color: #e0e4fc;
     border: solid black 1px;
     margin-left: 5px;
 }
 
+#textbox:focus{
+    background-color:white;
+}
+
+
+.test_group{
+    margin-top: 2px;
+    border: solid 1px #999999;
+    border-radius: 0;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.button_right{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+button{
+    background-color: #9c9c9c;
+    border: solid 1px black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 5px 15px rgba(72, 71, 73, 0.4);
+}
