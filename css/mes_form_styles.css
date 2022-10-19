@@ -136,11 +136,15 @@ ol li::marker {
     border: solid black 1px;
 }
 
+.page_data_row{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .page_content{
     padding: 10px;
     text-align: justify;
 }
-
 
 .page_content:after {
     clear: both;
