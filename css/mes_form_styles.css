@@ -238,6 +238,10 @@ ol li::marker {
     vertical-align: sub;
 }
 
+.input_group .if_yes, .input_group .if_no{
+    display: none;
+}
+
 .input_group_inline > label{
     margin-right: 10px;
 }

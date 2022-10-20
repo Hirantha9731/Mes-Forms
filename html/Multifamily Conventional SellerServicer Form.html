@@ -5,6 +5,7 @@
     <title>Multifamily Conventional Seller/Servicer Form</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/mes_form_styles.css">
+    
 </head>
 <body>
 
@@ -595,8 +596,8 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
             <div class="input_group page_data_row">
                 <label>3. Does the applicant conduct a yearly escrow analysis on each account that has an escrow?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                    <div class="group_item"><label><input type="radio" value="1233741" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2456852" name="rd_1"> No</label></div>
                 </div>
             </div>
         
@@ -609,7 +610,12 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
                 <label>5. Does the applicant require replacement reserves escrows?</label>
                 <div class="radio_group_wrp">
                     <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_1"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, please explain when replacement reserves escrows are required and the type of tracking system the Servicer has to monitor
+                        replacement reserves accounts.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         
@@ -628,8 +634,25 @@ conventional multifamily servicing operations.
          </div>
 
     </section>
-<script>
     
-</script>
+    <script src="../Js/jquery-3.6.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('input[type="radio"]').click(function(){
+                if ($(this).is(':checked'))
+                {
+                    var parent = $(this).parent();
+                    var selector;
+                    if($(this).val() == 1)
+                    selector =  parent.find(".if_yes").css("display", "block !important");
+                    
+                    console.log(selector);
+                }
+            });
+        });
+
+    </script>
+
 </body>
 </html>
