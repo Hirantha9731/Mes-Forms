@@ -177,7 +177,6 @@ ol li::marker {
 .mid_checkbox_content{
     padding-left: 30px;
     text-align: justify;
-
 }
 
 .mid_heading{
@@ -216,7 +215,6 @@ ol li::marker {
 .input_group select:focus{
     background-color:white;
 }
-
 
 .input_group select option{
     background-color:white;
@@ -264,13 +262,11 @@ ol li::marker {
     float: left;
     width: 180px;
     height: 20px;
-}
-
-#textbox {
     background-color: #e0e4fc;
     border: solid black 1px;
     margin-left: 5px;
 }
+
 
 #textbox:focus{
     background-color:white;
@@ -301,3 +297,28 @@ button{
     padding-right: 15px;
     box-shadow: 0 5px 15px rgba(72, 71, 73, 0.4);
 }
+
+/*Net Worth & Liquidity section starts */
+.text1{
+    margin-top: 2px;
+    border: solid 1px #999999;
+    border-radius: 0;
+    font-size: 12px;
+    background-color: #e0e4fc;
+    width: 185px;
+}
+
+.text2{
+    margin-top: 2px;
+    border: solid 1px #999999;
+    border-radius: 0;
+    font-size: 12px;
+    background-color: #e0e4fc;
+    width: 250px;
+}
+
+.text2:focus,
+.text1:focus{
+    background-color: white !important;
+}
+/*Net Worth & Liquidity section ends*/
