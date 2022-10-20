@@ -227,6 +227,19 @@ ol li::marker {
     background-color:white;
 }
 
+.input_group .radio_group_wrp{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.input_group .radio_group_wrp .group_item{
+    margin-right: 15px;
+}
+
+.input_group .radio_group_wrp input[type="radio"] {
+    vertical-align: sub;
+}
+
 .checkBox_wrp{
     padding-top: 2px;
     padding-bottom: 2px;
