@@ -232,8 +232,7 @@ conventional multifamily and commercial mortgages.
                     servicing staff?</label>
                 <div class="radio_group_wrp">
                     <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>                   
-                    
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
                 </div>
             
             </div>
@@ -248,8 +247,10 @@ conventional multifamily and commercial mortgages.
             <div class="input_group page_data_row">
                 <label>3. Are procedures manuals accessible to all members of the conventional multifamily servicing
                     staff?</label>
-                <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                <label><input type="radio" value="2" name="rd_1"> No</label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                    </div>
             </div>
         
             <div class="input_group page_data_row">
@@ -297,8 +298,10 @@ conventional multifamily and commercial mortgages.
         <div class="page_content">
             <div class="input_group page_data_row">
                 <label>1. Do you intend to employ a subservicer?</label>
-                <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                <label><input type="radio" value="2" name="rd_1"> No</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
             </div>
         
             <div class="input_group page_data_row">
@@ -308,25 +311,321 @@ conventional multifamily and commercial mortgages.
             </div>
         
             <div class="input_group page_data_row">
-                <label>1. Do you intend to employ a subservicer?</label>
-                <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                <label><input type="radio" value="2" name="rd_1"> No</label>
+                <label>3. Are they an existing Freddie Mac Seller/Servicer?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
             </div>
         
             <div class="input_group page_data_row">
-                <label>1. Do you intend to employ a subservicer?</label>
-                <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                <label><input type="radio" value="2" name="rd_1"> No</label>
+                <label>4. Do you have an existing subservicing agreement?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>
+            
+            <div class="input_group page_data_row">
+                <label>5. Do you intend to use a different subservicer for any loans post-securitization?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
             </div>
         
-        
             <div class="input_group page_data_row">
-                <label class="font-weight-bold">2. If so, please provide the company name and length of contractual
-                    relationship.</label>
+                <label class="font-weight-bold">6. Who have you identified to serve as a special servicer?</label>
                 <input type="text" id="">
             </div>
         </div>
 
+
+        <!-- ---------- Collection ----------- -->
+        <div class="row justify-content-center section_header">Collection</div>
+
+        <div class="page_content">
+            
+        
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">1. How many full-time multifamily collectors does the applicant employ?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">2. What is the average number of delinquent accounts assigned per collector?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">3. Please describe how the applicant's collectors are assigned their work loads (for example, 30, 60, 90+ days delinquent;
+                    alphabetically; per investor)</label>
+                <input type="text" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label>3. Are they an existing Freddie Mac Seller/Servicer?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>       
+                   
+            
+        </div>
+
+        <!-- ---------- Property Inspection ----------- -->
+        <div class="row justify-content-center section_header">Property Inspection</div>
+
+        <div class="page_content">
+            
+            <div class="input_group page_data_row">
+                <label>1. Are periodic property inspections required by the applicant?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">2. Are property inspections completed by the applicant's staff or by fee inspectors?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">3. How many full-time multifamily property inspectors does the applicant employ?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">4. Please describe how property inspectors are assigned their work loads? (for example, current, delinquent, location)</label>
+                <input type="text" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label>5. Does the applicant use a standard property inspection form?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>    
+            
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">6. Please describe the applicant's inspection process (for example, external and internal building inspection, property management
+                    interview, rental comparables).</label>
+                <input type="text" id="">
+            </div>
+            
+        </div>
+
+        <!-- ---------- Property Financial Review ----------- -->
+        <div class="row justify-content-center section_header">Property Financial Review</div>
+
+        <div class="page_content">
+            
+            <div class="input_group page_data_row">
+                <label>1. Does the applicant review periodically the financial operations of each property?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">2. How many full-time property analysts or mortgage analysts does the applicant employ?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">3. Please describe the applicant's review of a property's financial operations (for example, rental income amount and trends, vacancy
+                    & collection loss, expense amounts and trends, debt coverage ratio)</label>
+                <input type="text" id="">
+            </div>
+
+        </div>
+
+        <!-- ---------- Delinquency and REO Data ----------- -->
+        <div class="row justify-content-center section_header">Delinquency and REO Data</div>
+
+        <div class="page_content">
+            <p>
+                Provide the following information about the delinquency* and REO history of the applicant's conventional multifamily and commercial
+mortgages (reflecting total portfolio serviced for self and all investors) for the past three years. Begin with the most recent completed
+month.
+            </p>
+
+
+            <p>
+                * Delinquency occurs when all or part of the borrower's monthly installment of principal, interest, and where applicable, escrow is
+unpaid after the due date. A delinquency that remains uncured as of the close of business of the last working day before the next due
+date is considered a delinquency of one payment or 30 days, regardless of the actual number of calendar days since the initial due
+date. A delinquency that has been uncured for 30 days or more but less than 60 days by the end of the reporting month must be
+reported as a one-payment or 30-day delinquency.
+            </p>
+
+            <p>
+                For example: a mortgage due on October 1, would be considered 30 days (or one payment) delinquent as of the close of business on
+October 31. The mortgage would be considered 60 days (two payments) delinquent if unpaid by the close of business on November
+30
+            </p>
+
+
+        </div>
+
+        <!-- ---------- Delinquencies ----------- -->
+        <div class="row justify-content-center section_header">Delinquency and REO Data</div>
+
+        <div class="page_content">
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">1. When does the applicant send late notices (for example, 30, 60, 90+ days delinquent)?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">2. How and when does the applicant first attempt personal contact (for example, 30, 60, 90+ days delinquent)?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">3. When does the applicant order additional property inspections (for example 30, 60, 90+ days delinquent)? If the loan remains
+                    delinquent, how often does the applicant inspect the property?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">4. Please describe the tracking or monitoring system the applicant uses for following up on promise dates.</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>5. Are partial payments accepted?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>6. For delinquent mortgages, are repayment plans that are greater than three months put in writing?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">7. In what order are customers' payments applied (for example, escrow, interest, principal, other)?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>8. Does the applicant have any mortgages with due dates other than the first of the month?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">9. By what means does the applicant notify the national credit repositories of delinquent accounts?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">10. What types of alternatives to foreclosure (if any) does the applicant make available to customers (for example, modification,
+                    assumption)?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">11. What workout procedures does your institution initiate on delinquent multifamily and/or income property mortgages? Please
+                    attach your policy and procedures regarding delinquent mortgages.</label>
+                <input type="text" id="">
+            </div>
+
+        </div>
+
+        <!-- ---------- Foreclosure and Bankruptcies ----------- -->
+        <div class="row justify-content-center section_header">Foreclosure and Bankruptcies</div>
+        
+        <div class="page_content">
+        
+            <div class="input_group page_data_row">
+                <label>1. Does the applicant maintain a separate staff for processing foreclosures?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                </div>
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label>2. Does the applicant maintain a separate staff for processing bankruptcies?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                </div>
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">3. Describe the applicant's monitoring systems for tracking foreclosures and
+                    bankruptcies?</label>
+                <input type="text" id="">
+            </div>
+        
+        </div>
+
+        <!-- ---------- Escrows ----------- -->
+        <div class="row justify-content-center section_header">Escrows</div>
+        
+        <div class="page_content">
+        
+            <div class="input_group page_data_row">
+                <label>1. Does the applicant allow borrowers to pay real estate taxes and insurance premiums directly?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">2. Please describe the type of monitoring system the applicant has to identify and pay escrow items before they are due.</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>3. Does the applicant conduct a yearly escrow analysis on each account that has an escrow?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                </div>
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">4. Please give a brief description of the applicant's insurance claim procedures.</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>5. Does the applicant require replacement reserves escrows?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                </div>
+            </div>
+        
+        </div>
+
+         <!-- ---------- Conventional Servicing Contacts----------- -->
+         <div class="row justify-content-center section_header">Conventional Servicing Contacts</div>
+        
+         <div class="page_content">
+         
+             <p>
+                Please list the names, titles and telephone numbers of persons that Freddie Mac may contact regarding questions on the applicant's
+conventional multifamily servicing operations.
+             </p>
+         
+         </div>
 
     </section>
 <script>

@@ -238,6 +238,10 @@ ol li::marker {
     vertical-align: sub;
 }
 
+.input_group_inline > label{
+    margin-right: 10px;
+}
+
 .checkBox_wrp{
     padding-top: 2px;
     padding-bottom: 2px;
