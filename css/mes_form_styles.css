@@ -246,7 +246,7 @@ ol li::marker {
 }
 
 
-
+.input_group_inline .radio_group_wrp .group_item,
 .input_group .radio_group_wrp .group_item{
     margin-right: 15px;
 }
