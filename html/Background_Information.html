@@ -753,22 +753,19 @@
         <p><strong>Does another entity have control of the publicity traded company by voting rights, e.g., own 51% of shares?</strong></p>
         
         <div class="row">
-            <div class="col-sm-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+            <div class="col-sm-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_1"> No</label></div>
+                </div>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="">
                 </div>
             </div>
-            <div class="col-sm-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
-                </div>
-            </div>
+
+
+
         </div>
 
 
@@ -2681,6 +2678,28 @@
     <p style="page-break-after: always;"></p>
     <p style="page-break-before: always;">&nbsp;</p>
 
+
+    <script src="../Js/jquery-3.6.1.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('input[type="radio"]').click(function(){
+                if ($(this).is(':checked'))
+                {
+                    var parent = $(this).parents(".input_group");
+
+                    if($(this).val() == 1){
+                        parent.find(".if_yes").css("display", "block");
+                        parent.find(".if_no").css("display", "none");
+                    }else if($(this).val() == 0){
+                        parent.find(".if_yes").css("display", "none");
+                        parent.find(".if_no").css("display", "block");
+                    }
+                }
+            });
+        });
+
+    </script>
 
 
 </body>

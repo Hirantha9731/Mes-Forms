@@ -2,57 +2,614 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LIHTC Syndicator Application</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Test page</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mes_form_styles.css">
 </head>
 <body>
-    <div class="container mt-4">
+    <section class="container mt-2 mb-2 page_content_wrapper">
+
+        <div class="row justify-content-center section_header">Seller/Servicer Status</div>
+
+        <!-- Servicer status starts here -->
+
+        <p class="mt-2">Is the applicant an existing Freddie Mac Multifamily Seller/Servicer or a new applicant?</p>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Existing Seller/Servicer (check all that apply and include Seller/Servicer number)
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        New Applicant
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-3">
+                Conventional Seller/Servicer
+            </div>
+
+            <div class="col-2">
+                <input type="checkbox">
+            </div>
+
+            <div class="col-2 text_right_align">
+                Seller/Servicer No.:
+            </div>
+
+            <div class="col-4">
+                <input id="textbox">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-3">
+                Targeted Affordable Housing Seller/Servicer
+            </div>
+
+            <div class="col-2">
+                <input type="checkbox">
+            </div>
+
+            <div class="col-2 text_right_align">
+                Seller/Servicer No.:
+            </div>
+
+            <div class="col-4">
+                <input id="textbox">
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-3">
+                Structured Transaction Seller and/or Servicer
+            </div>
+
+            <div class="col-2">
+                <input type="checkbox">
+            </div>
+
+            <div class="col-2 text_right_align">
+                Seller/Servicer No.:
+            </div>
+
+            <div class="col-4">
+                <input id="textbox">
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-3">
+                Small Balance Loans Seller/Servicer
+            </div>
+
+            <div class="col-2">
+                <input type="checkbox">
+            </div>
+
+            <div class="col-2 text_right_align">
+                Seller/Servicer No.:
+            </div>
+
+            <div class="col-4">
+                <input id="textbox">
+
+            </div>
+        </div>
+
+        <div class="row mb-2">
+
+            <div class="col-3">
+                LIHTC Syndicator
+            </div>
+
+            <div class="col-2">
+                <input type="checkbox">
+            </div>
+
+            <div class="col-2 text_right_align">
+                Seller/Servicer No.:
+            </div>
+
+            <div class="col-4">
+                <input id="textbox">
+
+            </div>
+        </div>
+
+        <!-- Servicer status ends here -->
+
+        <div class="row justify-content-center section_header">Identification</div>
+
+        <!-- identification table starts here -->
+        <div class="row">
+            <div class="col-3  section_sub_text">
+                <div class="input_group">
+                    <label class="font-weight-bold">Legal Name of Firm</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-3  section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Tax Identification Number</label>
+                    <input type="text" >
+                </div>
+            </div>
+            <div class="col-3  section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Federal Reserve ID(RSSD ID)</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-3  section_sub_text border_right_0">
+                <div class="input_group">
+                    <label  class="font-weight-bold">FHA ID</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 applicant_table section_sub_text border_right_0">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Principal Office Street Address</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">City</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-4 section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">State</label>
+                    <select name="sort" id="state" class="select_option">
+                        <option selected>Select State</option>
+                        <option value="1">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Arizona</option>
+                        <option value="4">Arkansas</option>
+                        <option value="5">California</option>
+                        <option value="6">Colorado</option>
+                        <option value="7">Connecticut</option>
+                        <option value="8">Delaware</option>
+                        <option value="9">District of Columbia</option>
+                        <option value="10">Florida</option>
+                        <option value="11">Idaho</option>
+                        <option value="12">Indiana</option>
+                        <option value="13">Iowa</option>
+                        <option value="14">kansas</option>
+                        <option value="15">kentucky</option>
+                        <option value="16">Louisiana</option>
+                        <option value="17">Maine</option>
+                        <option value="18">Montana</option>
+                        <option value="19">Nebraska</option>
+                        <option value="20">Nevada</option>
+                        <option value="21">New Hampshire</option>
+                        <option value="22">New Jersey</option>
+                        <option value="23">New Mexico</option>
+                        <option value="24">New York</option>
+                        <option value="25">New York</option>
+                        <option value="27">North Carolina</option>
+                        <option value="28">North Dakota</option>
+                        <option value="29">Ohio</option>
+                        <option value="30">Oklahoma</option>
+                        <option value="31">Oregon</option>
+                        <option value="32">Oklahoma</option>
+                        <option value="33">Maryland</option>
+                        <option value="34">Massachusetts</option>
+                        <option value="35">Michigan</option>
+                        <option value="36">Mississippi</option>
+                        <option value="37">Missouri</option>
+                        <option value="38">Pennsylvania</option>
+                        <option value="39">Rhode Island</option>
+                        <option value="40">South Carolina</option>
+                        <option value="41">South Dakota</option>
+                        <option value="42">Tennessee</option>
+                        <option value="43">Texas</option>
+                        <option value="44">Utah</option>
+                        <option value="45">Vermont</option>
+                        <option value="46">Virginia</option>
+                        <option value="47">Washington</option>
+                        <option value="48">West Virginia</option>
+                        <option value="49">Wisconsin</option>
+                        <option value="50">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-4 section_sub_text border_right_0">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Zip Code</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 section_sub_text border_right_0">
+                <div class="input_group">
+                    <label class="font-weight-bold">Mailing Address (if other than above)</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">City</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-4 section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">State</label>
+                    <select name="sort" id="state" class="select_option">
+                        <option selected>Select State</option>
+                        <option value="1">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Arizona</option>
+                        <option value="4">Arkansas</option>
+                        <option value="5">California</option>
+                        <option value="6">Colorado</option>
+                        <option value="7">Connecticut</option>
+                        <option value="8">Delaware</option>
+                        <option value="9">District of Columbia</option>
+                        <option value="10">Florida</option>
+                        <option value="11">Idaho</option>
+                        <option value="12">Indiana</option>
+                        <option value="13">Iowa</option>
+                        <option value="14">kansas</option>
+                        <option value="15">kentucky</option>
+                        <option value="16">Louisiana</option>
+                        <option value="17">Maine</option>
+                        <option value="18">Montana</option>
+                        <option value="19">Nebraska</option>
+                        <option value="20">Nevada</option>
+                        <option value="21">New Hampshire</option>
+                        <option value="22">New Jersey</option>
+                        <option value="23">New Mexico</option>
+                        <option value="24">New York</option>
+                        <option value="25">New York</option>
+                        <option value="27">North Carolina</option>
+                        <option value="28">North Dakota</option>
+                        <option value="29">Ohio</option>
+                        <option value="30">Oklahoma</option>
+                        <option value="31">Oregon</option>
+                        <option value="32">Oklahoma</option>
+                        <option value="33">Maryland</option>
+                        <option value="34">Massachusetts</option>
+                        <option value="35">Michigan</option>
+                        <option value="36">Mississippi</option>
+                        <option value="37">Missouri</option>
+                        <option value="38">Pennsylvania</option>
+                        <option value="39">Rhode Island</option>
+                        <option value="40">South Carolina</option>
+                        <option value="41">South Dakota</option>
+                        <option value="42">Tennessee</option>
+                        <option value="43">Texas</option>
+                        <option value="44">Utah</option>
+                        <option value="45">Vermont</option>
+                        <option value="46">Virginia</option>
+                        <option value="47">Washington</option>
+                        <option value="48">West Virginia</option>
+                        <option value="49">Wisconsin</option>
+                        <option value="50">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-4 section_sub_text border_right_0">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Zip Code</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Date Fiscal Year Ends (MM/DD/YYYY)</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-4 section_sub_text">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Telephone Number</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-4 section_sub_text border_right_0">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Email</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 section_sub_text border_right_0 border_bottom_1">
+                <div class="input_group">
+                    <label  class="font-weight-bold">Web Address</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <!-- identification table ends here -->
+
+        <div class="row justify-content-center section_header">Ownership</div>
+
+        <div class="row">
+            <div class="col-6 ml-10 mt-2">
+                <p><strong>Check all applicable boxes for your institution</strong></p>
+            </div>
+        </div>
         
-        <table class="table table-bordered border-dark">
-            <tr class="row">
-                <td class="text-center text-light">Overview</td>
-            </tr>
-            <tr class="row">
-                <td>By completing the information on this form and attaching the items listed below, you will facilitate Freddie Mac's review of your LIHTC
-                    operations. The information you provide, unless otherwise specified, should be as of the date you complete and sign this form.
-                    Please indicate if you have recently submitted any of the relevant documentation requests to Freddie Mac.
-                </td>
-            </tr>
-            <tr class="row">
-                <td class="bg-primary text-center text-light">Application Fee</td>
-            </tr>
-            <tr class="row">
-                <td>All applicants must submit a non-refundable application fee as provided in the charts below. Please contact Counterparty
-                    Transactions team for wire instructions via e-mail at <a href="mailto: MF_Counterparty_Transactions@freddiemac.com">MF_Counterparty_Transactions@freddiemac.com.</a>
-                </td>
-            </tr>
-            <tr class="row">
-                <td class="text-center text-decoration-underline">Application fee to become an approved LIHTC Syndicator</td>
-            </tr>
-            <tr class="row">
-                <td class="col-sm text-decoration-underline"><b>Designation</b></td>
-                <td class="col-sm text-decoration-underline"><b>Fee</b></td>
-                <td class="col-sm text-decoration-underline"><b>Notes</b></td>
-            </tr>
-            <tr class="row">
-                <td class="col-sm">LIHTC Syndicator</td>
-                <td class="col-sm">$50,000</td>
-                <td class="col-sm">
-                    <ul class="list-group">Freddie Mac may adjust the fee based on prior approval and
-                        transaction type</ul>
-                </td>
-            </tr>
-            <tr class="row">
-                <td class="bg-primary text-center text-light">Application Package</td>
-            </tr>
-            <tr class="row">
-                <td>As part of the Application, please include the following documentation for review.
+        <div class="row applicant_table">
+            <div class="col-6">
 
-                </td>
-            </tr>
-        </table>
+                <p><strong>Ownership*</strong></p>
 
-    </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Minority-owned Business Enterprise:
+                    </label>
+                </div>
+
+                <div class="mid_checkbox_content">
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Black or (African) American
+                        </label>
+                    </div>
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Native Americans (or American Indian)
+                        </label>
+                    </div>
+
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Hispanic (or Latino American)
+                        </label>
+                    </div>
+
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Asian American
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Disabled-Owned Business Enterprise
+                    </label>
+                </div>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Women-Owned Business Enterprise
+                    </label>
+                </div>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        None of Above
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-6">
+
+                <p><strong>Additional Categories</strong></p>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Service-Disabled Veteran-Owned
+                    </label>
+                </div>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        GLBT-Owned
+                    </label>
+                </div>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Community-oriented lending
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row applicant_table">
+            <div class="col-6">
+                <p>Certifying Organization (if applicable)</p>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        United States Government Agency
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        State Government Agency
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Self-Certification
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <p>&nbsp;</p>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Local Government Agency
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Minority Council or Organization
+                    </label>
+                </div>
+            </div>
+        </div>   
+        
+
+        <div class="row justify-content-center section_header">Mission Statement</div>
+
+        <div class="row">
+            <div class="col-12 applicant_table border_top_1">
+                <div class="input_group">
+                    <label class="font-weight-bold">What is the applicant's mission statement?</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-12 applicant_table border_bottom_1">
+                <div class="input_group">
+                    <label class="font-weight-bold">Please explain why the applicant would like to do business with Freddie Mac.</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="row justify-content-center section_header">Program Type</div>
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center section_header">Legal Entity Type</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-6 section_sub_text">
+                <p><strong>Check the program for which the applicant is applying</strong></p>
+
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Conventional Seller/Servicer
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Targeted Affordable Housing Seller/Servicer
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Structured Transaction Seller and/or Servicer
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        Small Balance Loans Seller/Servicer
+                    </label>
+                </div>
+                <div class="checkBox_wrp">
+                    <input type="checkbox">
+                    <label>
+                        LIHTC Syndicator
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-6 section_sub_text border_right_0">
+
+                <div class="col-12">
+                    <p><strong>Check the legal entity type:</strong></p>
+                </div>
+                
+                <div class="col-6">
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Corporation
+                        </label>
+                    </div>
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Partnership
+                        </label>
+                    </div>
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Other
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Proprietorship
+                        </label>
+                    </div>
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Limited Partnership
+                        </label>
+                    </div>
+                    <div class="checkBox_wrp">
+                        <input type="checkbox">
+                        <label>
+                            Limited Liability Company
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
 </body>
