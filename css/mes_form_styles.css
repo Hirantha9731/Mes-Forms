@@ -67,7 +67,15 @@
     padding-right: 0px !important;
 }
 
+.padding_lr_10{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
 
+.padding_lr_15{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
 
 p{
     text-align: justify;
@@ -109,6 +117,7 @@ ol li::marker {
     background-color: #08a4e4;
     color: #ffffff;
     text-align: center !important;
+    justify-content: center;
     font-weight: bold;
     font-size: 14px;
     padding: 5px 15px;
@@ -172,6 +181,7 @@ ol li::marker {
 
 .page_content{
     padding: 10px;
+    width: 100%;
     text-align: justify;
 }
 
@@ -197,7 +207,7 @@ ol li::marker {
 }
 
 .input_group{
-
+    width: 100%;
 }
 
 .input_group label,
@@ -467,13 +477,7 @@ button{
 }
 
 
-.row{
+.row, .flex_wrp{
     flex-wrap: wrap;
     display: flex;
-}
-
-.flex_wrp{
-    display: flex;
-    flex-wrap: wrap;
-
 }
