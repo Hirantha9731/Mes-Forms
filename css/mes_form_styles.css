@@ -245,10 +245,7 @@ ol li::marker {
     background-color:white;
 }
 
-.input_group .radio_group_wrp{
-    display: flex;
-    /* justify-content: space-around; */
-}
+
 
 .input_group .radio_group_wrp .group_item{
     margin-right: 15px;
@@ -264,6 +261,10 @@ ol li::marker {
 
 .input_group_inline > label{
     margin-right: 10px;
+}
+
+.input_group .radio_group_wrp, .input_group_inline .radio_group_wrp{
+    display: flex;
 }
 
 .checkBox_wrp{
