@@ -255,7 +255,7 @@ ol li::marker {
     vertical-align: sub;
 }
 
-.input_group .if_yes, .input_group .if_no{
+.input_group .if_yes, .input_group .if_no, .input_group .input_wrp{
     display: none;
 }
 

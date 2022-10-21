@@ -142,16 +142,28 @@ underwriting functions for conventional multifamily and commercial mortgages.
                 <label for="typedName" class="font-weight-bold">What is the average tenure for an underwriter and originator within the company? Do you believe that the turnover rate is higher or
                     lower than that of your peer companies, given the current business environment?</label>
                 <input type="text"  id="">
-            </div>
-        
+            </div>        
         
             <div class="input_group page_data_row">
-                <label for="typedName" class="font-weight-bold">Do you believe that you have a sufficient number of staff to manage the current workload and back-up key positions?</label>
-                <!-- <input type="text"  id=""> -->
+                <label>Do you believe that you have a sufficient number of staff to manage the current workload and back-up key positions?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="reserves_escrows"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="reserves_escrows"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, why?</label>
+                </div>
+                <div class="if_no page_data_row">
+                    <label class="font-weight-bold">If no, why?</label>
+                </div>
+                <div class="input_wrp page_data_row">
+                    <input type="text" id="">
+                </div>
             </div>
+
         </div>
 
-        <div class="row justify-content-center section_header">Conventional Origination and Underwriting Staffing</div>
+        <div class="row justify-content-center section_header">Conventional Production</div>
         <div class="page_content">
         
             <div class="input_group page_data_row">
@@ -314,16 +326,23 @@ conventional multifamily and commercial mortgages.
             <div class="input_group page_data_row">
                 <label>3. Are they an existing Freddie Mac Seller/Servicer?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                    <div class="group_item"><label><input type="radio" value="1" name="reserves_escrows"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="reserves_escrows"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If so, please provide the company name and length of contractual relationship.</label>
+                    <input type="text" id="">
                 </div>
             </div>
-        
+
             <div class="input_group page_data_row">
                 <label>4. Do you have an existing subservicing agreement?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                    <div class="group_item"><label><input type="radio" value="1" name="reserves_escrows"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="reserves_escrows"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, please provide.</label>
                 </div>
             </div>
             
@@ -379,12 +398,16 @@ conventional multifamily and commercial mortgages.
         <div class="row justify-content-center section_header">Property Inspection</div>
 
         <div class="page_content">
-            
+
             <div class="input_group page_data_row">
                 <label>1. Are periodic property inspections required by the applicant?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                    <div class="group_item"><label><input type="radio" value="1" name="inspections_applicant"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="inspections_applicant"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how often?</label>
+                    <input type="text" id="">
                 </div>
             </div>
 
@@ -401,15 +424,18 @@ conventional multifamily and commercial mortgages.
             <div class="input_group page_data_row">
                 <label class="font-weight-bold">4. Please describe how property inspectors are assigned their work loads? (for example, current, delinquent, location)</label>
                 <input type="text" id="">
-            </div>
-        
+            </div>  
+            
             <div class="input_group page_data_row">
                 <label>5. Does the applicant use a standard property inspection form?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                    <div class="group_item"><label><input type="radio" value="1" name="inspections_applicant"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="inspections_applicant"> No</label></div>
                 </div>
-            </div>    
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, please provide a copy of the form to this form.</label>
+                </div>
+            </div>
             
             <div class="input_group page_data_row">
                 <label class="font-weight-bold">6. Please describe the applicant's inspection process (for example, external and internal building inspection, property management
@@ -645,11 +671,14 @@ conventional multifamily servicing operations.
                     var parent = $(this).parents(".input_group");
                     
                     if($(this).val() == 1){
-                         parent.find(".if_yes").css("display", "block");
-                         parent.find(".if_no").css("display", "none");
+                        parent.find(".if_yes").css("display", "block");
+                        parent.find(".if_no").css("display", "none");
+                        parent.find(".input_wrp").css("display", "block");
                     }else if($(this).val() == 0){
                         parent.find(".if_yes").css("display", "none");
-                         parent.find(".if_no").css("display", "block");
+                        parent.find(".if_no").css("display", "block");
+                        parent.find(".input_wrp").css("display", "block");
+                         
                     }                    
                 }
             });
