@@ -453,8 +453,12 @@ conventional multifamily and commercial mortgages.
             <div class="input_group page_data_row">
                 <label>1. Does the applicant review periodically the financial operations of each property?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>   
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how often?</label>
+                    <input type="text" id="">
                 </div>
             </div>
 
@@ -500,7 +504,7 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
         </div>
 
         <!-- ---------- Delinquencies ----------- -->
-        <div class="row justify-content-center section_header">Delinquency and REO Data</div>
+        <div class="row justify-content-center section_header">Delinquency</div>
 
         <div class="page_content">
             <div class="input_group page_data_row">
@@ -580,16 +584,24 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
             <div class="input_group page_data_row">
                 <label>1. Does the applicant maintain a separate staff for processing foreclosures?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
                 </div>
-            </div>
-        
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how many full-time employees are on the Servicer's multifamily foreclosure staff?</label>
+                    <input type="text" id="">
+                </div>
+            </div>  
+
             <div class="input_group page_data_row">
                 <label>2. Does the applicant maintain a separate staff for processing bankruptcies?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how many full-time employees are on the Servicer's multifamily bankruptcy staff?</label>
+                    <input type="text" id="">
                 </div>
             </div>
         
@@ -609,8 +621,12 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
             <div class="input_group page_data_row">
                 <label>1. Does the applicant allow borrowers to pay real estate taxes and insurance premiums directly?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how does the Servicer monitor borrowers' payments to ensure that hazard insurance and real estate taxes are paid?</label>
+                    <input type="text" id="">
                 </div>
             </div>
 
@@ -622,8 +638,12 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
             <div class="input_group page_data_row">
                 <label>3. Does the applicant conduct a yearly escrow analysis on each account that has an escrow?</label>
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1233741" name="rd_1"> Yes</label></div>
-                    <div class="group_item"><label><input type="radio" value="2456852" name="rd_1"> No</label></div>
+                    <div class="group_item"><label><input type="radio" value="1" name="has_escrow"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="has_escrow"> No</label></div>
+                </div>
+                <div class="if_no page_data_row">
+                    <label class="font-weight-bold">If no, please explain why. If the analysis is conducted less frequently than annually, please state how frequently.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         
