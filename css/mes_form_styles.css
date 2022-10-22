@@ -229,7 +229,7 @@ ol li::marker {
     border-radius: 0;
     line-height: 24px;
     font-size: 12px;
-    background-color: #e0e4fc;
+    background-color: #D5EFFA;
 }
 
 .input_group select:focus{
@@ -291,7 +291,7 @@ ol li::marker {
     float: left;
     width: 180px;
     height: 20px;
-    background-color: #dcdce1;
+    background-color: #D5EFFA;
     border: solid black 1px;
     margin-left: 5px;
 }
@@ -332,8 +332,8 @@ button{
     border: solid 1px #999999;
     border-radius: 0;
     font-size: 12px;
-    background-color: #e0e4fc;
-    width: 185px;
+    background-color: #D5EFFA;
+    width: calc(100% - 90px);
 }
 
 .text2{
@@ -341,8 +341,8 @@ button{
     border: solid 1px #999999;
     border-radius: 0;
     font-size: 12px;
-    background-color: #e0e4fc;
-    width: 250px;
+    background-color: #D5EFFA;
+    width: calc(100% - 22px);
 }
 
 .text3{
@@ -350,7 +350,7 @@ button{
     border: solid 1px #999999;
     border-radius: 0;
     font-size: 12px;
-    background-color: #e0e4fc;
+    background-color: #D5EFFA;
     width: 833px;
 }
 
@@ -359,8 +359,8 @@ button{
     border: solid 1px #999999;
     border-radius: 0;
     font-size: 12px;
-    background-color: #e0e4fc;
-    width: 465px;
+    background-color: #D5EFFA;
+    width: 100%;
 }
 
 .text5{
@@ -368,8 +368,8 @@ button{
     border: solid 1px #999999;
     border-radius: 0;
     font-size: 12px;
-    background-color: #e0e4fc;
-    width: 450px;
+    background-color: #D5EFFA;
+    width: calc(100% - 17px);
 }
 
 

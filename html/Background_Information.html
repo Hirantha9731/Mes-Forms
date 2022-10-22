@@ -1439,8 +1439,32 @@
                     <div class="group_item"><label><input type="radio" value="0" name="rd_4"> No</label></div>
                 </div>
                 <div class="if_yes">
-                    <label class="font-weight-bold">FHA Mortgage Number:</label>
-                    <input type="text" id="">
+                    <div class="flex_wrp">
+                        <div class="col-2">
+                            <label class="font-weight-bold">FHA Mortgage Number:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" id="" class="text1">
+                        </div>
+                    </div>
+                </div>
+                <div class="if_yes">
+                    <div class="flex_wrp">
+                        <div class="col-2">
+                            <label class="font-weight-bold">Date Approved:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" id="" class="text1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="if_yes">
+                    <div class="flex_wrp mt-2">
+                        <div class="col-12">
+                            <label class="font-weight-bold">Please provide a copy of the applicant’s most recent FHA servicing review report (if a FHA approved institution)</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1448,25 +1472,36 @@
 
         <p class="mt-2"><strong>Is the Applicant currently approved by Fannie Mae for Multifamily Mortgages?</strong></p>
 
+
         <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+            <div class="col-12 input_group_inline">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_5"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_5"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <div class="flex_wrp">
+                        <div class="col-2">
+                            <label class="font-weight-bold">Fannie Mae Number:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" id="" class="text1">
+                        </div>
+                    </div>
+                </div>
+                <div class="if_yes">
+                    <div class="flex_wrp">
+                        <div class="col-2">
+                            <label class="font-weight-bold">Date Approved:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="text" id="" class="text1">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
+        
         <div class="row mt-2">
             <div class="col-12">
                 <div class="input_group">
@@ -1480,20 +1515,10 @@
             approved jurisdictions?</strong></p>
 
         <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
-                </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_6"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_6"> No</label></div>
                 </div>
             </div>
         </div>
@@ -1508,20 +1533,10 @@
         </p>
 
         <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        P&I
-                    </label>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Escrow
-                    </label>
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_7"> P&I</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_7"> Escrow</label></div>
                 </div>
             </div>
         </div>
@@ -1564,20 +1579,118 @@
         </p>
 
         <div class="row">
-            <div class="col-4">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes (list the applicant's five major investors)
-                    </label>
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes(list the applicant's five major investors)</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_1"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+
+                    <div class="flex_wrp">
+                        <div class="col-4 section_sub_text border_left_1">
+                            <label class="font-weight-bold para_heading text-center">Investor</label>
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold para_heading text-center">UPB (000's)</label>
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold para_heading text-center">(%) of Portfolio</label>
+                        </div>
+                    </div>
+
+
+                    <div class="flex_wrp">
+                        <div class="col-4 section_sub_text border_left_1">
+                            <label>1 &nbsp;</label>
+                            <input type="text" class="text6">
+
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">$</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">%</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+                    </div>
+
+                    <div class="flex_wrp">
+                        <div class="col-4 section_sub_text border_left_1">
+                            <label>2 &nbsp;</label>
+                            <input type="text" class="text6">
+
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">$</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">%</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+                    </div>
+
+                    <div class="flex_wrp">
+                        <div class="col-4 section_sub_text border_left_1">
+                            <label>3 &nbsp;</label>
+                            <input type="text" class="text6">
+
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">$</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">%</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+                    </div>
+
+                    <div class="flex_wrp">
+                        <div class="col-4 section_sub_text border_left_1">
+                            <label>4 &nbsp;</label>
+                            <input type="text" class="text6">
+
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">$</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+
+                        <div class="col-4 section_sub_text">
+                            <label class="font-weight-bold">%</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+                    </div>
+
+                    <div class="flex_wrp">
+                        <div class="col-4 section_sub_text border_left_1 border_bottom_1">
+                            <label>5 &nbsp;</label>
+                            <input type="text" class="text6">
+
+                        </div>
+
+                        <div class="col-4 section_sub_text border_bottom_1">
+                            <label class="font-weight-bold">$</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+
+                        <div class="col-4 section_sub_text border_bottom_1">
+                            <label class="font-weight-bold">%</label>
+                            <input type="text" id="" class="text6">
+                        </div>
+                    </div>
+                
                 </div>
             </div>
         </div>
@@ -1667,20 +1780,14 @@
         </p>
 
         <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_7"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_7"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1690,20 +1797,14 @@
         </p>
 
         <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_8"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_8"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1713,21 +1814,15 @@
                 including bankruptcy or insolvency:</strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_9"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_9"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1752,21 +1847,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_10"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_10"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1778,21 +1867,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_11"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_11"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please explain and list steps taken to resolve.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1804,25 +1887,18 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_12"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_12"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the proceeding/investigation and list the potential resolutions.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
-
 
         <p class="mt-2">
             <strong>Has either the applicant, the applicant’s direct parent, or the applicant’s ultimate parent ever been involved in a proceeding or subject
@@ -1831,21 +1907,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_13"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_13"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the proceeding/investigation and list the potential resolutions.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1859,21 +1929,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_14"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_14"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the claim and list steps taken to resolve.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1887,21 +1951,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_15"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_15"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1912,21 +1970,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_16"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_16"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please explain and list steps taken to resolve.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1938,21 +1990,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_17"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_17"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the proceeding/investigation and list the potential resolutions.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1965,21 +2011,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_18"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_18"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the proceeding/investigation and list the potential resolutions.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -1992,25 +2032,18 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_19"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_19"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the claim and list steps taken to resolve..</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
-
 
         <p class="mt-2">
             <strong>Have any of the principals or managing executives listed in this application ever been convicted of a felony or are presently, to your
@@ -2020,21 +2053,15 @@
             </strong>
         </p>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_20"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_20"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Describe the nature of the claim and list steps taken to resolve.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -2050,21 +2077,15 @@
             </li>
         </ol>
 
-        <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+        <div class="row mb-2">
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_21"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_21"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please Explain.</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -2192,7 +2213,6 @@
                     <input type="text" class="text1">
                 </div>
                 <div class="col-9 section_sub_text border_bottom_1">
-                    <label>&nbsp;</label>
                     <input type="text" class="text3">
                 </div>
             </div>
@@ -2268,21 +2288,15 @@
 
                 <p class="mt-2"><strong>Has the applicant changed independent public accountants in the past 12 months</strong></p>
 
-                <div class="row">
-                    <div class="col-1">
-                        <div class="checkBox_wrp">
-                            <input type="checkbox">
-                            <label>
-                                Yes
-                            </label>
+                <div class="row mb-2">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_22"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_22"> No</label></div>
                         </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="checkBox_wrp">
-                            <input type="checkbox">
-                            <label>
-                                No
-                            </label>
+                        <div class="if_yes">
+                            <label class="font-weight-bold">Please explain reason for change and identify the previous auditors below. Provide if necessary</label>
+                            <input type="text" id="">
                         </div>
                     </div>
                 </div>
@@ -2311,20 +2325,10 @@
             </li>
 
             <div class="row">
-                <div class="col-1">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox">
-                        <label>
-                            Yes
-                        </label>
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox">
-                        <label>
-                            No
-                        </label>
+                <div class="col-12 input_group">
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" name="rd_23"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" name="rd_23"> No</label></div>
                     </div>
                 </div>
             </div>
@@ -2333,20 +2337,10 @@
             </li>
 
             <div class="row">
-                <div class="col-1">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox">
-                        <label>
-                            Yes
-                        </label>
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox">
-                        <label>
-                            No
-                        </label>
+                <div class="col-12 input_group">
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" name="rd_24"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" name="rd_24"> No</label></div>
                     </div>
                 </div>
             </div>
@@ -2615,20 +2609,14 @@
         </p>
 
         <div class="row">
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        Yes
-                    </label>
+            <div class="col-12 input_group">
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="rd_1"> No</label></div>
                 </div>
-            </div>
-            <div class="col-1">
-                <div class="checkBox_wrp">
-                    <input type="checkbox">
-                    <label>
-                        No
-                    </label>
+                <div class="if_yes">
+                    <label class="font-weight-bold">Please explain, provide attachment if necessary</label>
+                    <input type="text" id="">
                 </div>
             </div>
         </div>
@@ -2644,12 +2632,23 @@
         </div>
 
 
+        <div class="row">
+            
+        </div>
+
         <ol class="mt-2">
 
             <li><strong>Please describe your information security approach (e.g., how you manage items including: anti-virus and malware; firewall/
                 firewall rules and network access control lists; external connections; remote access; virtual technologies/cloud; network traffic log;
                 unapproved networks; isolated critical network segments; unauthorized devices; extranet, encryption/cryptography; SSL; DMZ;
                 removable media, log in/out and timeout).</strong>
+            </li>
+            <div class="input_group">
+                <input type="text">
+            </div>
+
+            <li><strong>Has the applicant's information security process been independently evaluated for compliance and performance? If so, please
+                describe (e.g., SOC reports).</strong>
             </li>
             <div class="input_group">
                 <input type="text">
