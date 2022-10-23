@@ -118,7 +118,8 @@
                 <div class="col-4"><input type="text" id=""></div>
             </div>
         
-            <div class="page_content padding_lr_15">                
+            <div class="page_content padding_lr_15">
+                <div class="col-2"></div>                
                 <table>
                     <tr>
                         <td></td>
@@ -170,13 +171,42 @@
         
         </div>
 
-        <div class="row justify-content-center section_header">Conventional Origination and Underwriting Personnel</div>
+        <div class="row justify-content-center section_header">Conventional Origination and Underwriting Personnel</div>        
 
         <div class="page_content">
             <p>
                 Complete the following information for the key operating personal (division/operating unit heads) in the applicant's origination and
 underwriting functions for conventional multifamily and commercial mortgages.
             </p>
+        </div>
+
+        <div class="page_content">
+            <div class="oneToMany_content_wrp">
+                <div class="data_table">
+                    <div class="table_row text_center_align text_bold">
+                        <div class="col-3 table_cell">Name</div>
+                        <div class="col-3 table_cell">Functional Title</div>
+                        <div class="col-2 table_cell">Email</div>
+                        <div class="col-2 table_cell">Years with applicant</div>
+                        <div class="col-2 table_cell">Years of housing experience</div>
+                    </div>
+        
+                    <div class="table_row">
+                        <div class="col-3 table_cell"><input type="text" id=""></div>
+                        <div class="col-3 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                    </div>
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Add Personnel</button>
+        
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Remove Personnel</button>
+                </div>
+            </div>
         </div>
 
         <div class="row justify-content-center section_header">Conventional Origination and Underwriting Staffing</div>
@@ -285,6 +315,36 @@ underwriting functions for conventional multifamily and commercial mortgages.
 administration, default management (delinquency and foreclosure), REO Servicing, and investor accounting functions for
 conventional multifamily and commercial mortgages.
             </p>
+        </div>
+
+        <div class="page_content">
+            <div class="oneToMany_content_wrp">
+                <div class="data_table">
+                    <div class="table_row text-center text_bold">
+                        <div class="col-2 table_cell">Name</div>
+                        <div class="col-2 table_cell">Functional Title</div>
+                        <div class="col-2 table_cell">Email</div>
+                        <div class="col-2 table_cell">Years with applicant</div>
+                        <div class="col-2 table_cell">Years of servicing Experience</div>
+                        <div class="col-2 table_cell">Years of default management experience</div>
+                    </div>
+        
+                    <div class="table_row">
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                    </div>
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Add Servicing Personnel</button>        
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Remove Servicing Personnel</button>
+                </div>
+            </div>
         </div>
 
         <div class="row justify-content-center section_header">Conventional Servicing General Controls</div>
@@ -536,37 +596,29 @@ mortgages (reflecting total portfolio serviced for self and all investors) for t
 month.
             </p>
 
-            <div class=" ">                
-                <table>
+            <div class="padding_tb_15">                
+                <table >
                     <tr>
                         <td></td>
-                        <td colspan="2">Number of Mortgages</td>
-                        <td colspan="2">Unpaid Principal Balance</td>
-                        <td colspan="2">Gross Annual Servicing Income</td>
+                        <td></td>
+                        <td colspan="3" class="text_bold">Delinquent 60 days or more including
+                            foreclosures (total outstanding)</td>
+                        <td colspan="2" class="text_bold">Real estate owned (REO) (Total
+                            outstanding)</td>
                     </tr>
-                    <tr>
-                        <td>Mortgage Type</td>
-                        <td>Risk Shared</td>
-                        <td>Non-Risk Shared</td>
-                        <td>Risk Shared</td>
-                        <td>Non-Risk Shared</td>
-                        <td>Risk Shared</td>
-                        <td>Non-Risk Shared</td>
-                    </tr>
-
-                    <tr>
-                        <td>Conventional Multifamily</td>
-                        <td><input type="text" id=""></td>
-                        <td><input type="text" id=""></td>
-                        <td><input type="text" id=""></td>
-                        <td><input type="text" id=""></td>
-                        <td><input type="text" id=""></td>
-                        <td><input type="text" id=""></td>
+                    <tr class="text_center_align">
+                        <td class="text_bold">Month/year</td>
+                        <td class="text_bold">Mortgage Type</td>
+                        <td class="text_bold">Total Loans Serviced</td>
+                        <td class="text_bold">Unpaid Principal Balance</td>
+                        <td class="text_bold">Percent of UPB of Servicing Portfolio</td>
+                        <td class="text_bold">Total Number of Mortgages</td>
+                        <td class="text_bold">Total Original Balance</td>
                     </tr>
 
-                    <tr>
-                        <td>FHA Multifamily</td>
+                    <tr>                        
                         <td><input type="text" id=""></td>
+                        <td>Conventional Multifamily: Risk Shared</td>
                         <td><input type="text" id=""></td>
                         <td><input type="text" id=""></td>
                         <td><input type="text" id=""></td>
@@ -574,9 +626,19 @@ month.
                         <td><input type="text" id=""></td>
                     </tr>
 
-                    <tr>
-                        <td>FNMA Multifamily</td>
+                    <tr>                        
                         <td><input type="text" id=""></td>
+                        <td>Conventional Multifamily: Non-Risk Shared</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>                        
+                        <td><input type="text" id=""></td>
+                        <td>Commercial</td>
                         <td><input type="text" id=""></td>
                         <td><input type="text" id=""></td>
                         <td><input type="text" id=""></td>
@@ -776,8 +838,94 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
                 Please list the names, titles and telephone numbers of persons that Freddie Mac may contact regarding questions on the applicant's
 conventional multifamily servicing operations.
              </p>
+
+             <div class="oneToMany_content_wrp">
+                <div class="data_table">
+                    <div class="table_row text_bold">
+                        <div class="col-8 table_cell">
+                           <label class="font-weight-bold">Name</label>
+                           <input type="text" id="">
+                        </div>
+                        <div class="col-4 table_cell">
+                           <label class="font-weight-bold">Title</label>
+                           <input type="text" id="">
+                        </div>
+                        
+                    </div>
+        
+                    <div class="table_row">
+                        <div class="col-4 table_cell">
+                           <label class="font-weight-bold">Telephone Number</label>
+                           <input type="text" id="">
+                        </div>
+                        <div class="col-4 table_cell">
+                           <label class="font-weight-bold">Email</label>
+                           <input type="text" id="">
+                        </div>
+                        <div class="col-4 table_cell">
+                           <label class="font-weight-bold">Web Address</label>
+                           <input type="text" id="">
+                       </div>
+                    </div>
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Add Servicing Contact</button>        
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Remove Servicing Contact</button>
+                </div>
+            </div>
          
          </div>
+
+          <!-- ---------- Attorneys and Title Companies Used for Loan Closings----------- -->
+          <div class="row justify-content-center section_header">Attorneys and Title Companies Used for Loan Closings</div>
+        
+          <div class="page_content">
+          
+              <p>
+                Please list the names, titles and telephone numbers of firms/attorneys and title companies used for loan closings.
+              </p>
+ 
+              <div class="oneToMany_content_wrp">
+                 <div class="data_table">
+                     <div class="table_row text_bold">
+                         <div class="col-8 table_cell">
+                            <label class="font-weight-bold">Name</label>
+                            <input type="text" id="">
+                         </div>
+                         <div class="col-4 table_cell">
+                            <label class="font-weight-bold">Title</label>
+                            <input type="text" id="">
+                         </div>
+                         
+                     </div>
+         
+                     <div class="table_row">
+                         <div class="col-4 table_cell">
+                            <label class="font-weight-bold">Telephone Number</label>
+                            <input type="text" id="">
+                         </div>
+                         <div class="col-4 table_cell">
+                            <label class="font-weight-bold">Email</label>
+                            <input type="text" id="">
+                         </div>
+                         <div class="col-4 table_cell">
+                            <label class="font-weight-bold">Web Address</label>
+                            <input type="text" id="">
+                        </div>
+                     </div>
+                 </div>
+                 <div class="flex_wrp content_right mt-2">
+                     <button>Add Attorneys</button>        
+                 </div>
+                 <div class="flex_wrp content_right mt-2">
+                     <button>Remove Attorneys</button>
+                 </div>
+             </div>
+          
+          </div>
+ 
 
     </section>
     

@@ -26,6 +26,15 @@
     text-align: right;
 }
 
+.text_center_align{
+    text-align: center;
+}
+
+.text_bold{
+    font-weight: bold;
+}
+
+
 .border_right_0{
     border-right: 0 !important;
 }
@@ -76,6 +85,12 @@
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
+
+.padding_tb_15{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
 
 p{
     text-align: justify;
@@ -310,21 +325,21 @@ ol li::marker {
     font-size: 12px;
 }
 
-.button_right{
+/* .button_right{
     float: right;
     margin-top: 10px;
     margin-right: 10px;
-}
+} */
 
 button{
     background-color: #9c9c9c;
-    border: solid 1px black;
+    border: solid 1px #434343;
     color: white;
     font-weight: bold;
     font-size: 16px;
     padding-left: 15px;
     padding-right: 15px;
-    box-shadow: 0 5px 15px rgba(72, 71, 73, 0.4);
+    /* box-shadow: 0 5px 15px rgba(72, 71, 73, 0.4); */
 }
 
 .text1{
@@ -483,6 +498,10 @@ button{
     display: flex;
 }
 
+.content_right{
+    justify-content: right;
+}
+
 /* -------- Data Table ---------- */
 
 table td{
@@ -513,6 +532,7 @@ table td{
     border-right: none;
 }
 
-/* .data_table{
-    border: solid 1px #121212;
-} */
+.data_table .table_row input[type=text], table td input[type=text]{
+    width: 100%;
+}
+
