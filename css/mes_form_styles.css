@@ -6,6 +6,10 @@
     margin-top: 0.5rem!important;
 }
 
+.mt-3rem{
+    margin-top: 3rem !important;
+}
+
 .mb-2{
     margin-bottom: 0.5rem !important;
 }
@@ -34,6 +38,10 @@
     font-weight: bold;
 }
 
+
+label{
+    text-align: justify;
+}
 
 .border_right_0{
     border-right: 0 !important;
