@@ -6,6 +6,10 @@
     margin-top: 0.5rem!important;
 }
 
+.mt-3rem{
+    margin-top: 3rem !important;
+}
+
 .mb-2{
     margin-bottom: 0.5rem !important;
 }
@@ -34,6 +38,10 @@
     font-weight: bold;
 }
 
+
+label{
+    text-align: justify;
+}
 
 .border_right_0{
     border-right: 0 !important;
@@ -99,6 +107,11 @@ p{
 .para_heading{
     font-weight: bold;
     font-size: 14px;
+}
+
+.para_heading_1{
+    font-weight: bold;
+    font-size: 16px;
 }
 
 ul li{
