@@ -22,8 +22,16 @@
     margin-left: 15px !important;
 }
 
+.ml-70{
+    margin-left: 60px !important;
+}
+
 .mr-5{
     margin-right: 5px !important;
+}
+
+.mr-2{
+    margin-right: 2px !important;
 }
 
 .text_right_align{
@@ -260,8 +268,16 @@ ol li::marker {
     background-color: #D5EFFA;
 }
 
+table input[type="text"]{
+    background-color: #D5EFFA;
+    border-radius: 0;
+    border: solid 1px #999999;
+}
+
+table input[type="text"]:focus,
 .input_group select:focus{
     background-color:white;
+    border-radius: 0;
 }
 
 .input_group select option{
@@ -515,13 +531,17 @@ button{
     justify-content: right;
 }
 
-/* -------- Data Table ---------- */
 
 table td{
     border: solid 1px #121212;
     padding: 5px;
 }
 
+.table_border_none{
+    border: none;
+}
+
+/* -------- Data Table ---------- */
 .data_table{
     border: solid 1px #121212;
 }
@@ -548,4 +568,5 @@ table td{
 .data_table .table_row input[type=text], table td input[type=text]{
     width: 100%;
 }
+
 

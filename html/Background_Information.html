@@ -744,8 +744,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Add Parent</button>
             </div>
         </div>
@@ -857,8 +857,8 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="button_right">
+            <div class="row content_right mt-2 mr-2">
+                <div>
                     <button>Add Affiliate</button>
                 </div>
             </div>
@@ -921,8 +921,8 @@
                 of the Board of Directors
             </p>
 
-            <div class="row">
-                <div class="button_right">
+            <div class="row content_right mt-2 mr-2">
+                <div>
                     <button>Add Principal or Management Executive</button>
                 </div>
             </div>
@@ -1294,13 +1294,13 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="button_right">
+            <div class="row content_right mt-2 mr-2">
+                <div>
                     <button>Add Organization</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="button_right">
+            <div class="row content_right mt-2 mr-2">
+                <div>
                     <button>Remove Organization</button>
                 </div>
             </div>
@@ -1558,13 +1558,13 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Add Custodial Account</button>
             </div>
         </div>
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Remove Custodial Account</button>
             </div>
         </div>
@@ -1761,14 +1761,14 @@
     
         </div>
 
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Add Lender</button>
             </div>
         </div>
 
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Remove Lender</button>
             </div>
         </div>
@@ -2218,14 +2218,14 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Add Contingent Liabilities</button>
             </div>
         </div>
 
-        <div class="row">
-            <div class="button_right">
+        <div class="row content_right mt-2 mr-2">
+            <div>
                 <button>Remove Contingent Liabilities</button>
             </div>
         </div>
@@ -3463,29 +3463,9 @@
     <!-- page 10 ends here -->
 
 
-
-
     <script src="../Js/jquery-3.6.1.min.js"></script>
-    <script>
+    <script src="../Js/mes_form.js"></script>
 
-        $(document).ready(function(){
-            $('input[type="radio"]').click(function(){
-                if ($(this).is(':checked'))
-                {
-                    var parent = $(this).parents(".input_group,.input_group_inline");
-
-                    if($(this).val() == 1){
-                        parent.find(".if_yes").css("display", "block");
-                        parent.find(".if_no").css("display", "none");
-                    }else if($(this).val() == 0){
-                        parent.find(".if_yes").css("display", "none");
-                        parent.find(".if_no").css("display", "block");
-                    }
-                }
-            });
-        });
-
-    </script>
 
 
 </body>
