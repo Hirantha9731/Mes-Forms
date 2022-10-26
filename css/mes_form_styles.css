@@ -546,6 +546,12 @@ table td{
     border: solid 1px #121212;
 }
 
+.data_table.row{
+    border-left: none;
+    border-right : none;
+    display: block;
+}
+
 .data_table .table_row{
     flex-wrap: wrap;
     display: flex;
@@ -554,6 +560,10 @@ table td{
 
 .data_table .table_row:last-child{
     border-bottom: none;
+}
+
+.data_table .table_row.cell_padding_10 .table_cell {
+    padding: 5px 10px;
 }
 
 .data_table .table_row .table_cell{
