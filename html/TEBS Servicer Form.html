@@ -817,17 +817,901 @@ information as a result of the release of such information to Freddie Mac.
         </div>
 
         <div class="row justify-content-center section_header mt-4">Servicing Experience</div>
-     
+
+        <div class="page_content">
+            <div class="input_group page_data_row">
+                <label>Is the applicant servicing permanent multifamily mortgages?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="asp"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="asp"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">Please complete chart below, add additional sheets if necessary.</label>
+                    <div class="oneToMany_content_wrp">
+                        <div class="data_table">
+                            <div class="table_row text_center_align text_bold">
+                                <div class="col-6 table_cell">
+                                    <div class="input_group_inline page_data_row ">
+                                        <label class="font-weight-bold">State</label>
+                                        <select name="sort" id="state" class="select_option">
+                                            <option selected>Select State</option>
+                                            <option value="1">Alabama</option>
+                                            <option value="2">Alaska</option>
+                                            <option value="3">Arizona</option>
+                                            <option value="4">Arkansas</option>
+                                            <option value="5">California</option>
+                                            <option value="6">Colorado</option>
+                                            <option value="7">Connecticut</option>
+                                            <option value="8">Delaware</option>
+                                            <option value="9">District of Columbia</option>
+                                            <option value="10">Florida</option>
+                                            <option value="11">Idaho</option>
+                                            <option value="12">Indiana</option>
+                                            <option value="13">Iowa</option>
+                                            <option value="14">kansas</option>
+                                            <option value="15">kentucky</option>
+                                            <option value="16">Louisiana</option>
+                                            <option value="17">Maine</option>
+                                            <option value="18">Montana</option>
+                                            <option value="19">Nebraska</option>
+                                            <option value="20">Nevada</option>
+                                            <option value="21">New Hampshire</option>
+                                            <option value="22">New Jersey</option>
+                                            <option value="23">New Mexico</option>
+                                            <option value="24">New York</option>
+                                            <option value="25">New York</option>
+                                            <option value="27">North Carolina</option>
+                                            <option value="28">North Dakota</option>
+                                            <option value="29">Ohio</option>
+                                            <option value="30">Oklahoma</option>
+                                            <option value="31">Oregon</option>
+                                            <option value="32">Oklahoma</option>
+                                            <option value="33">Maryland</option>
+                                            <option value="34">Massachusetts</option>
+                                            <option value="35">Michigan</option>
+                                            <option value="36">Mississippi</option>
+                                            <option value="37">Missouri</option>
+                                            <option value="38">Pennsylvania</option>
+                                            <option value="39">Rhode Island</option>
+                                            <option value="40">South Carolina</option>
+                                            <option value="41">South Dakota</option>
+                                            <option value="42">Tennessee</option>
+                                            <option value="43">Texas</option>
+                                            <option value="44">Utah</option>
+                                            <option value="45">Vermont</option>
+                                            <option value="46">Virginia</option>
+                                            <option value="47">Washington</option>
+                                            <option value="48">West Virginia</option>
+                                            <option value="49">Wisconsin</option>
+                                            <option value="50">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 table_cell">
+                                    <div class="input_group_inline page_data_row ">
+                                        <label class="font-weight-bold">Percent of Multifamily Mortgage Portfolio</label>
+                                        <input type="text" id="">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            
+                        </div>
+                        <div class="flex_wrp content_right mt-2">
+                            <button>Add Sheet</button>
+                
+                        </div>
+                        <div class="flex_wrp content_right mt-2">
+                            <button>Remove Sheet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input_group page_data_row">
+                <label>Is the applicant servicing permanent commercial mortgages?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="asp"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="asp"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">Please complete chart below, add additional sheets if necessary.</label>
+                    <div class="oneToMany_content_wrp">
+                        <div class="data_table">
+                            <div class="table_row text_center_align text_bold">
+                                <div class="col-6 table_cell">
+                                    <div class="input_group_inline page_data_row ">
+                                        <label class="font-weight-bold">State</label>
+                                        <select name="sort" id="state" class="select_option">
+                                            <option selected>Select State</option>
+                                            <option value="1">Alabama</option>
+                                            <option value="2">Alaska</option>
+                                            <option value="3">Arizona</option>
+                                            <option value="4">Arkansas</option>
+                                            <option value="5">California</option>
+                                            <option value="6">Colorado</option>
+                                            <option value="7">Connecticut</option>
+                                            <option value="8">Delaware</option>
+                                            <option value="9">District of Columbia</option>
+                                            <option value="10">Florida</option>
+                                            <option value="11">Idaho</option>
+                                            <option value="12">Indiana</option>
+                                            <option value="13">Iowa</option>
+                                            <option value="14">kansas</option>
+                                            <option value="15">kentucky</option>
+                                            <option value="16">Louisiana</option>
+                                            <option value="17">Maine</option>
+                                            <option value="18">Montana</option>
+                                            <option value="19">Nebraska</option>
+                                            <option value="20">Nevada</option>
+                                            <option value="21">New Hampshire</option>
+                                            <option value="22">New Jersey</option>
+                                            <option value="23">New Mexico</option>
+                                            <option value="24">New York</option>
+                                            <option value="25">New York</option>
+                                            <option value="27">North Carolina</option>
+                                            <option value="28">North Dakota</option>
+                                            <option value="29">Ohio</option>
+                                            <option value="30">Oklahoma</option>
+                                            <option value="31">Oregon</option>
+                                            <option value="32">Oklahoma</option>
+                                            <option value="33">Maryland</option>
+                                            <option value="34">Massachusetts</option>
+                                            <option value="35">Michigan</option>
+                                            <option value="36">Mississippi</option>
+                                            <option value="37">Missouri</option>
+                                            <option value="38">Pennsylvania</option>
+                                            <option value="39">Rhode Island</option>
+                                            <option value="40">South Carolina</option>
+                                            <option value="41">South Dakota</option>
+                                            <option value="42">Tennessee</option>
+                                            <option value="43">Texas</option>
+                                            <option value="44">Utah</option>
+                                            <option value="45">Vermont</option>
+                                            <option value="46">Virginia</option>
+                                            <option value="47">Washington</option>
+                                            <option value="48">West Virginia</option>
+                                            <option value="49">Wisconsin</option>
+                                            <option value="50">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 table_cell">
+                                    <div class="input_group_inline page_data_row ">
+                                        <label class="font-weight-bold">Percent of Multifamily Mortgage Portfolio</label>
+                                        <input type="text" id="">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            
+                        </div>
+                        <div class="flex_wrp content_right mt-2">
+                            <button>Add Sheet</button>
+                
+                        </div>
+                        <div class="flex_wrp content_right mt-2">
+                            <button>Remove Sheet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>Does the applicant use or intend to use a sub-servicer? A sub-servicer acts on behalf of the institution in servicing mortgages</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="asp"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="asp"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">Please provide name and address; provide attachment if necessary.</label>
+                    
+                        <div class="data_table">
+                            <div class="table_row text_center_align text_bold">
+                                <div class="col-6 table_cell">
+                                    <div class="input_group_inline page_data_row ">
+                                        <label class="font-weight-bold">Name</label>
+                                        <input type="text" id="">
+                                    </div>
+                                </div>
+                                <div class="col-6 table_cell">
+                                    <div class="input_group_inline page_data_row ">
+                                        <label class="font-weight-bold">Address</label>
+                                        <input type="text" id="">
+                                    </div>
+                                </div>
+                            </div>               
+                            
+                        </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center section_header mt-4">TEBS Specific Servicing Experience</div>
+
+        <div class="page_content">
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    1. Please explain how the applicant maintains compliance for LIHTC/Historical Tax Credits?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    2. Please explain the applicant's process for compliance with regulatory agreements and subordination agreements?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    4. What is the applicants legal counsel's experience with Tax Exempt Loans, Bonds and writing of opinions and PLIMS for these
+                    matters on Bonds?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    5. What is applicant's experience dealing with Trustees and Custodians on Bonds cashflows? Are there changes to the cashflows
+from the Trustee to Servicer for these Bonds once the deal closes?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    6. What is the applicant's experience with Investor Reporting Package (IRP) remittance?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    7. What is the applicant's experience and comfort in using the Insurance Compliance Tool (ICT)?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    8. Please explain the applicant's familiarity with general servicing, accounting, and consent management, for Tax-Exempt Bond and
+LIHTC Deals.
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    9. Will the applicant use existing applications or technologies in servicing these bonds? Will the applicant require additional
+technological capabilities to adequately service these bonds?
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    10. What is the applicant's familiarity with docs and agreements, related to TEBS structures? (eg. Indentures of Trust,
+Reimbursement Agreements, Intercreditor Agreements, Sinking Fund Schedules, etc.?)
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    11. Does the applicant have sufficient controls and compliance measures in place for Tax-Exempt Bond Securitizations? Please
+                    explain what those are.
+                </label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    12. What is the applicant's level of experience for the key individuals responsible for the servicing and asset management for these
+                    deals?
+                </label>
+                <input type="text" id="">
+            </div>
+        </div>
+        
+        <div class="row justify-content-center section_header mt-4">Servicing History</div>
+
+        <div class="row">
+            <div class="page_content padding_lr_10 flex_wrp">
+                <p class="col-12">Indicate the number and dollar amount of multifamily and commercial mortgages serviced for the past five years.</p>
+        
+                <div class="col-4 ">Mortgage servicing as of the recent fiscal year</div>
+                <div class="col-4"><input type="text" id=""></div>
+            </div>
+        
+            <div class="page_content padding_lr_15">
+                <div class="col-2"></div>                
+                <table>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">Number of Mortgages</td>
+                        <td colspan="2">Unpaid Principal Balance</td>
+                        <td colspan="2">Gross Annual Servicing Income</td>
+                    </tr>
+                    <tr>
+                        <td>Mortgage Type</td>
+                        <td>Risk Shared</td>
+                        <td>Non-Risk Shared</td>
+                        <td>Risk Shared</td>
+                        <td>Non-Risk Shared</td>
+                        <td>Risk Shared</td>
+                        <td>Non-Risk Shared</td>
+                    </tr>
+
+                    <tr>
+                        <td>Conventional Multifamily</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>FHA Multifamily</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Commercial Mortgages</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tax Exempt Bond Financed Mortgage</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+                </table>        
+            </div>
+        
+        </div>
+
+        <div class="row justify-content-center section_header mt-4">TEBS Servicing Personnel</div>
+
+        <div class="page_content">
+            <p>
+                Complete the following information for the key operating personnel (division/operating unit heads) in the applicant's mortgage
+administration, default management (delinquency and foreclosure), REO servicing, and investor accounting functions for multifamily
+TEBS.
+            </p>
+
+            <div class="oneToMany_content_wrp">
+                <div class="data_table">
+                    <div class="table_row text_bold">
+                        <div class="col-6 table_cell">
+                           <label class="font-weight-bold">Name</label>
+                           <input type="text" id="">
+                        </div>
+                        <div class="col-6 table_cell">
+                           <label class="font-weight-bold">Functional Title</label>
+                           <input type="text" id="">
+                        </div>
+                        
+                    </div>
+        
+                    <div class="table_row">
+                        <div class="col-3 table_cell">
+                           <label class="font-weight-bold">Years with Applicant</label>
+                           <input type="text" id="">
+                        </div>
+                        <div class="col-3 table_cell">
+                           <label class="font-weight-bold">Years of servicing experience</label>
+                           <input type="text" id="">
+                        </div>
+                        <div class="col-6 table_cell">
+                           <label class="font-weight-bold">Years of default management experience</label>
+                           <input type="text" id="">
+                       </div>
+                    </div>
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Add personal</button>        
+                </div>
+                <div class="flex_wrp content_right mt-2">
+                    <button>Remove Personal</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------- Delinquency and REO Data ----------- -->
+        <div class="row justify-content-center section_header">Delinquency and REO Data</div>
+
+        <div class="page_content">
+            <p>
+                Provide the following information about the delinquency* and REO history of the applicant's multifamily and commercial mortgages
+(reflecting total portfolio serviced for self and all investors) for the past three years. Begin with the most recent completed month.
+            </p>
+
+            <div class="padding_tb_15">                
+                <table >
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td colspan="3" class="text_bold">Delinquent 60 days or more including
+                            foreclosures (total outstanding)</td>
+                        <td colspan="2" class="text_bold">Real estate owned (REO) (Total
+                            outstanding)</td>
+                    </tr>
+                    <tr class="text_center_align">
+                        <td class="text_bold">Month/year</td>
+                        <td class="text_bold">Mortgage Type</td>
+                        <td class="text_bold">Total Loans Serviced</td>
+                        <td class="text_bold">Unpaid Principal Balance</td>
+                        <td class="text_bold">Percent of UPB of Servicing Portfolio</td>
+                        <td class="text_bold">Total Number of Mortgages</td>
+                        <td class="text_bold">Total Original Balance</td>
+                    </tr>
+
+                    <tr>                        
+                        <td><input type="text" id=""></td>
+                        <td rowspan="3">Conventional Multifamily:
+                            Risk Shared
+                            Non-Risk Shared</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>                        
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td> 
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>                        
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td> 
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+
+                    <tr>                        
+                        <td><input type="text" id=""></td>
+                        <td>Commercial</td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+                </table>        
+            </div>
+
+            <p>
+                * Delinquency occurs when all or part of the borrower's monthly installment of principal, interest, and where applicable, escrow is
+unpaid after the due date. A delinquency that remains uncured as of the close of business of the last working day before the next due
+date is considered a delinquency of one payment or 30 days, regardless of the actual number of calendar days since the initial due
+date. A delinquency that has been uncured for 30 days or more but less than 60 days by the end of the reporting month must be
+reported as a one-payment or 30-day delinquency.
+            </p>
+
+            <p>
+                For example, a mortgage due on October 1, would be considered 30 days (or one payment) delinquent as of the close of business on
+October 31. The mortgage would be considered 60 days (2 payments) delinquent if unpaid by the close of business on November 30
+            </p>
+
+        </div>
+
+        <div class="row justify-content-center section_header">General Information</div>
+
+        <div class="page_content">
+            <div class="input_group page_data_row">
+                <label>1. Is the applicant''s multifamily servicing staff separate and distinct from the Servicer's single
+                    family servicing staff?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_1"> No</label></div>
+                </div>
+            </div>
+        
+        
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">2. How many people does the applicant employ on its multifamily servicing
+                    staff?</label>
+                <input type="number" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label>
+                    3. Are procedures manuals accessible to all members of the multifamily servicing staff?
+                </label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_11"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_11"> No</label></div>
+                </div>
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    4. What types of internal and external training are offered to your multifamily servicing staff to ensure
+                    the staff is familiar with industry
+                    trends, market trends, and investor requirements?
+                </label>
+                <input type="text" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">
+                    5. What types of software or service bureaus does the applicant use (for example, CPI, NCR, MISER, Lomas &
+                    Nettleton)?
+                </label>
+                <input type="text" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">6. What type of hardware does the applicant use to perform its servicing
+                    operations?</label>
+                <input type="text" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">7. If the applicant uses a sub-servicer to service any portion of the
+                    applicant's portfolio, please describe the monitoring system the
+                    applicant uses to ensure that the sub-servicer complies with the servicing requirements.</label>
+                <input type="text" id="">
+            </div>
+        </div>
+
+
+         <!-- ---------- Collection ----------- -->
+         <div class="row justify-content-center section_header">Collection</div>
+
+         <div class="page_content">            
+         
+             <div class="input_group_inline page_data_row">
+                 <label class="font-weight-bold">1. How many full-time multifamily collectors does the applicant employ?</label>
+                 <input type="number" id="">
+             </div>
+ 
+             <div class="input_group_inline page_data_row">
+                 <label class="font-weight-bold">2. What is the average number of delinquent accounts assigned per collector?</label>
+                 <input type="number" id="">
+             </div>
+ 
+             <div class="input_group page_data_row">
+                 <label class="font-weight-bold">3. Please describe how the applicant's collectors are assigned their work loads (for example, 30, 60, 90+ days delinquent;
+                    alphabetically; per investor)</label>
+                 <input type="text" id="">
+             </div>     
+             
+         </div>
+
+          <!-- ---------- Property Inspection ----------- -->
+        <div class="row justify-content-center section_header">Property Inspection</div>
+
+        <div class="page_content">
+
+            <div class="input_group page_data_row">
+                <label>1. Are periodic property inspections required by the applicant?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="inspections_applicant"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="inspections_applicant"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how often?</label>
+                    <input type="text" id="">
+                </div>
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">2. Are property inspections completed by the applicant's staff or by fee inspectors?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label class="font-weight-bold">3. How many full-time multifamily property inspectors does the applicant employ?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">4. At what frequency does the applicant review property inspections?</label>
+                <input type="text" id="">
+            </div>  
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">5. Please explain the applicant's experience with HUD, MBA and CREFC inspections.</label>
+                <input type="text" id="">
+            </div> 
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">6. Please describe how property inspectors are assigned their work loads? (for example, current, delinquent, location)</label>
+                <input type="text" id="">
+            </div> 
+            
+            <div class="input_group page_data_row">
+                <label>7. Does the applicant use a standard property inspection form?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="inspections_applicant"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="inspections_applicant"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, please provide a copy of the form to this questionnaire.</label>
+                </div>
+            </div>
+            
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">8. Please describe the applicant's inspection process (for example, external and internal building inspection, property management
+                    interview, rental comparables).</label>
+                <input type="text" id="">
+            </div>
+            
+        </div>
+
+        <!-- ---------- Property Financial Review ----------- -->
+        <div class="row justify-content-center section_header">Property Financial Review</div>
+
+        <div class="page_content">
+            
+            <div class="input_group page_data_row">
+                <label>1. Does the applicant review periodically the financial operations of each property?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label >If yes, how often?</label>
+                    <input type="text" id="">
+                </div>
+            </div>
+
+            <div class="input_group_inline page_data_row">
+                <label >2. How many full-time property analysts or mortgage analysts does the applicant employ?</label>
+                <input type="number" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label >3. Please describe the Servicer's review of a property's financial operations (for example, rental income amount and trends, vacancy
+                    & collection loss, expense amounts and trends, debt service)</label>
+                <input type="text" id="">
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center section_header">Delinquencies</div>
+
+        <div class="page_content">
+            <div class="input_group page_data_row">
+                <label >1. When does the applicant send late notices (for example, 30, 60, 90+ days delinquent)?</label>
+                <input type="text" id="">
+            </div>
+            <div class="input_group page_data_row">
+                <label >2. How and when does the applicant first attempt personal contact (for example, 30, 60, 90+ days delinquent)?</label>
+                <input type="text" id="">
+            </div>
+            <div class="input_group page_data_row">
+                <label >3. When does the applicant order additional property inspections (for example 30, 60, 90+ days delinquent)? If the loan remains
+                    delinquent, how often does the applicant inspect the property?</label>
+                <input type="text" id="">
+            </div>
+            <div class="input_group page_data_row">
+                <label >4. Please describe the tracking or monitoring system the applicant uses for following up on promise dates.</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>5. Are partial payments accepted?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label >If yes, how are they posted?</label>
+                    <input type="text" id="">
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>
+                    6. For delinquent mortgages, are repayment plans that are greater than three months put in writing?
+                </label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_11"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_11"> No</label></div>
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label >7. In what order are customers' payments applied (for example, escrow, interest, principal, other)?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>
+                   8. Does the applicant have any mortgages with due dates other than the first of the month?
+                </label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="rd_11"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" name="rd_11"> No</label></div>
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label >9. By what means does the applicant notify the national credit repositories of delinquent accounts?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label >10. What types of alternatives to foreclosure (if any) does the applicant make available to customers (for example, modification,
+                    assumption)?</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label >11. What workout procedures does your institution initiate on delinquent multifamily and/or income property mortgages? Please
+                    attach your policy and procedures regarding delinquent mortgages.</label>
+                <input type="text" id="">
+            </div>
+        </div>
+
+        <div class="row justify-content-center section_header">Foreclosure and Bankruptcies</div>
+        
+        <div class="page_content">
+
+            <div class="input_group page_data_row">
+                <label >If yes, how many full-time employees are on the Servicer's multifamily foreclosure staff?</label>
+                <input type="text" id="">
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label>2. Does the applicant maintain a separate staff for processing bankruptcies?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how many full-time employees are on the Servicer's multifamily bankruptcy staff?</label>
+                    <input type="text" id="">
+                </div>
+            </div>  
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">3. Describe the applicant's monitoring systems for tracking foreclosures and bankruptcies?</label>
+                <input type="text" id="">
+            </div>
+        
+        </div>
+
+        <!-- ---------- Escrows ----------- -->
+        <div class="row justify-content-center section_header">Escrows</div>
+        
+        <div class="page_content">
+        
+            <div class="input_group page_data_row">
+                <label>1. Does the applicant allow borrowers to pay real estate taxes and insurance premiums directly?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="financial_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="financial_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how does the Servicer monitor borrowers' payments to ensure that hazard insurance and real estate taxes are paid?</label>
+                    <input type="text" id="">
+                </div>
+            </div>
+
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">2. Please describe the type of monitoring system the applicant has to identify and pay escrow items before they are due.</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>3. Does the applicant conduct a yearly escrow analysis on each account that has an escrow?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="has_escrow"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="has_escrow"> No</label></div>
+                </div>
+                <div class="if_no page_data_row">
+                    <label class="font-weight-bold">If no, please explain why. If the analysis is conducted less frequently than annually, please state how frequently.</label>
+                    <input type="text" id="">
+                </div>
+            </div>
+        
+            <div class="input_group page_data_row">
+                <label class="font-weight-bold">4. Please give a brief description of the applicant's insurance claim procedures.</label>
+                <input type="text" id="">
+            </div>
+
+            <div class="input_group page_data_row">
+                <label>5. Does the applicant require replacement reserves escrows?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="reserves_escrows"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="reserves_escrows"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, please explain when replacement reserves escrows are required and the type of tracking system the Servicer has to monitor
+                        replacement reserves accounts.</label>
+                    <input type="text" id="">
+                </div>
+            </div>
+        
+        </div>
+
+        <!-- ---------- SBL Servicing Contacts----------- -->
+        <div class="row justify-content-center section_header">SBL Servicing Contacts</div>
+        
+        <div class="page_content">
+        
+            <p>
+               Please list the names, titles and telephone numbers of persons that Freddie Mac may contact regarding questions on the applicant's
+SBL multifamily servicing operations.
+            </p>
+
+            <div class="oneToMany_content_wrp">
+               <div class="data_table">
+                   <div class="table_row text_bold">
+                       <div class="col-8 table_cell">
+                          <label class="font-weight-bold">Name</label>
+                          <input type="text" id="">
+                       </div>
+                       <div class="col-4 table_cell">
+                          <label class="font-weight-bold">Telephone Number</label>
+                          <input type="text" id="">
+                       </div>
+                       
+                   </div>
+       
+                   <div class="table_row">
+                       <div class="col-12 table_cell">
+                          <label class="font-weight-bold">Title</label>
+                          <input type="text" id="">
+                       </div>
+                   </div>
+               </div>
+               <div class="flex_wrp content_right mt-2">
+                   <button>Add Servicing Contact</button>        
+               </div>
+               <div class="flex_wrp content_right mt-2">
+                   <button>Remove Servicing Contact</button>
+               </div>
+           </div>
+        
+        </div>
 
     </section>
 
 
-
-<!--    <p style="page-break-after: always;"></p>-->
-<!--    <p style="page-break-before: always;">&nbsp;</p>-->
-
-
-
+    <script src="../Js/jquery-3.6.1.min.js"></script>
+    <script src="../Js/mes_form.js"></script>
 
 </body>
 </html>

@@ -268,13 +268,14 @@ ol li::marker {
     background-color: #D5EFFA;
 }
 
-table input[type="text"]{
+table input[type="text"], .data_table input[type="text"]{
     background-color: #D5EFFA;
     border-radius: 0;
     border: solid 1px #999999;
 }
 
-table input[type="text"]:focus,
+table input[type="text"]:focus, 
+.data_table input[type="text"]:focus,
 .input_group select:focus{
     background-color:white;
     border-radius: 0;
@@ -299,7 +300,8 @@ table input[type="text"]:focus,
     vertical-align: sub;
 }
 
-.input_group .if_yes, .input_group .if_no, .input_group .input_wrp{
+.input_group .if_yes, .input_group .if_no, .input_group .input_wrp,
+.input_group_inline .if_yes, .input_group_inline .if_no, .input_group_inline .input_wrp{
     display: none;
 }
 
