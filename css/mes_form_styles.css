@@ -117,26 +117,15 @@ p{
     font-size: 14px;
 }
 
-.para_heading_underline{
-    font-weight: bold;
-    font-size: 14px;
-    text-decoration: underline;
-}
-
 .para_heading_1{
     font-weight: bold;
     font-size: 16px;
-}
-
-.list-unstyled{
-    list-style: none;
 }
 
 ul li{
     text-align: justify;
     list-style-type: disc;
 }
-
 
 ol{
     padding-left:11px;
@@ -310,12 +299,7 @@ table input[type="text"]:focus,
     vertical-align: sub;
 }
 
-.input_group .if_yes,
-.input_group .if_no,
-.input_group .input_wrp,
-.input_group_inline .if_yes,
-.input_group_inline .if_no,
-.input_group_inline .input_wrp{
+.input_group .if_yes, .input_group .if_no, .input_group .input_wrp{
     display: none;
 }
 
@@ -330,7 +314,6 @@ table input[type="text"]:focus,
 .checkBox_wrp{
     padding-top: 2px;
     padding-bottom: 2px;
-    display: flex;
 }
 
 .checkBox_wrp input[type = "checkbox"]{
@@ -543,7 +526,6 @@ button{
     flex-wrap: wrap;
     display: flex;
 }
-
 
 .content_right{
     justify-content: right;
