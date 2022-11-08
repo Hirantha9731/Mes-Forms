@@ -299,7 +299,12 @@ table input[type="text"]:focus,
     vertical-align: sub;
 }
 
-.input_group .if_yes, .input_group .if_no, .input_group .input_wrp{
+.input_group .if_yes,
+.input_group .if_no,
+.input_group .input_wrp ,
+.input_group_inline .if_yes,
+.input_group_inline .if_no,
+.input_group_inline .input_wrp{
     display: none;
 }
 
@@ -307,13 +312,15 @@ table input[type="text"]:focus,
     margin-right: 10px;
 }
 
-.input_group .radio_group_wrp, .input_group_inline .radio_group_wrp{
+.input_group .radio_group_wrp,
+.input_group_inline .radio_group_wrp{
     display: flex;
 }
 
 .checkBox_wrp{
     padding-top: 2px;
     padding-bottom: 2px;
+    display: flex;
 }
 
 .checkBox_wrp input[type = "checkbox"]{
