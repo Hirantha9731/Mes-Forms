@@ -112,7 +112,7 @@ Servicer must, at a minimum, maintain fidelity insurance (single loss or per occ
             </p>
         </div>
 
-        <div class="row data_table">
+        <div class="data_table">
             <div class="table_row cell_padding_10">
                 <div class="col-4 table_cell"> <b><u>Base* (Insured Portfolio UPB)</u></b> </div>
                 <div class="col-4 table_cell"><b><u>Coverage Calculations by Base</u></b> </div>
@@ -173,7 +173,7 @@ the minimum required as shown in the table below.
             </p>
         </div>  
         
-        <div class="row data_table">
+        <div class="data_table">
             <div class="table_row cell_padding_10">
                 <div class="col-4 table_cell"> <b><u>Base* (Insured Portfolio UPB)</u></b> </div>
                 <div class="col-4 table_cell"><b><u>Coverage Calculations by Base</u></b> </div>
@@ -1589,9 +1589,16 @@ October 31. The mortgage would be considered 60 days (2 payments) delinquent if 
         <div class="page_content">
 
             <div class="input_group page_data_row">
-                <label >If yes, how many full-time employees are on the Servicer's multifamily foreclosure staff?</label>
-                <input type="text" id="">
-            </div>
+                <label>1. Does the applicant maintain a separate staff for processing foreclosures?</label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" name="foreclosures_operations"> Yes</label></div>
+                    <div class="group_item"><label><input type="radio" value="0" name="foreclosures_operations"> No</label></div>
+                </div>
+                <div class="if_yes page_data_row">
+                    <label class="font-weight-bold">If yes, how many full-time employees are on the Servicer's multifamily foreclosure staff?</label>
+                    <input type="text" id="">
+                </div>
+            </div> 
         
             <div class="input_group page_data_row">
                 <label>2. Does the applicant maintain a separate staff for processing bankruptcies?</label>
