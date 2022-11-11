@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Multifamily Conventional Seller/Servicer Form</title>
+    <title>Multifamily Small Balance Loans Seller/Servicer Form</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/mes_form_styles.css">
     
@@ -138,25 +138,30 @@ portfolios.
         <div class="row justify-content-center section_header">SBL Origination and Servicing History</div>
 
         
-        <div class="page_content padding_lr_10 flex_wrp">
-            <p class="col-12">Indicate the number and dollar amount of conventional multifamily and commercial mortgages
+        <div class="page_content">
+            <p>Indicate the number and dollar amount of conventional multifamily and commercial mortgages
                 originated and serviced for the past three years.</p>
-    
-            <div class="col-4 ">Mortgage origination history as of the recent fiscal year:</div>
-            <div class="col-4"><input type="text" id=""></div>
+
+            <div class="row">
+                <div class="col-4 mt-2">
+                    <label class="font-weight-bold">Mortgage origination history as of the recent fiscal year:</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
+            </div>
         </div>
-    
-        <div class="page_content padding_lr_15">
-                            
+
+        <div class="padding_tb_15">
             <table>
                 <tr>
-                    <td></td>
-                    <td colspan="2">Number of Mortgages</td>
-                    <td colspan="2">Unpaid Principal Balance</td>
-                    <td colspan="2">Gross Annual Servicing Income</td>
+                    <td class="table_border_none"></td>
+                    <td colspan="2"><span class="para_heading ml-70">Number of Mortgages</span></td>
+                    <td colspan="2"><span class="para_heading ml-70">Unpaid Principal Balance</span></td>
+                    <td colspan="2"><span class="para_heading ml-70">Gross Annual Servicing Income</span></td>
                 </tr>
                 <tr>
-                    <td style="width: 120px;">Mortgage Type</td>
+                    <td>Mortgage Type</td>
                     <td>Risk Shared</td>
                     <td>Non-Risk Shared</td>
                     <td>Risk Shared</td>
@@ -194,18 +199,9 @@ portfolios.
                     <td><input type="text" id=""></td>
                     <td><input type="text" id=""></td>
                 </tr>
-            </table>        
-        </div>
-        
-        <div class="page_content padding_lr_15">
-            <table>
-                <tr>
-                    
-                    
-                </tr>
 
                 <tr>
-                    <td style="width: 120px;">Other</td>
+                    <td>Other</td>
                     <td><input type="text" id=""></td>
                     <td><input type="text" id=""></td>
                     <td><input type="text" id=""></td>
@@ -215,7 +211,7 @@ portfolios.
                 </tr>
 
                 <tr>
-                    <td>Total</td>
+                    <td><strong>Total</strong></td>
                     <td><input type="text" id=""></td>
                     <td><input type="text" id=""></td>
                     <td><input type="text" id=""></td>
@@ -247,10 +243,10 @@ underwriting functions for SBL multifamily and mortgages.
                     </div>
         
                     <div class="table_row">
-                        <div class="col-3 table_cell"><input type="text" id=""></div>
-                        <div class="col-3 table_cell"><input type="text" id=""></div>
-                        <div class="col-3 table_cell"><input type="text" id=""></div>
-                        <div class="col-3 table_cell"><input type="text" id=""></div>
+                        <div class="col-3 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-3 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-3 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-3 table_cell input_group"><input type="text" id=""></div>
                     </div>
                 </div>
                 <div class="flex_wrp content_right mt-2">
@@ -379,12 +375,12 @@ conventional multifamily and commercial mortgages.
                     </div>
         
                     <div class="table_row">
-                        <div class="col-2 table_cell"><input type="text" id=""></div>
-                        <div class="col-2 table_cell"><input type="text" id=""></div>
-                        <div class="col-2 table_cell"><input type="text" id=""></div>
-                        <div class="col-2 table_cell"><input type="text" id=""></div>
-                        <div class="col-2 table_cell"><input type="text" id=""></div>
-                        <div class="col-2 table_cell"><input type="text" id=""></div>
+                        <div class="col-2 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-2 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-2 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-2 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-2 table_cell input_group"><input type="text" id=""></div>
+                        <div class="col-2 table_cell input_group"><input type="text" id=""></div>
                     </div>
                 </div>
                 <div class="flex_wrp content_right mt-2">
@@ -408,14 +404,15 @@ conventional multifamily and commercial mortgages.
             
             </div>
         <!-- -------------------------------------- -->
-        
-            <div class="input_group_inline page_data_row">
-                <label class="font-weight-bold">2. How many people does the applicant employ on its SBL multifamily servicing staff?</label>
-                <input type="number" id="">
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <label class="font-weight-bold">2. How many people does the applicant employ on its SBL multifamily servicing staff?</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
             </div>
-        
-        
-        
+
             <div class="input_group page_data_row">
                 <label>
                     3. Are procedures manuals accessible to all members of the SBL multifamily servicing staff?
@@ -518,23 +515,32 @@ industry trends, market trends, and investor requirements?
         <!-- ---------- Collection ----------- -->
         <div class="row justify-content-center section_header">Collection</div>
 
-        <div class="page_content">            
-        
-            <div class="input_group_inline page_data_row">
-                <label class="font-weight-bold">1. How many full-time multifamily collectors does the applicant employ?</label>
-                <input type="number" id="">
+        <div class="page_content">
+
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <label class="font-weight-bold">1. How many full-time multifamily collectors does the applicant employ?</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
             </div>
 
-            <div class="input_group_inline page_data_row">
-                <label class="font-weight-bold">2. What is the average number of delinquent accounts assigned per collector?</label>
-                <input type="number" id="">
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <label class="font-weight-bold">2. What is the average number of delinquent accounts assigned per collector?</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
             </div>
+
 
             <div class="input_group page_data_row">
                 <label class="font-weight-bold">3. Please describe how the applicant's collectors are assigned their work loads (for example, 30, 60, 90+ days delinquent;
                     alphabetically; per investor)</label>
                 <input type="text" id="">
-            </div>     
+            </div>
             
         </div>
 
@@ -555,14 +561,22 @@ industry trends, market trends, and investor requirements?
                 </div>
             </div>
 
-            <div class="input_group_inline page_data_row">
-                <label class="font-weight-bold">2. Are property inspections completed by the applicant's staff or by fee inspectors?</label>
-                <input type="number" id="">
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <label class="font-weight-bold">2. Are property inspections completed by the applicant's staff or by fee inspectors?</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
             </div>
 
-            <div class="input_group_inline page_data_row">
-                <label class="font-weight-bold">3. How many full-time multifamily property inspectors does the applicant employ?</label>
-                <input type="number" id="">
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <label class="font-weight-bold">3. How many full-time multifamily property inspectors does the applicant employ?</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
             </div>
 
             <div class="input_group page_data_row">
@@ -606,13 +620,17 @@ industry trends, market trends, and investor requirements?
                 </div>
             </div>
 
-            <div class="input_group_inline page_data_row">
-                <label >2. How many full-time property analysts or mortgage analysts does the applicant employ?</label>
-                <input type="number" id="">
+            <div class="row">
+                <div class="col-6 mt-2">
+                    <label class="font-weight-bold">2. How many full-time property analysts or mortgage analysts does the applicant employ?</label>
+                </div>
+                <div class="col-3 input_group">
+                    <input type="text">
+                </div>
             </div>
 
             <div class="input_group page_data_row">
-                <label >3.Please describe the applicant's review of a property's financial operations (for example, rental income amount and trends, vacancy
+                <label class="font-weight-bold">3. Please describe the applicant's review of a property's financial operations (for example, rental income amount and trends, vacancy
                     & collection loss, expense amounts and trends, debt coverage ratio)</label>
                 <input type="text" id="">
             </div>
@@ -874,11 +892,11 @@ SBL multifamily servicing operations.
              <div class="oneToMany_content_wrp">
                 <div class="data_table">
                     <div class="table_row text_bold">
-                        <div class="col-8 table_cell">
+                        <div class="col-8 table_cell input_group">
                            <label class="font-weight-bold">Name</label>
                            <input type="text" id="">
                         </div>
-                        <div class="col-4 table_cell">
+                        <div class="col-4 table_cell input_group">
                            <label class="font-weight-bold">Title</label>
                            <input type="text" id="">
                         </div>
@@ -886,15 +904,15 @@ SBL multifamily servicing operations.
                     </div>
         
                     <div class="table_row">
-                        <div class="col-4 table_cell">
+                        <div class="col-4 table_cell input_group">
                            <label class="font-weight-bold">Telephone Number</label>
                            <input type="text" id="">
                         </div>
-                        <div class="col-4 table_cell">
+                        <div class="col-4 table_cell input_group">
                            <label class="font-weight-bold">Email</label>
                            <input type="text" id="">
                         </div>
-                        <div class="col-4 table_cell">
+                        <div class="col-4 table_cell input_group">
                            <label class="font-weight-bold">Web Address</label>
                            <input type="text" id="">
                        </div>
@@ -922,11 +940,11 @@ SBL multifamily servicing operations.
               <div class="oneToMany_content_wrp">
                  <div class="data_table">
                      <div class="table_row text_bold">
-                         <div class="col-8 table_cell">
+                         <div class="col-8 table_cell input_group">
                             <label class="font-weight-bold">Name</label>
                             <input type="text" id="">
                          </div>
-                         <div class="col-4 table_cell">
+                         <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Title</label>
                             <input type="text" id="">
                          </div>
@@ -934,15 +952,15 @@ SBL multifamily servicing operations.
                      </div>
          
                      <div class="table_row">
-                         <div class="col-4 table_cell">
+                         <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Telephone Number</label>
                             <input type="text" id="">
                          </div>
-                         <div class="col-4 table_cell">
+                         <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Email</label>
                             <input type="text" id="">
                          </div>
-                         <div class="col-4 table_cell">
+                         <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Web Address</label>
                             <input type="text" id="">
                         </div>

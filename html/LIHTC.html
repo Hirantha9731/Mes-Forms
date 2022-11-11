@@ -36,30 +36,30 @@
         </div>
 
         <!--application fee table starts here-->
-        <div class="row justify-content-center section_sub_header">
-            <p>Application fee to become an approved LIHTC Syndicator</p>
+        <div class="row section_sub_header content_center">
+            Application fee to become an approved LIHTC Syndicator
         </div>
 
         <div class="row">
-            <div class="col-sm table_header section_sub_text">
+            <div class="col-3 table_header section_sub_text">
                 Designation
             </div>
-            <div class="col-sm table_header section_sub_text">
+            <div class="col-3   table_header section_sub_text">
                 Fee
             </div>
-            <div class="col-sm table_header section_sub_text border_right_0">
+            <div class="col-6 table_header section_sub_text border_right_0">
                 Notes
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm section_sub_text">
+            <div class="col-3 section_sub_text">
                 LIHTC Syndicator
             </div>
-            <div class="col-sm section_sub_text">
+            <div class="col-3 section_sub_text">
                 $50,000
             </div>
-            <div class="col-sm section_sub_text border_right_0 border_bottom_0">
+            <div class="col-6 section_sub_text border_right_0 border_bottom_0">
                 Freddie Mac may adjust the fee based on prior approval and
                 transaction type
             </div>
@@ -196,67 +196,71 @@
         </div>
 
         <!--Applicant table starts here-->
-        <div class="page_content">
-            <div class="row">
-                <div class="col-9 applicant_table border_bottom_0">
+        <div class="data_table mt-4">
+
+            <div class="table_row">
+                <div class="col-8 table_cell">
                     <div class="input_group">
-                        <label for="applicantName" class="font-weight-bold">Applicant Name</label>
-                        <input type="text"  id="applicantName">
+                        <label class="font-weight-bold">Applicant Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-4 table_cell">
+                    <div class="input_group">
+                        <label class="font-weight-bold">Telephone Number</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="col-8 table_cell">
+                    <div class="input_group">
+                        <label class="font-weight-bold">Applicant Signature (Type your first and last name)</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-4 table_cell">
+                    <div class="input_group">
+                        <label class="font-weight-bold">Date</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="col-8 table_cell">
+                    <div class="input_group">
+                        <label class="font-weight-bold">Email</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="col-4 table_cell">
+                    <div class="input_group">
+                        <label class="font-weight-bold">Web Address</label>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="table_row">
+                <div class="col-5 table_cell">
+                    <div class="input_group">
+                        <label class="font-weight-bold">Address</label>
+                        <input type="text">
                     </div>
                 </div>
 
-                <div class="col-3 applicant_table border_left_0 border_bottom_0">
+                <div class="col-3 table_cell">
                     <div class="input_group">
-                        <label for="telephoneNumber" class="font-weight-bold">Telephone Number</label>
-                        <input type="text" id="telephoneNumber">
+                        <label class="font-weight-bold">City</label>
+                        <input type="text">
                     </div>
                 </div>
 
-                <div class="col-9 applicant_table border_bottom_0">
+                <div class="col-2 table_cell">
                     <div class="input_group">
-                        <label for="fullName" class="font-weight-bold">Applicant Signature (Type your first and last name)</label>
-                        <input type="text" id="fullName">
-                    </div>
-                </div>
-
-                <div class="col-3 applicant_table border_bottom_0 border_left_0">
-                    <div class="input_group">
-                        <label for="date" class="font-weight-bold">Date</label>
-                        <input type="date" id="date">
-                    </div>
-                </div>
-
-                <div class="col-9 applicant_table border_bottom_0">
-                    <div class="input_group">
-                        <label for="email" class="font-weight-bold">Email</label>
-                        <input type="text" id="email">
-                    </div>
-                </div>
-
-                <div class="col-3 applicant_table border_bottom_0 border_left_0">
-                    <div class="input_group">
-                        <label for="webAddress" class="font-weight-bold">Web Address</label>
-                        <input type="text" id="webAddress">
-                    </div>
-                </div>
-
-                <div class="col-5 applicant_table">
-                    <div class="input_group">
-                        <label for="address" class="font-weight-bold">Address</label>
-                        <input type="text" id="address">
-                    </div>
-                </div>
-
-                <div class="col-3 applicant_table border_left_0">
-                    <div class="input_group">
-                        <label for="city" class="font-weight-bold">City</label>
-                        <input type="text" id="city">
-                    </div>
-                </div>
-
-                <div class="col-2 applicant_table border_left_0">
-                    <div class="input_group">
-                        <label for="state" class="font-weight-bold">State</label>
+                        <label class="font-weight-bold">State</label>
                         <select name="sort" id="state" class="select_option">
                             <option selected>Select State</option>
                             <option value="1">Alabama</option>
@@ -312,13 +316,12 @@
                     </div>
                 </div>
 
-                <div class="col-2 applicant_table border_left_0">
+                <div class="col-2 table_cell">
                     <div class="input_group">
-                        <label for="zipCode" class="font-weight-bold">Zip Code</label>
-                        <input type="text" id="zipCode">
+                        <label class="font-weight-bold">Zip Code</label>
+                        <input type="text">
                     </div>
                 </div>
-
             </div>
         </div>
         <!--Applicant table ends here-->
@@ -331,43 +334,41 @@
         <p class="mt-4">Person to contact regarding this application (if different from above) :</p>
 
         <!--Applicant table 2 starts here-->
-        <div class="page_content">
-            <div class="row">
-                <div class="col-9 applicant_table border_bottom_0">
+        <div class="data_table mb-2">
+            <div class="table_row">
+                <div class="col-8 table_cell">
                     <div class="input_group">
-                        <label for="typedName" class="font-weight-bold">Typed Name</label>
-                        <input type="text"  id="typedName">
+                        <label class="font-weight-bold">Typed Name</label>
+                        <input type="text">
                     </div>
                 </div>
-
-                <div class="col-3 applicant_table border_left_0 border_bottom_0">
+                <div class="col-4 table_cell">
                     <div class="input_group">
-                        <label for="typedTitle" class="font-weight-bold">Typed Title</label>
-                        <input type="text" id="typedTitle">
+                        <label class="font-weight-bold">Typed Title</label>
+                        <input type="text">
                     </div>
                 </div>
+            </div>
 
-                <div class="col-5 applicant_table">
+            <div class="table_row">
+                <div class="col-4 table_cell">
                     <div class="input_group">
-                        <label for="telephoneNumber2" class="font-weight-bold">Telephone Number</label>
-                        <input type="text" id="telephoneNumber2">
+                        <label class="font-weight-bold">Telephone Number</label>
+                        <input type="text">
                     </div>
                 </div>
-
-                <div class="col-4 applicant_table border_left_0">
+                <div class="col-4 table_cell">
                     <div class="input_group">
-                        <label for="email2" class="font-weight-bold">Email</label>
-                        <input type="text" id="email2">
+                        <label class="font-weight-bold">Email</label>
+                        <input type="text">
                     </div>
                 </div>
-
-                <div class="col-3 applicant_table border_left_0">
+                <div class="col-4 table_cell">
                     <div class="input_group">
-                        <label for="webAddress2" class="font-weight-bold">Web Address</label>
-                        <input type="text" id="webAddress2">
+                        <label class="font-weight-bold">Web Address</label>
+                        <input type="text">
                     </div>
                 </div>
-
             </div>
         </div>
         <!--Applicant table 2 ends here-->
@@ -375,110 +376,120 @@
         <div class="row justify-content-center section_header mt-4">LIHTC Fund Performance</div>
 
         <div class="page_content">
+
             <p>Please provide the most current data available for all prior housing tax credit funds. (Attach a list generated by your institution if your
                 list provides the same information as requested below).</p>
 
-            <!--            <div class="row">-->
-            <!--                <div class="col-sm applicant_table section_sub_header">-->
-            <!--                    Fund Type-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_left_0 section_sub_header">-->
-            <!--                    Gross Equity-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_left_0 section_sub_header">-->
-            <!--                    Final Closing-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_left_0 section_sub_header">-->
-            <!--                    IRR (Forecasted)-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_left_0 section_sub_header">-->
-            <!--                    IRR (Current)-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_left_0 section_sub_header">-->
-            <!--                    Total Credits-->
-            <!--                    (Forecasted)-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_left_0 section_sub_header">-->
-            <!--                    Total Credits-->
-            <!--                    (Current)-->
-            <!--                </div>-->
-            <!--            </div>-->
+            <div class="data_table">
+                <div class="table_row">
+                    <div class="col-2 table_cell">
+                        <label>Fund Type</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Gross Equity</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Final Closing</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>IRR (Forecasted)</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label> IRR (Current)</label>
+                    </div>
+                    <div class="col-1 table_cell">
+                        <label>Total Credits
+                            (Forecasted)</label>
+                    </div>
+                    <div class="col-1 table_cell">
+                        <label>Total Credits
+                            (Current)</label>
+                    </div>
+                </div>
 
-            <!--            <div class="row">-->
-            <!--                <div class="col-sm applicant_table border_top_0">-->
-            <!--                    <select name="fundType" id="fundType" class="select_option">-->
-            <!--                        <option value="1">Proprietary</option>-->
-            <!--                        <option value="2">Multi-Investor</option>-->
-            <!--                    </select>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="grossEquity">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="finalClosing">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="irrForecasted">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="irrCurrent">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="totalCreditForecast">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="totalCreditCurrent">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
+                <div class="table_row">
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <select name="fundType" id="fundType" class="select_option">
+                                <option value="1">Proprietary</option>
+                                <option value="2">Multi-Investor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="grossEquity">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="finalClosing">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="irrForecasted">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="irrCurrent">
+                        </div>
+                    </div>
+                    <div class="col-1 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalCreditForecast">
+                        </div>
+                    </div>
+                    <div class="col-1 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalCreditCurrent">
+                        </div>
+                    </div>
+                </div>
 
-            <!--            <div class="row">-->
-            <!--                <div class="col-sm applicant_table section_sub_header border_top_0">-->
-            <!--                    Total-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="totalGrossEquity">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="totalFinalClosing">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="totalIrrForecasted">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="totalIrrCurrent">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="netTotalCreditForecast">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <div class="col-sm applicant_table border_top_0 border_left_0">-->
-            <!--                    <div class="input_group">-->
-            <!--                        <input type="text" id="netTotalCreditCurrent">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
+                <div class="table_row">
+                    <div class="col-2 table_cell">
+                        <label>Total</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalGrossEquity">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalFinalClosing">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalIrrForecasted">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalIrrCurrent">
+                        </div>
+                    </div>
+                    <div class="col-1 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="netTotalCreditForecast">
+                        </div>
+                    </div>
+                    <div class="col-1 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="netTotalCreditCurrent">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row content_right mt-2 mr-2">
+                <div>
+                    <button>Add Fund Performance</button>
+                </div>
+            </div>
         </div>
 
         <div class="row justify-content-center section_header mt-4">Personal</div>
@@ -489,6 +500,74 @@
                 management, construction monitoring, default management (delinquency and foreclosure), and investor accounting functions. Attach
                 resumes for each person listed below.
             </p>
+
+            <div class="data_table">
+                <div class="table_row">
+                    <div class="col-2 table_cell">
+                        <label>Name</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Functional Title</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Email</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Years with
+                            applicant</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Years of LIHTC
+                            experience</label>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <label>Years of real
+                            estate experience</label>
+                    </div>
+
+                </div>
+
+                <div class="table_row">
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="grossEquity">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="finalClosing">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="irrForecasted">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="irrCurrent">
+                        </div>
+                    </div>
+                    <div class="col-2 table_cell">
+                        <div class="input_group">
+                            <input type="text" id="totalCreditForecast">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row content_right mt-2 mr-2">
+                <div>
+                    <button>Add Parent</button>
+                </div>
+            </div>
+
         </div>
 
         <div class="row justify-content-center section_header mt-2">General Controls</div>
@@ -514,11 +593,14 @@
                     </div>
                 </li>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Are procedures manuals accessible to all members of the low income housing tax credit staff?</label>
-                        <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                        <label><input type="radio" value="2" name="rd_1"> No</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_1"> No</label></div>
+                        </div>
                     </div>
+
                 </li>
                 <li>
                     <div class="input_group">
@@ -555,17 +637,21 @@
                     </div>
                 </li>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Is the applicant, or any LIHTC project or fund managed by the applicant, currently under audit by the IRS? If so, please describe.</label>
-                        <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                        <label><input type="radio" value="2" name="rd_1"> No</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_2"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="2"> No</label></div>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Is the applicant aware of any fund or project level litigation? If so, please describe its status?</label>
-                        <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                        <label><input type="radio" value="2" name="rd_1"> No</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_3"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_3"> No</label></div>
+                        </div>
                     </div>
                 </li>
             </ol>
@@ -602,10 +688,12 @@
                     </div>
                 </li>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Does the applicant have a dedicated Construction Monitoring team?</label>
-                        <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                        <label><input type="radio" value="2" name="rd_1"> No</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_4"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_4"> No</label></div>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -658,10 +746,12 @@
                     </div>
                 </li>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Are property inspections completed by the applicant’s staff or by fee inspectors?</label>
-                        <label><input type="radio" value="1" name="rd_1"> Staff</label>
-                        <label><input type="radio" value="2" name="rd_1"> Fee Inspectors</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_5"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_5"> No</label></div>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -671,10 +761,12 @@
                     </div>
                 </li>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Does the applicant use a standard property inspection form? If yes, please attach a copy of the form.</label>
-                        <label><input type="radio" value="1" name="rd_1"> yes</label>
-                        <label><input type="radio" value="2" name="rd_1"> no</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_6"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_6"> No</label></div>
+                        </div>
                     </div>
                 </li>
             </ol>
@@ -685,10 +777,12 @@
         <div class="page_content">
             <ol>
                 <li>
-                    <div class="input_group">
+                    <div class="col-12 input_group">
                         <label>Is the applicant’s acquisition staff reporting separated from underwriting staff reporting?</label>
-                        <label><input type="radio" value="1" name="rd_1"> Yes</label>
-                        <label><input type="radio" value="2" name="rd_1"> No</label>
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" name="rd_7"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" name="rd_7"> No</label></div>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -746,13 +840,6 @@
         </div>
 
     </section>
-
-
-
-<!--    <p style="page-break-after: always;"></p>-->
-<!--    <p style="page-break-before: always;">&nbsp;</p>-->
-
-
 
 
 </body>

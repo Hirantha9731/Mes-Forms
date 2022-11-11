@@ -255,6 +255,7 @@ ol li::marker {
 .input_group label,
 .input_group input[type="text"],
 .input_group input[type="date"],
+.input_group input[type="number"],
 .input_group select{
     width: 100%;
 }
@@ -265,6 +266,7 @@ ol li::marker {
 
 .input_group input[type="text"],
 .input_group input[type="date"],
+.input_group input[type="number"],
 .input_group select{
     margin-top: 2px;
     border: solid 1px #999999;
@@ -544,6 +546,9 @@ button{
     justify-content: right;
 }
 
+.content_center{
+    justify-content: center;
+}
 
 table td{
     border: solid 1px #121212;
