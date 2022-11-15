@@ -202,13 +202,13 @@
                 <div class="col-8 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Applicant Name</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ApplicantName" name="Ack_ApplicantName">
                     </div>
                 </div>
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Telephone Number</label>
-                        <input type="text">
+                        <input type="text" id="Ack_Telephone" name="Ack_Telephone">
                     </div>
                 </div>
             </div>
@@ -217,13 +217,13 @@
                 <div class="col-8 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Applicant Signature (Type your first and last name)</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ApplicantSignature" name="Ack_ApplicantSignature">
                     </div>
                 </div>
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Date</label>
-                        <input type="text">
+                        <input type="text" id="Ack_Date" name="Ack_Date">
                     </div>
                 </div>
             </div>
@@ -232,13 +232,13 @@
                 <div class="col-8 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Email</label>
-                        <input type="text">
+                        <input type="text" id="Ack_Email" name="Ack_Email">
                     </div>
                 </div>
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Web Address</label>
-                        <input type="text">
+                        <input type="text" id="Ack_WebAddress" name="Ack_WebAddress">
                     </div>
                 </div>
             </div>
@@ -247,21 +247,21 @@
                 <div class="col-5 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Address</label>
-                        <input type="text">
+                        <input type="text" id="Ack_StreetAddress" name="Ack_StreetAddress">
                     </div>
                 </div>
 
                 <div class="col-3 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">City</label>
-                        <input type="text">
+                        <input type="text" id="Ack_City" name="Ack_City">
                     </div>
                 </div>
 
                 <div class="col-2 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">State</label>
-                        <select name="sort" id="state" class="select_option">
+                        <select id="Ack_State" name="Ack_State" class="select_option">
                             <option selected>Select State</option>
                             <option value="1">Alabama</option>
                             <option value="2">Alaska</option>
@@ -319,7 +319,7 @@
                 <div class="col-2 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Zip Code</label>
-                        <input type="text">
+                        <input type="text" id="Ack_Zip" name="Ack_Zip">
                     </div>
                 </div>
             </div>
@@ -327,7 +327,7 @@
         <!--Applicant table ends here-->
 
         <label>
-            <input type="checkbox">
+            <input type="checkbox" id="Ack_LegalSignatureAck" name="Ack_LegalSignatureAck">
             I understand that checking this box constitutes a legal signature.
         </label>
 
@@ -339,13 +339,13 @@
                 <div class="col-8 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Typed Name</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ContactName" name="Ack_ContactName">
                     </div>
                 </div>
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Typed Title</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ContactTitle" name="Ack_ContactTitle">
                     </div>
                 </div>
             </div>
@@ -354,19 +354,19 @@
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Telephone Number</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ContactPhone" name="Ack_ContactPhone">
                     </div>
                 </div>
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Email</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ContactEmail" name="Ack_ContactEmail">
                     </div>
                 </div>
                 <div class="col-4 table_cell">
                     <div class="input_group">
                         <label class="font-weight-bold">Web Address</label>
-                        <input type="text">
+                        <input type="text" id="Ack_ContactWebAddress" name="Ack_ContactWebAddress">
                     </div>
                 </div>
             </div>
@@ -410,7 +410,7 @@
                 <div class="table_row">
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <select name="fundType" id="fundType" class="select_option">
+                            <select name="LIHTC_FundPerf_FundType" id="LIHTC_FundPerf_FundType" class="select_option">
                                 <option value="1">Proprietary</option>
                                 <option value="2">Multi-Investor</option>
                             </select>
@@ -418,32 +418,32 @@
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="grossEquity">
+                            <input type="text" id="LIHTC_FundPerf_GrossEq" name="LIHTC_FundPerf_GrossEq">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="finalClosing">
+                            <input type="text" id="LIHTC_FundPerf_FinalClosing" name="LIHTC_FundPerf_FinalClosing">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="irrForecasted">
+                            <input type="text" id="LIHTC_FundPerf_IRRF" name="LIHTC_FundPerf_IRRF">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="irrCurrent">
+                            <input type="text" id="LIHTC_FundPerf_IRRC" name="LIHTC_FundPerf_IRRC">
                         </div>
                     </div>
                     <div class="col-1 table_cell">
                         <div class="input_group">
-                            <input type="text" id="totalCreditForecast">
+                            <input type="text" id="LIHTC_FundPerf_TCF" name="LIHTC_FundPerf_TCF">
                         </div>
                     </div>
                     <div class="col-1 table_cell">
                         <div class="input_group">
-                            <input type="text" id="totalCreditCurrent">
+                            <input type="text" id="LIHTC_FundPerf_TCT" name="LIHTC_FundPerf_TCT">
                         </div>
                     </div>
                 </div>
@@ -530,32 +530,32 @@
                 <div class="table_row">
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="name">
+                            <input type="text" id="LIHTC_Personnel_Name" name="LIHTC_Personnel_Name">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="grossEquity">
+                            <input type="text" id="LIHTC_Personnel_Title" name="LIHTC_Personnel_Title">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="finalClosing">
+                            <input type="text" id="LIHTC_Personnel_Email" name="LIHTC_Personnel_Email">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="irrForecasted">
+                            <input type="text" id="LIHTC_Personnel_ApplExp" name="LIHTC_Personnel_ApplExp">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="irrCurrent">
+                            <input type="text" id="LIHTC_Personnel_LIHTCExp" name="LIHTC_Personnel_LIHTCExp">
                         </div>
                     </div>
                     <div class="col-2 table_cell">
                         <div class="input_group">
-                            <input type="text" id="totalCreditForecast">
+                            <input type="text" id="LIHTC_Personnel_RealEstExp" name="LIHTC_Personnel_RealEstExp">
                         </div>
                     </div>
                 </div>
@@ -577,27 +577,27 @@
                 <li>
                     <div class="input_group">
                         <label>Describe the applicant’s history of operations within the low income housing tax credit business?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_GenControls_1" name="LIHTC_GenControls_1">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How many people does the applicant employ on its low income housing tax credit staff?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_GenControls_2" name="LIHTC_GenControls_2">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How are they organized?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_GenControls_3" name="LIHTC_GenControls_3">
                     </div>
                 </li>
                 <li>
                     <div class="col-12 input_group">
                         <label>Are procedures manuals accessible to all members of the low income housing tax credit staff?</label>
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" name="rd_1"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" name="rd_1"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="LIHTC_GenControls_4" name="LIHTC_GenControls_4"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="LIHTC_GenControls_4" name="LIHTC_GenControls_4"> No</label></div>
                         </div>
                     </div>
 
@@ -606,13 +606,13 @@
                     <div class="input_group">
                         <label>What types of internal and external training are offered to your staff to ensure the staff is familiar with industry trends, market trends,
                             and investor requirements?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_GenControls_5" name="LIHTC_GenControls_5">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>What information systems does the applicant use to perform its operations?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_GenControls_6" name="LIHTC_GenControls_6">
                     </div>
                 </li>
             </ol>
@@ -626,22 +626,22 @@
                     <div class="input_group">
                         <label>Describe the applicant’s process for obtaining a legal opinion that a fund or project is entitled to low-income housing tax credits that
                             can be passed through to investors.</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_Tax_1" name="LIHTC_Tax_1">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>Describe the applicant’s process for verifying that a fund or project is in compliance with regulatory requirements to maintain its
                             entitlement to low-income housing tax credits that can be passed through to investors.</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_Tax_2" name="LIHTC_Tax_2">
                     </div>
                 </li>
                 <li>
                     <div class="col-12 input_group">
                         <label>Is the applicant, or any LIHTC project or fund managed by the applicant, currently under audit by the IRS? If so, please describe.</label>
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" name="rd_2"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" name="2"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="LIHTC_Tax_3" name="LIHTC_Tax_3"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="LIHTC_Tax_3" name="LIHTC_Tax_3"> No</label></div>
                         </div>
                     </div>
                 </li>
@@ -649,8 +649,8 @@
                     <div class="col-12 input_group">
                         <label>Is the applicant aware of any fund or project level litigation? If so, please describe its status?</label>
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" name="rd_3"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" name="rd_3"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="LIHTC_Tax_4" name="LIHTC_Tax_4"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="LIHTC_Tax_4" name="LIHTC_Tax_4"> No</label></div>
                         </div>
                     </div>
                 </li>
@@ -665,34 +665,34 @@
                     <div class="input_group">
                         <label>Describe the applicant’s process for obtaining a legal opinion that a fund or project is entitled to low-income housing tax credits that
                             can be passed through to investors.</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_1" name="LIHTC_AssetMgmt_1">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>Please include a list of third parties, such as inspection companies, construction managers, and engineers, etc. that the applicant
                             has hired to monitor construction projects in the past.</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_2" name="LIHTC_AssetMgmt_2">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How does the applicant analyze and select construction projects?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_3" name="LIHTC_AssetMgmt_3">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How do you evaluate projects and project teams?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_4" name="LIHTC_AssetMgmt_4">
                     </div>
                 </li>
                 <li>
                     <div class="col-12 input_group">
                         <label>Does the applicant have a dedicated Construction Monitoring team?</label>
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" name="rd_4"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" name="rd_4"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="LIHTC_AssetMgmt_5" name="LIHTC_AssetMgmt_5"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="LIHTC_AssetMgmt_5" name="LIHTC_AssetMgmt_5"> No</label></div>
                         </div>
                     </div>
                 </li>
@@ -700,72 +700,72 @@
                     <div class="input_group">
                         <label>How is the construction monitoring staff’s workload managed as it relates to construction monitoring, lease up management, and ongoing
                             compliance of LIHTC properties?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_6" name="LIHTC_AssetMgmt_6">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>Describe how the applicant monitors construction?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_7" name="LIHTC_AssetMgmt_7">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>And how the developers that are a part of its funds are monitored?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_8" name="LIHTC_AssetMgmt_8">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How do you onboard projects after they close?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_9" name="LIHTC_AssetMgmt_9">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How does the applicant monitor the Lease-up of projects?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_10" name="LIHTC_AssetMgmt_10">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How does the applicant monitor compliance with rent levels and tax credit requirements?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_11" name="LIHTC_AssetMgmt_11">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>Please describe the watchlist and monitoring process?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_12" name="LIHTC_AssetMgmt_12">
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>How does an entity get onto a watchlist?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_13" name="LIHTC_AssetMgmt_13">
                     </div>
                 </li>
                 <li>
                     <div class="col-12 input_group">
                         <label>Are property inspections completed by the applicant’s staff or by fee inspectors?</label>
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" name="rd_5"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" name="rd_5"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="LIHTC_AssetMgmt_14" name="LIHTC_AssetMgmt_14"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="LIHTC_AssetMgmt_14" name="LIHTC_AssetMgmt_14"> No</label></div>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="input_group">
                         <label>Please describe the property inspection process?</label>
-                        <input type="text">
+                        <input type="text" id="LIHTC_AssetMgmt_15" name="LIHTC_AssetMgmt_15">
                     </div>
                 </li>
                 <li>
                     <div class="col-12 input_group">
                         <label>Does the applicant use a standard property inspection form? If yes, please attach a copy of the form.</label>
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" name="rd_6"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" name="rd_6"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="LIHTC_AssetMgmt_16" name="LIHTC_AssetMgmt_16"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="LIHTC_AssetMgmt_16" name="LIHTC_AssetMgmt_16"> No</label></div>
                         </div>
                     </div>
                 </li>
