@@ -345,7 +345,7 @@ table input[type="text"]:focus,
     width: 100%;
 }
 
-#textbox {
+.SellerServicer_text {
     display: block;
     float: left;
     width: 180px;
@@ -356,7 +356,7 @@ table input[type="text"]:focus,
 }
 
 
-#textbox:focus{
+.SellerServicer_text:focus{
     background-color:white;
 }
 
