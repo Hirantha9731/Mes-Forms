@@ -486,10 +486,10 @@
                 </div>
 
                 <div class="row buttonWrp mt-2 mr-2">
-                    <div>
+                    <div class="btnConteiner">
                         <button class="addRecord">Add Fund Performance</button>
                     </div>
-                    <div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
                         <button class="removeRecord">Remove Add Fund Performance</button>
                     </div>
                 </div>
@@ -508,72 +508,77 @@
             </p>
 
             <div class="oneToManySec">
-            <div class="data_table">
-                <div class="table_row">
-                    <div class="col-2 table_cell">
-                        <label>Name</label>
+                <div class="data_table">
+                    <div class="table_row">
+                        <div class="col-2 table_cell">
+                            <label>Name</label>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <label>Functional Title</label>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <label>Years with
+                                applicant</label>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <label>Years of LIHTC
+                                experience</label>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <label>Years of real
+                                estate experience</label>
+                        </div>
+
                     </div>
-                    <div class="col-2 table_cell">
-                        <label>Functional Title</label>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <label>Email</label>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <label>Years with
-                            applicant</label>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <label>Years of LIHTC
-                            experience</label>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <label>Years of real
-                            estate experience</label>
+
+                    <div class="table_row repeatSec">
+                        <div class="col-2 table_cell">
+                            <div class="input_group">
+                                <input type="text" id="LIHTC_Personnel_Name" name="LIHTC_Personnel_Name">
+                            </div>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <div class="input_group">
+                                <input type="text" id="LIHTC_Personnel_Title" name="LIHTC_Personnel_Title">
+                            </div>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <div class="input_group">
+                                <input type="text" id="LIHTC_Personnel_Email" name="LIHTC_Personnel_Email">
+                            </div>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <div class="input_group">
+                                <input type="text" id="LIHTC_Personnel_ApplExp" name="LIHTC_Personnel_ApplExp">
+                            </div>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <div class="input_group">
+                                <input type="text" id="LIHTC_Personnel_LIHTCExp" name="LIHTC_Personnel_LIHTCExp">
+                            </div>
+                        </div>
+                        <div class="col-2 table_cell">
+                            <div class="input_group">
+                                <input type="text" id="LIHTC_Personnel_RealEstExp" name="LIHTC_Personnel_RealEstExp">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="table_row repeatSec">
-                    <div class="col-2 table_cell">
-                        <div class="input_group">
-                            <input type="text" id="LIHTC_Personnel_Name" name="LIHTC_Personnel_Name">
-                        </div>
+                
+                <div class=" buttonWrp mt-2 ">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Personnel</button>
                     </div>
-                    <div class="col-2 table_cell">
-                        <div class="input_group">
-                            <input type="text" id="LIHTC_Personnel_Title" name="LIHTC_Personnel_Title">
-                        </div>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <div class="input_group">
-                            <input type="text" id="LIHTC_Personnel_Email" name="LIHTC_Personnel_Email">
-                        </div>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <div class="input_group">
-                            <input type="text" id="LIHTC_Personnel_ApplExp" name="LIHTC_Personnel_ApplExp">
-                        </div>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <div class="input_group">
-                            <input type="text" id="LIHTC_Personnel_LIHTCExp" name="LIHTC_Personnel_LIHTCExp">
-                        </div>
-                    </div>
-                    <div class="col-2 table_cell">
-                        <div class="input_group">
-                            <input type="text" id="LIHTC_Personnel_RealEstExp" name="LIHTC_Personnel_RealEstExp">
-                        </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Personnel</button>
                     </div>
                 </div>
 
-            </div>
-
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button class="addRecord">Add Parent</button>
-                </div>
-            </div>
             </div>
 
         </div>
@@ -872,7 +877,7 @@
                 var parentWrp = $(this).closest(".oneToManySec");
                 var repeatSec= $(parentWrp).find(".repeatSec");
                 var dupElement = $(repeatSec[repeatSec.length - 1]).clone();
-
+                console.log(repeatSec.length );
                 $(dupElement).find(':text').each(function(){
                     var elementId = $(this).attr('id').split('-')[0];
                     var dupNum = $(this).attr('id').split('-')[1];
@@ -898,6 +903,12 @@
                 // $(parentWrp.find(".data_table")).append(dupElement);
                 $(repeatSec[repeatSec.length - 1]).after(dupElement);
 
+                if($(parentWrp).find(".repeatSec").length > 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','block');
+                }
+
+                
+
                 
             });
 
@@ -907,6 +918,12 @@
                 if(repeatSec.length > 1){                    
                     $(repeatSec).last().remove();                    
                 }
+
+                if($(parentWrp).find(".repeatSec").length <= 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','none');
+                }
+
+                console.log(repeatSec.length );
             
             });
 
