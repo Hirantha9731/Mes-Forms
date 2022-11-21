@@ -5,6 +5,8 @@
     <title>Background Information</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/mes_form_styles.css">
+    
+
 </head>
 <body>
     <section class="container mt-4">
@@ -99,7 +101,7 @@
             </div>
 
             <div class="col-4">
-                <input id="text" id="BI_SSNo_3" name="BI_SSNo_3" class="SellerServicer_text">
+                <input type="text" id="BI_SSNo_3" name="BI_SSNo_3" class="SellerServicer_text">
 
             </div>
         </div>
@@ -577,39 +579,47 @@
 
                 <div class="col-3">
                     <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_LegalEntity_Corp" name="BI_LegalEntity_Corp">
+                        <input type="checkbox" class="radioCheck" value="1" id="BI_LegalEntity_Corp" name="BI_LegalEntity_Corp">
                         <label>
                             Corporation
                         </label>
                     </div>
                     <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_LegalEntity_Ptnship" name="BI_LegalEntity_Ptnship">
+                        <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_Ptnship" name="BI_LegalEntity_Ptnship">
                         <label>
                             Partnership
                         </label>
                     </div>
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_LegalEntity_Other" name="BI_LegalEntity_Other">
-                        <label>
-                            Other
-                        </label>
+                    
+                    <div class="input_group">
+                        <div class="checkBox_wrp">
+                            <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_Other" name="BI_LegalEntity_Other">
+                            <label>
+                                Other
+                            </label>
+                        </div>
+                        <div class="if_yes">
+                            <label class="font-weight-bold">Please Explain</label>
+                            <input type="text"  id="BI_LegalEntity_Other_Explain" name="BI_LegalEntity_Other_Explain">
+                        </div>
                     </div>
+                     
                 </div>
                 <div class="col-5">
                     <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_LegalEntity_Propship" name="BI_LegalEntity_Propship">
+                        <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_Propship" name="BI_LegalEntity_Propship">
                         <label>
                             Proprietorship
                         </label>
                     </div>
                     <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_LegalEntity_LP" name="BI_LegalEntity_LP">
+                        <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_LP" name="BI_LegalEntity_LP">
                         <label>
                             Limited Partnership
                         </label>
                     </div>
                     <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_LegalEntity_LLC" name="BI_LegalEntity_LLC">
+                        <input type="checkbox" class="radioCheck" value="1" id="BI_LegalEntity_LLC" name="BI_LegalEntity_LLC">
                         <label>
                             Limited Liability Company
                         </label>
@@ -1232,13 +1242,13 @@
                 <div class="col-6 section_sub_text border_left_1 border_right_0">
                     <div class="input_group">
                         <label  class="font-weight-bold">Name</label>
-                        <input type="text" id="BI_CR_Name" name="BI_CR_Name">
+                        <input type="text" id="BI_RO_Name" name="BI_RO_Name">
                     </div>
                 </div>
                 <div class="col-6 section_sub_text border_left_1">
                     <div class="input_group">
                         <label  class="font-weight-bold">Email Address</label>
-                        <input type="text" id="BI_CR_Email" name="BI_CR_Email">
+                        <input type="text" id="BI_RO_Email" name="BI_RO_Email">
                     </div>
                 </div>
             </div>
@@ -1247,13 +1257,13 @@
                 <div class="col-6 section_sub_text border_left_1 border_right_0 border_bottom_1">
                     <div class="input_group">
                         <label  class="font-weight-bold">Name Title</label>
-                        <input type="text" id="BI_CR_Title" name="BI_CR_Title">
+                        <input type="text" id="BI_RO_Title" name="BI_RO_Title">
                     </div>
                 </div>
                 <div class="col-6 section_sub_text border_left_1 border_bottom_1">
                     <div class="input_group">
                         <label  class="font-weight-bold">Phone Number</label>
-                        <input type="text" id="BI_CR_Telephone" name="BI_CR_Telephone">
+                        <input type="text" id="BI_RO_Telephone" name="BI_RO_Telephone">
                     </div>
                 </div>
             </div>
@@ -1641,12 +1651,12 @@
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">$</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_UPB1" name="BI_InvInfo_UPB1">
+                            <input type="text" class="text2" id="BI_InvInfo_UPB1" name="BI_InvInfo_UPB1">
                         </div>
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">%</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_Portfolio1" name="BI_InvInfo_Portfolio1">
+                            <input type="text" class="text2" id="BI_InvInfo_Portfolio1" name="BI_InvInfo_Portfolio1">
                         </div>
                     </div>
 
@@ -1659,12 +1669,12 @@
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">$</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_UPB2" name="BI_InvInfo_UPB2">
+                            <input type="text" class="text2" id="BI_InvInfo_UPB2" name="BI_InvInfo_UPB2">
                         </div>
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">%</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_Portfolio2" name="BI_InvInfo_Portfolio2">
+                            <input type="text" class="text2" id="BI_InvInfo_Portfolio2" name="BI_InvInfo_Portfolio2">
                         </div>
                     </div>
 
@@ -1677,12 +1687,12 @@
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">$</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_UPB3" name="BI_InvInfo_UPB3">
+                            <input type="text" class="text2" id="BI_InvInfo_UPB3" name="BI_InvInfo_UPB3">
                         </div>
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">%</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_Portfolio3" name="BI_InvInfo_Portfolio3">
+                            <input type="text" class="text2" id="BI_InvInfo_Portfolio3" name="BI_InvInfo_Portfolio3">
                         </div>
                     </div>
 
@@ -1695,12 +1705,12 @@
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">$</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_UPB4" name="BI_InvInfo_UPB4">
+                            <input type="text" class="text2" id="BI_InvInfo_UPB4" name="BI_InvInfo_UPB4">
                         </div>
 
                         <div class="col-4 section_sub_text">
                             <label class="font-weight-bold">%</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_Portfolio4" name="BI_InvInfo_Portfolio4">
+                            <input type="text" class="text2" id="BI_InvInfo_Portfolio4" name="BI_InvInfo_Portfolio4">
                         </div>
                     </div>
 
@@ -1713,12 +1723,12 @@
 
                         <div class="col-4 section_sub_text border_bottom_1">
                             <label class="font-weight-bold">$</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_UPB5" name="BI_InvInfo_UPB5">
+                            <input type="text" class="text2" id="BI_InvInfo_UPB5" name="BI_InvInfo_UPB5">
                         </div>
 
                         <div class="col-4 section_sub_text border_bottom_1">
                             <label class="font-weight-bold">%</label>
-                            <input type="text" id="" class="text2" id="BI_InvInfo_Portfolio5" name="BI_InvInfo_Portfolio5">
+                            <input type="text" class="text2" id="BI_InvInfo_Portfolio5" name="BI_InvInfo_Portfolio5">
                         </div>
                     </div>
 
@@ -2699,7 +2709,7 @@
                 <label>3. Please describe your incident and issue management process including reporting requirements.</label>
 
                 <div class="input_group">
-                    <input type="text" id="BI_InfoSec_3" name="BckInfo_InfoSec_3">
+                    <input type="text" id="BI_InfoSec_3" name="BI_InfoSec_3">
                 </div>
             </div>
         </div>
@@ -2717,7 +2727,7 @@
                 <label> 1. Please describe how you manage access to information.</label>
 
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_4" name="BckInfo_InfoSec_4">
+                    <input type="text" id="BI_InfoSec_4" name="BI_InfoSec_4">
                 </div>
             </div>
         </div>
@@ -2738,7 +2748,7 @@
                     required to take the training.</label>
 
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_5" name="BckInfo_InfoSec_5">
+                    <input type="text" id="BI_InfoSec_5" name="BI_InfoSec_5">
                 </div>
             </div>
         </div>
@@ -2749,7 +2759,7 @@
                 <label>3. Please describe how you perform information risk assessment and remediation of gaps.</label>
 
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_6" name="BckInfo_InfoSec_6">
+                    <input type="text" id="BI_InfoSec_6" name="BI_InfoSec_6">
                 </div>
             </div>
         </div>
@@ -2760,7 +2770,7 @@
                 <label>4. Please describe how you control access to systems and data, including physical access to your information or systems.</label>
 
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_7" name="BckInfo_InfoSec_7">
+                    <input type="text" id="BI_InfoSec_7" name="BI_InfoSec_7">
                 </div>
             </div>
         </div>
@@ -2779,7 +2789,7 @@
                 <label> 1. Please describe your data management process.</label>
 
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_8" name="BckInfo_InfoSec_8">
+                    <input type="text" id="BI_InfoSec_8" name="BI_InfoSec_8">
                 </div>
             </div>
         </div>
@@ -2789,7 +2799,7 @@
 
                 <label>2. Please describe your data retention and destruction policy.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_9" name="BckInfo_InfoSec_9">
+                    <input type="text" id="BI_InfoSec_9" name="BI_InfoSec_9">
                 </div>
             </div>
         </div>
@@ -2799,7 +2809,7 @@
 
                 <label>3. Please describe how you perform system and data backups and at what frequency.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_10" name="BckInfo_InfoSec_10">
+                    <input type="text" id="BI_InfoSec_10" name="BI_InfoSec_10">
                 </div>
             </div>
         </div>
@@ -2809,7 +2819,7 @@
 
                 <label>4. Please describe how you encrypt data in transit and at rest.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_11" name="BckInfo_InfoSec_11">
+                    <input type="text" id="BI_InfoSec_11" name="BI_InfoSec_11">
                 </div>
             </div>
         </div>
@@ -2819,7 +2829,7 @@
 
                 <label>5. Please describe how you classify and manage different data types.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_12" name="BckInfo_InfoSec_12">
+                    <input type="text" id="BI_InfoSec_12" name="BI_InfoSec_12">
                 </div>
             </div>
         </div>
@@ -2830,7 +2840,7 @@
 
                 <label>6. Please describe how you manage Personal Protected Information (PPI).</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_13" name="BckInfo_InfoSec_13">
+                    <input type="text" id="BI_InfoSec_13" name="BI_InfoSec_13">
                 </div>
             </div>
         </div>
@@ -2840,7 +2850,7 @@
 
                 <label>7. Do you scan or otherwise electronically and centrally store legal and loan documentation?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_14" name="BckInfo_InfoSec_14">
+                    <input type="text" id="BI_InfoSec_14" name="BI_InfoSec_14">
                 </div>
             </div>
         </div>
@@ -2850,7 +2860,7 @@
 
                 <label>8. Do you use an electronic file management system? If yes, for what data?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_15" name="BckInfo_InfoSec_15">
+                    <input type="text" id="BI_InfoSec_15" name="BI_InfoSec_15">
                 </div>
             </div>
         </div>
@@ -2861,7 +2871,7 @@
                 <label>9. Please describe how you maintain operational resiliency, including a description of your business continuity and recovery
                     planning process.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_16" name="BckInfo_InfoSec_16">
+                    <input type="text" id="BI_InfoSec_16" name="BI_InfoSec_16">
                 </div>
             </div>
         </div>
@@ -2871,7 +2881,7 @@
 
                 <label>10. Do you use a third party vendor for disaster recovery services? Which vendor?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_17" name="BckInfo_InfoSec_17">
+                    <input type="text" id="BI_InfoSec_17" name="BI_InfoSec_17">
                 </div>
             </div>
         </div>
@@ -2881,7 +2891,7 @@
 
                 <label>11. Describe disaster recovery and business continuity testing.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_18" name="BckInfo_InfoSec_18">
+                    <input type="text" id="BI_InfoSec_18" name="BI_InfoSec_18">
                 </div>
             </div>
         </div>
@@ -2891,7 +2901,7 @@
 
                 <label>12. How often do you test your disaster recovery plans, and what is in scope?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_19" name="BckInfo_InfoSec_19">
+                    <input type="text" id="BI_InfoSec_19" name="BI_InfoSec_19">
                 </div>
             </div>
         </div>
@@ -2901,7 +2911,7 @@
 
                 <label>13. What was the most recent date of your disaster recovery and business continuity testing? What were the results?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_20" name="BckInfo_InfoSec_20">
+                    <input type="text" id="BI_InfoSec_20" name="BI_InfoSec_20">
                 </div>
             </div>
         </div>
@@ -2919,7 +2929,7 @@
 
                 <label>1. Please describe how you manage cybersecurity.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_21" name="BckInfo_InfoSec_21">
+                    <input type="text" id="BI_InfoSec_21" name="BI_InfoSec_21">
                 </div>
             </div>
         </div>
@@ -2929,7 +2939,7 @@
 
                 <label>2. Please describe your process for performing security reviews, vulnerability assessments, and other information security testing.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_22" name="BckInfo_InfoSec_22">
+                    <input type="text" id="BI_InfoSec_22" name="BI_InfoSec_22">
                 </div>
             </div>
         </div>
@@ -2939,7 +2949,7 @@
 
                 <label>3. Please describe how you prevent, address, and respond to cyber attacks, ransomware and malware.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_23" name="BckInfo_InfoSec_23">
+                    <input type="text" id="BI_InfoSec_23" name="BI_InfoSec_23">
                 </div>
             </div>
         </div>
@@ -2950,7 +2960,7 @@
                 <label>4. Has the applicant had any security incidents / issues / concerns that in the past three years? What was the remediation action /
                     improvements implemented?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_24" name="BckInfo_InfoSec_24">
+                    <input type="text" id="BI_InfoSec_24" name="BI_InfoSec_24">
                 </div>
             </div>
         </div>
@@ -2960,7 +2970,7 @@
 
                 <label>5. What control(s) are in place for employees when working remotely?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_InfoSec_25" name="BckInfo_InfoSec_25">
+                    <input type="text" id="BI_InfoSec_25" name="BI_InfoSec_25">
                 </div>
             </div>
         </div>
@@ -2991,7 +3001,7 @@
 
                 <label>1. Please describe your vendor risk management program.</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_VM_1" name="BckInfo_VM_1">
+                    <input type="text" id="BI_VM_1" name="BI_VM_1">
                 </div>
             </div>
         </div>
@@ -3002,7 +3012,7 @@
                 <label>2. Do you plan on sharing Freddie Mac / borrower / sensitive data with affiliates or any other outside parties (e.g., subcontractors,
                     agencies / bureaus)? If so, how do you plan to ensure that Freddie Mac data is appropriately safeguarded?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_VM_2" name="BckInfo_VM_2">
+                    <input type="text" id="BI_VM_2" name="BI_VM_2">
                 </div>
             </div>
         </div>
@@ -3012,7 +3022,7 @@
 
                 <label>3. Do you review / require independent assessments related to information security for your vendors? If yes, which ones?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_VM_3" name="BckInfo_VM_3">
+                    <input type="text" id="BI_VM_3" name="BI_VM_3">
                 </div>
             </div>
         </div>
@@ -3022,7 +3032,7 @@
 
                 <label>4. What control(s) are in place for onboarding and vetting contractors?</label>
                 <div class="input_group">
-                    <input type="text" id="BckInfo_VM_4" name="BckInfo_VM_4">
+                    <input type="text" id="BI_VM_4" name="BI_VM_4">
                 </div>
             </div>
         </div>
@@ -3036,8 +3046,8 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_1" name="BckInfo_Compliance_1"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_1" name="BckInfo_Compliance_1"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_1" name="BI_Compliance_1"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_1" name="BI_Compliance_1"> No</label></div>
                     </div>
                 </div>
             </div>
@@ -3051,12 +3061,12 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_2" name="BckInfo_Compliance_2"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_2" name="BckInfo_Compliance_2"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_2" name="BI_Compliance_2"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_2" name="BI_Compliance_2"> No</label></div>
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold">If Yes, what actions have been taken to further mitigate the risk of being associated with such persons?</label>
-                        <input type="text" id="BckInfo_Compliance_2_Explain" name="BckInfo_Compliance_2_Explain">
+                        <input type="text" id="BI_Compliance_2_Explain" name="BI_Compliance_2_Explain">
                     </div>
                 </div>
             </div>
@@ -3067,12 +3077,12 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_3" name="BckInfo_Compliance_3"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_3" name="BckInfo_Compliance_3"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_3" name="BI_Compliance_3"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_3" name="BI_Compliance_3"> No</label></div>
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold">If Yes, why was the disclosure submitted?</label>
-                        <input type="text" id="BckInfo_Compliance_3_Explain" name="BckInfo_Compliance_3_Explain">
+                        <input type="text" id="BI_Compliance_3_Explain" name="BI_Compliance_3_Explain">
                     </div>
                 </div>
             </div>
@@ -3087,15 +3097,15 @@
                     <div class="row mb-2">
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_4a" name="BckInfo_Compliance_4a"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_4a" name="BckInfo_Compliance_4a"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_4a" name="BI_Compliance_4a"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_4a" name="BI_Compliance_4a"> No</label></div>
                             </div>
                         </div>
                     </div>
 
                     <li><strong>What (if any) automated screening tools are used to conduct OFAC watchlist searches?</strong></li>
                     <div class="input_group">
-                        <input type="text" id="BckInfo_Compliance_4a_Explain" name="BckInfo_Compliance_4a_Explain">
+                        <input type="text" id="BI_Compliance_4a_Explain" name="BI_Compliance_4a_Explain">
                     </div>
 
                     <li class="mt-2"><strong>Are Borrowers screened against the most current OFAC SDN List and the OFAC Consolidated Sanctions List during the
@@ -3104,12 +3114,12 @@
                     <div class="row mb-2">
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_4b" name="BckInfo_Compliance_4b"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_4b" name="BckInfo_Compliance_4b"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_4b" name="BI_Compliance_4b"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_4b" name="BI_Compliance_4b"> No</label></div>
                             </div>
                             <div class="if_yes">
                                 <label class="font-weight-bold">If Yes, when during the process?</label>
-                                <input type="text" id="BckInfo_Compliance_4b_Explain" name="BckInfo_Compliance_4b_Explain">
+                                <input type="text" id="BI_Compliance_4b_Explain" name="BI_Compliance_4b_Explain">
                             </div>
                         </div>
                     </div>
@@ -3118,24 +3128,24 @@
                     <div class="row mb-2">
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_4c" name="BckInfo_Compliance_4c"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_4c" name="BckInfo_Compliance_4c"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_4c" name="BI_Compliance_4c"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_4c" name="BI_Compliance_4c"> No</label></div>
                             </div>
                             <div class="if_yes">
                                 <label class="font-weight-bold">If Yes, when and how?</label>
-                                <input type="text" id="BckInfo_Compliance_4c_Explain" name="BckInfo_Compliance_4c_Explain">
+                                <input type="text" id="BI_Compliance_4c_Explain" name="BI_Compliance_4c_Explain">
                             </div>
                         </div>
                     </div>
 
                     <li><strong>How are the results of searches with a potential match documented?</strong></li>
                     <div class="input_group">
-                        <input type="text" id="BckInfo_Compliance_4d" name="BckInfo_Compliance_4d">
+                        <input type="text" id="BI_Compliance_4d" name="BI_Compliance_4d">
                     </div>
 
                     <li class="mt-2"><strong>How and to whom are matches against the most current OFAC SDN List and the OFAC Consolidated Sanctions List reported?</strong></li>
                     <div class="input_group">
-                        <input type="text" id="BckInfo_Compliance_4e" name="BckInfo_Compliance_4e">
+                        <input type="text" id="BI_Compliance_4e" name="BI_Compliance_4e">
                     </div>
 
                 </ul>
@@ -3147,8 +3157,8 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_5" name="BckInfo_Compliance_5"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_5" name="BckInfo_Compliance_5"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_5" name="BI_Compliance_5"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_5" name="BI_Compliance_5"> No</label></div>
                     </div>
                     <div class="if_yes">
 
@@ -3157,8 +3167,8 @@
 
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_5a" name="BckInfo_Compliance_5a"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="2" id="BckInfo_Compliance_5a" name="BckInfo_Compliance_5a"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_5a" name="BI_Compliance_5a"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="2" id="BI_Compliance_5a" name="BI_Compliance_5a"> No</label></div>
                             </div>
                         </div>
 
@@ -3167,8 +3177,8 @@
 
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_5b" name="BckInfo_Compliance_5b"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="2" id="BckInfo_Compliance_5b" name="BckInfo_Compliance_5b"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_5b" name="BI_Compliance_5b"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="2" id="BI_Compliance_5b" name="BI_Compliance_5b"> No</label></div>
                             </div>
                         </div>
                     </div>
@@ -3202,7 +3212,7 @@
                 Suspended Counterparty Program List?</strong>
             </li>
             <div class="input_group">
-                <input type="text" id="BckInfo_Compliance_6" name="BckInfo_Compliance_6">
+                <input type="text" id="BI_Compliance_6" name="BI_Compliance_6">
             </div>
 
             <li class="mt-2"><strong>Do you document this check?</strong>
@@ -3211,12 +3221,12 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_7" name="BckInfo_Compliance_7"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_7" name="BckInfo_Compliance_7"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_7" name="BI_Compliance_7"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_7" name="BI_Compliance_7"> No</label></div>
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold">If Yes, how?</label>
-                        <input type="text" id="BckInfo_Compliance_7_Explain" name="BckInfo_Compliance_7_Explain">
+                        <input type="text" id="BI_Compliance_7_Explain" name="BI_Compliance_7_Explain">
                     </div>
                 </div>
             </div>
@@ -3228,12 +3238,12 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_8" name="BckInfo_Compliance_8"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_8" name="BckInfo_Compliance_8"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_8" name="BI_Compliance_8"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_8" name="BI_Compliance_8"> No</label></div>
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold">If Yes, What is your process?</label>
-                        <input type="text" id="BckInfo_Compliance_8_Explain" name="BckInfo_Compliance_8_Explain">
+                        <input type="text" id="BI_Compliance_8_Explain" name="BI_Compliance_8_Explain">
                     </div>
                 </div>
             </div>
@@ -3245,12 +3255,12 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_9" name="BckInfo_Compliance_9"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_9" name="BckInfo_Compliance_9"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_9" name="BI_Compliance_9"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_9" name="BI_Compliance_9"> No</label></div>
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold">If Yes, What are the procedures?</label>
-                        <input type="text" id="BckInfo_Compliance_9_Explain" name="BckInfo_Compliance_9_Explain">
+                        <input type="text" id="BI_Compliance_9_Explain" name="BI_Compliance_9_Explain">
                     </div>
                 </div>
             </div>
@@ -3272,8 +3282,8 @@
             <div class="row mb-2">
                 <div class="col-12 input_group">
                     <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_10" name="BckInfo_Compliance_10"> Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_10" name="BckInfo_Compliance_10"> No</label></div>
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_10" name="BI_Compliance_10"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_10" name="BI_Compliance_10"> No</label></div>
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold mt-2">If Yes, what regulatory body examines you for AML program compliance? (Check all that are applicable)</label>
@@ -3281,19 +3291,19 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BckInfo_Compliance_10_RegBody" name="BckInfo_Compliance_10_RegBody">
+                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
                                     <label>
                                         Financial Industry Regulatory Authority (FINRA)
                                     </label>
                                 </div>
                                 <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BckInfo_Compliance_10_RegBody" name="BckInfo_Compliance_10_RegBody">
+                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
                                     <label>
                                         Federal Reserve Board (FRB)
                                     </label>
                                 </div>
                                 <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BckInfo_Compliance_10_RegBody" name="BckInfo_Compliance_10_RegBody">
+                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
                                     <label>
                                         Office of the Comptroller of Currency (OCC)
                                     </label>
@@ -3302,23 +3312,31 @@
 
                             <div class="col-6">
                                 <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BckInfo_Compliance_10_RegBody" name="BckInfo_Compliance_10_RegBody">
+                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
                                     <label>
                                         Securities and Exchange Commission(SEC)
                                     </label>
                                 </div>
                                 <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BckInfo_Compliance_10_RegBody" name="BckInfo_Compliance_10_RegBody">
+                                    <input type="checkbox"  id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
                                     <label>
                                         Federal Deposit Insurance Corporation (FDIC)
                                     </label>
                                 </div>
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BckInfo_Compliance_10_RegBody" name="BckInfo_Compliance_10_RegBody">
-                                    <label>
-                                        Other Regulator
-                                    </label>
+                                
+                                <div class="input_group">
+                                    <div class="checkBox_wrp">
+                                        <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
+                                        <label>
+                                            Other Regulator
+                                        </label>   
+                                    </div>
+                                    <div class="if_check">
+                                        <label class="font-weight-bold">Please specify:</label>
+                                        <input type="text" id="BI_Compliance_10_Other" name="BI_Compliance_10_Other">
+                                    </div>
                                 </div>
+                            </div>
                             </div>
 
                         </div>
@@ -3335,8 +3353,8 @@
                     <div class="row mb-2">
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_11a_1" name="BckInfo_Compliance_11a_1"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_11a_1" name="BckInfo_Compliance_11a_1"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_11a_1" name="BI_Compliance_11a_1"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_11a_1" name="BI_Compliance_11a_1"> No</label></div>
                             </div>
                         </div>
                     </div>
@@ -3345,8 +3363,8 @@
                     <div class="row mb-2">
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_11a_2" name="BckInfo_Compliance_11a_2"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_11a_2" name="BckInfo_Compliance_11a_2"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_11a_2" name="BI_Compliance_11a_2"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_11a_2" name="BI_Compliance_11a_2"> No</label></div>
                             </div>
                         </div>
                     </div>
@@ -3355,8 +3373,8 @@
                     <div class="row mb-2">
                         <div class="col-12 input_group">
                             <div class="radio_group_wrp">
-                                <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_11a_3" name="BckInfo_Compliance_11a_3"> Yes</label></div>
-                                <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_11a_3" name="BckInfo_Compliance_11a_3"> No</label></div>
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_11a_3" name="BI_Compliance_11a_3"> Yes</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_11a_3" name="BI_Compliance_11a_3"> No</label></div>
                             </div>
                         </div>
                     </div>
@@ -3367,8 +3385,8 @@
                 <div class="row mb-2 ml-10">
                     <div class="col-12 input_group">
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_11b" name="BckInfo_Compliance_11b"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_11b" name="BckInfo_Compliance_11b"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_11b" name="BI_Compliance_11b"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_11b" name="BI_Compliance_11b"> No</label></div>
                         </div>
                         <div class="if_yes">
                             <label class="font-weight-bold">If Yes</label>
@@ -3378,19 +3396,19 @@
                                     <label class="font-weight-bold">How do you certify employee compliance with such required training?</label>
 
                                 </li>
-                                <input type="text" id="BckInfo_Compliance_11b_1" name="BckInfo_Compliance_11b_1">
+                                <input type="text" id="BI_Compliance_11b_1" name="BI_Compliance_11b_1">
 
                                 <li>
                                     <label class="font-weight-bold">When is this training conducted?</label>
 
                                 </li>
-                                <input type="text" id="BckInfo_Compliance_11b_2" name="BckInfo_Compliance_11b_2">
+                                <input type="text" id="BI_Compliance_11b_2" name="BI_Compliance_11b_2">
 
                                 <li>
                                     <label class="font-weight-bold">What is the most recent date of targeted training for existing staff?</label>
 
                                 </li>
-                                <input type="text" id="BckInfo_Compliance_11b_3" name="BckInfo_Compliance_11b_3">
+                                <input type="text" id="BI_Compliance_11b_3" name="BI_Compliance_11b_3">
                             </ul>
 
                         </div>
@@ -3405,12 +3423,12 @@
                 <div class="row mb-2">
                     <div class="col-12 input_group">
                         <div class="radio_group_wrp">
-                            <div class="group_item"><label><input type="radio" value="1" id="BckInfo_Compliance_12" name="BckInfo_Compliance_12"> Yes</label></div>
-                            <div class="group_item"><label><input type="radio" value="0" id="BckInfo_Compliance_12" name="BckInfo_Compliance_12"> No</label></div>
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_Compliance_12" name="BI_Compliance_12"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_Compliance_12" name="BI_Compliance_12"> No</label></div>
                         </div>
                         <div class="if_yes">
                             <label class="font-weight-bold">If Yes, please describe the actions.</label>
-                            <input type="text" id="BckInfo_Compliance_12_Explain" name="BckInfo_Compliance_12_Explain">
+                            <input type="text" id="BI_Compliance_12_Explain" name="BI_Compliance_12_Explain">
                         </div>
                     </div>
                 </div>
