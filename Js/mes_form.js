@@ -10,6 +10,7 @@ $(document).ready(function () {
                 parent.find(".if_yes").css("display", "none");
                 parent.find(".if_no").css("display", "block");
             }
+            parent.find(".explainArea").css("display", "block");
         }
     });
 });
