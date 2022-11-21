@@ -593,4 +593,15 @@ table td{
     width: 100%;
 }
 
+/* -------- One to many ---------- */
+
+.removeBtnWrp{
+    display: none;
+}
+
+.buttonWrp .btnConteiner{
+    width: 100%;
+    text-align: right;
+}
+
 
