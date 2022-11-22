@@ -853,6 +853,7 @@
         </div>
 
     </section>
+
     <script src="../Js/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -883,10 +884,14 @@
                     var dupNum = $(this).attr('id').split('-')[1];
                     
                     if(dupNum == null || dupNum == undefined){
-                        $(this).attr('id', elementId+"-"+ 1);
+                        elementId = elementId+"-"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
                     }else{
-                        $(this).attr('id', elementId+"-"+ repeatSec.length);
-                    }                    
+                        elementId = elementId+"-"+ repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }   
+                    
+                    $(this).val('');
                 });
 
                 $(dupElement).find('select').each(function(){
@@ -894,9 +899,11 @@
                     var dupNum = $(this).attr('id').split('-')[1];
                     
                     if(dupNum == null || dupNum == undefined){
-                        $(this).attr('id', elementId+"-"+ 1);
+                        elementId = elementId+"-"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
                     }else{
-                        $(this).attr('id', elementId+"-"+ repeatSec.length);
+                        elementId = elementId+"-"+ repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
                     }                    
                 });
 
@@ -905,12 +912,12 @@
 
                 if($(parentWrp).find(".repeatSec").length > 1){
                     $(parentWrp).find(".removeBtnWrp").css('display','block');
-                }
-
-                
+                }                
 
                 
             });
+
+            // ------------ Remove Record button -----------
 
             $(".removeRecord").on("click", function(){
                 var parentWrp = $(this).closest(".oneToManySec");
@@ -922,8 +929,6 @@
                 if($(parentWrp).find(".repeatSec").length <= 1){
                     $(parentWrp).find(".removeBtnWrp").css('display','none');
                 }
-
-                console.log(repeatSec.length );
             
             });
 
