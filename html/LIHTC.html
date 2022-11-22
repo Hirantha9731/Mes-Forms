@@ -874,7 +874,7 @@
 
             // ------------ Repeate sections Js  -----------------
 
-            $(".addRecord").on("click", function(){
+            $(".addRecord").on("click", function(e){
                 var parentWrp = $(this).closest(".oneToManySec");
                 var repeatSec= $(parentWrp).find(".repeatSec");
                 var dupElement = $(repeatSec[repeatSec.length - 1]).clone();
@@ -914,12 +914,12 @@
                     $(parentWrp).find(".removeBtnWrp").css('display','block');
                 }                
 
-                
+                e.preventDefault();
             });
 
             // ------------ Remove Record button -----------
 
-            $(".removeRecord").on("click", function(){
+            $(".removeRecord").on("click", function(e){
                 var parentWrp = $(this).closest(".oneToManySec");
                 var repeatSec= $(parentWrp).find(".repeatSec");
                 if(repeatSec.length > 1){                    
@@ -929,6 +929,8 @@
                 if($(parentWrp).find(".repeatSec").length <= 1){
                     $(parentWrp).find(".removeBtnWrp").css('display','none');
                 }
+
+                e.preventDefault();
             
             });
 
