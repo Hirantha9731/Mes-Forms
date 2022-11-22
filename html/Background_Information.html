@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    
     <section class="container mt-4">
         <div class="row page_header_row">
             <div class="col-6 page_header">
@@ -576,55 +577,58 @@
                 <div class="col-12">
                     <strong>Check the legal entity type:</strong>
                 </div>
-
-                <div class="col-3">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" class="radioCheck" value="1" id="BI_LegalEntity_Corp" name="BI_LegalEntity_Corp">
-                        <label>
-                            Corporation
-                        </label>
-                    </div>
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_Ptnship" name="BI_LegalEntity_Ptnship">
-                        <label>
-                            Partnership
-                        </label>
-                    </div>
+                
+                    <div class="col-3">
                     
-                    <div class="input_group">
                         <div class="checkBox_wrp">
-                            <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_Other" name="BI_LegalEntity_Other">
+                            <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Corp" name="BI_LegalEntity_Corp">
                             <label>
-                                Other
+                                Corporation
                             </label>
                         </div>
-                        <div class="if_yes">
-                            <label class="font-weight-bold">Please Explain</label>
-                            <input type="text"  id="BI_LegalEntity_Other_Explain" name="BI_LegalEntity_Other_Explain">
+                        <div class="checkBox_wrp">
+                            <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Ptnship" name="BI_LegalEntity_Ptnship">
+                            <label>
+                                Partnership
+                            </label>
+                        </div>
+                    
+                        <div class="checkbox_input_group">
+                            <div class="checkBox_wrp">
+                                <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Other" name="BI_LegalEntity_Other">
+                                <label>
+                                    Other
+                                </label>
+                            </div>
+                            <div class="if_check">
+                                <label class="font-weight-bold">Please Explain</label>
+                                <input type="text" id="BI_LegalEntity_Other_Explain" name="BI_LegalEntity_Other_Explain">
+                            </div>
                         </div>
                     </div>
                      
-                </div>
-                <div class="col-5">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_Propship" name="BI_LegalEntity_Propship">
-                        <label>
-                            Proprietorship
-                        </label>
+                
+                    <div class="col-5">
+                        <div class="checkBox_wrp">
+                            <input type="checkbox" class="radioCheck"  id="BI_LegalEntity_Propship" name="BI_LegalEntity_Propship">
+                            <label>
+                                Proprietorship
+                            </label>
+                        </div>
+                        <div class="checkBox_wrp">
+                            <input type="checkbox" class="radioCheck"  id="BI_LegalEntity_LP" name="BI_LegalEntity_LP">
+                            <label>
+                                Limited Partnership
+                            </label>
+                        </div>
+                        <div class="checkBox_wrp">
+                            <input type="checkbox" class="radioCheck"  id="BI_LegalEntity_LLC" name="BI_LegalEntity_LLC">
+                            <label>
+                                Limited Liability Company
+                            </label>
+                        </div>
                     </div>
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" class="radioCheck" value="1"  id="BI_LegalEntity_LP" name="BI_LegalEntity_LP">
-                        <label>
-                            Limited Partnership
-                        </label>
-                    </div>
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" class="radioCheck" value="1" id="BI_LegalEntity_LLC" name="BI_LegalEntity_LLC">
-                        <label>
-                            Limited Liability Company
-                        </label>
-                    </div>
-                </div>
+                
             </div>
         </div>
 
@@ -3287,58 +3291,58 @@
                     </div>
                     <div class="if_yes">
                         <label class="font-weight-bold mt-2">If Yes, what regulatory body examines you for AML program compliance? (Check all that are applicable)</label>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
-                                    <label>
-                                        Financial Industry Regulatory Authority (FINRA)
-                                    </label>
-                                </div>
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
-                                    <label>
-                                        Federal Reserve Board (FRB)
-                                    </label>
-                                </div>
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
-                                    <label>
-                                        Office of the Comptroller of Currency (OCC)
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
-                                    <label>
-                                        Securities and Exchange Commission(SEC)
-                                    </label>
-                                </div>
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox"  id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
-                                    <label>
-                                        Federal Deposit Insurance Corporation (FDIC)
-                                    </label>
-                                </div>
-                                
-                                <div class="input_group">
+                              
+                            <div class="row">
+                                <div class="col-6">
                                     <div class="checkBox_wrp">
                                         <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
                                         <label>
-                                            Other Regulator
-                                        </label>   
+                                            Financial Industry Regulatory Authority (FINRA)
+                                        </label>
                                     </div>
-                                    <div class="if_check">
-                                        <label class="font-weight-bold">Please specify:</label>
-                                        <input type="text" id="BI_Compliance_10_Other" name="BI_Compliance_10_Other">
+                                    <div class="checkBox_wrp">
+                                        <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
+                                        <label>
+                                            Federal Reserve Board (FRB)
+                                        </label>
+                                    </div>
+                                    <div class="checkBox_wrp">
+                                        <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
+                                        <label>
+                                            Office of the Comptroller of Currency (OCC)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="checkBox_wrp">
+                                        <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
+                                        <label>
+                                            Securities and Exchange Commission(SEC)
+                                        </label>
+                                    </div>
+                                    <div class="checkBox_wrp">
+                                        <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
+                                        <label>
+                                            Federal Deposit Insurance Corporation (FDIC)
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="checkbox_input_group">
+                                        <div class="checkBox_wrp">
+                                            <input type="checkbox" class="radioCheck" id="BI_Compliance_10_RegBody" name="BI_Compliance_10_RegBody">
+                                            <label>
+                                                Other Regulator
+                                            </label>   
+                                        </div>
+                                        <div class="if_check">
+                                            <label class="font-weight-bold">Please specify:</label>
+                                            <input type="text" id="BI_Compliance_10_Other" name="BI_Compliance_10_Other">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
-
+                            
                         </div>
                     </div>
                 </div>
