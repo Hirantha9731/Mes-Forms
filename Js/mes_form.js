@@ -16,18 +16,34 @@ $(document).ready(function () {
         }
     });
     
+    // $('input[class="radioCheck"]').on('change', function() {
+        
+    //    $(".if_check").hide();
+    //     var parent = $(this).parents(".checkbox_input_group,.checkbox_input_group_inline");
+    //     if ($(this).is(":checked")) { 
+    //         $('input[class="radioCheck"]').not(this).prop('checked', false);
+            
+    //         parent.find(".if_check").css("display", "block"); 
+    //     }else{
+    //         $(".if_check").hide();
+    //     }
+    // });
     $('input[class="radioCheck"]').on('change', function() {
         
-       $(".if_check").hide();
+        var content = $(this).parents(".checkbox_parent_input_group,.checkbox_parent_input_group_inline");
+        content.find(".if_check").css("display", "none");
         var parent = $(this).parents(".checkbox_input_group,.checkbox_input_group_inline");
-        if ($(this).is(":checked")) { 
-            $('input[class="radioCheck"]').not(this).prop('checked', false);
-            
-            parent.find(".if_check").css("display", "block"); 
-        }else{
-            $(".if_check").hide();
-        }
-    });
+        
+        
+         var parent = $(this).parents(".checkbox_input_group,.checkbox_input_group_inline");
+         if ($(this).is(":checked")) { 
+             $('input[class="radioCheck"]').not(this).prop('checked', false);
+             
+             parent.find(".if_check").css("display", "block"); 
+         }else{
+            content.find(".if_check").css("display", "none");
+         }
+     });
    
 });
 
