@@ -605,3 +605,12 @@
 }
 
 
+.section_show{
+    display: block;
+}
+
+.section_hide{
+    display: none;
+}
+
+

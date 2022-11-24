@@ -28,6 +28,30 @@ $(document).ready(function () {
             $(".if_check").hide();
         }
     });
-   
+
+    $(".btn-next").on("click",function (e){
+
+        var nextPage = $(this).parents(".form_page").next(".form_page");
+
+        $(this).parents(".form_page").addClass("section_hide");
+        $(this).parents(".form_page").removeClass("section_show");
+        $(nextPage).removeClass("section_hide");
+        $(nextPage).addClass("section_show");
+
+        e.preventDefault();
+    });
+
+    $(".btn-prev").on("click",function (e){
+
+        var prevPage = $(this).parents(".form_page").prev(".form_page");
+
+        $(this).parents(".form_page").addClass("section_hide");
+        $(this).parents(".form_page").removeClass("section_show");
+        $(prevPage).removeClass("section_hide");
+        $(prevPage).addClass("section_show");
+
+        e.preventDefault();
+    });
+
 });
 
