@@ -878,16 +878,26 @@
                 var parentWrp = $(this).closest(".oneToManySec");
                 var repeatSec= $(parentWrp).find(".repeatSec");
                 var dupElement = $(repeatSec[repeatSec.length - 1]).clone();
-                console.log(repeatSec.length );
+                
                 $(dupElement).find(':text').each(function(){
-                    var elementId = $(this).attr('id').split('-')[0];
-                    var dupNum = $(this).attr('id').split('-')[1];
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
                     
-                    if(dupNum == null || dupNum == undefined){
-                        elementId = elementId+"-"+ 1;
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
                         $(this).attr({'id': elementId , 'name' : elementId });
                     }else{
-                        elementId = elementId+"-"+ repeatSec.length;
+
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
                         $(this).attr({'id': elementId , 'name':elementId });
                     }   
                     
@@ -895,19 +905,28 @@
                 });
 
                 $(dupElement).find('select').each(function(){
-                    var elementId = $(this).attr('id').split('-')[0];
-                    var dupNum = $(this).attr('id').split('-')[1];
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
                     
-                    if(dupNum == null || dupNum == undefined){
-                        elementId = elementId+"-"+ 1;
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
                         $(this).attr({'id': elementId , 'name' : elementId });
                     }else{
-                        elementId = elementId+"-"+ repeatSec.length;
-                        $(this).attr({'id': elementId , 'name':elementId });
-                    }                    
-                });
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                // newID += value + "_";
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
 
-                // $(parentWrp.find(".data_table")).append(dupElement);
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }                      
+                });
+                
                 $(repeatSec[repeatSec.length - 1]).after(dupElement);
 
                 if($(parentWrp).find(".repeatSec").length > 1){
