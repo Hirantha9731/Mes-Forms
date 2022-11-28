@@ -106,7 +106,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
-    background-color: #5ee215;
+    background-color: #87be3c;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -200,6 +200,7 @@
     /* border: solid black 1px ; */
     border-bottom: solid black 1px;
     padding: 10px;
+    width: 100%;
 }
 
 .page_content_wrapper .applicant_table:last-child{
@@ -243,7 +244,8 @@
 
 .page_content_wrapper .mid_heading{
     text-align: center;
-    margin-bottom: -10px;
+    align-items: center;
+    padding-bottom: 5px;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -377,22 +379,45 @@
     font-size: 12px;
 }
 
-/* .button_right{
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-} */
-
 .page_content_wrapper button{
     background-color: #9c9c9c;
     border: solid 1px #434343;
     color: white;
     font-weight: bold;
     font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 3px 15px 3px 15px;
     /* box-shadow: 0 5px 15px rgba(72, 71, 73, 0.4); */
 }
+
+.page_content_wrapper .btn-next{
+    color: white;
+    background-color: #286090;
+}
+
+.page_content_wrapper .btn-next:hover{
+    background-color: #398acf;
+}
+
+.page_content_wrapper .btn-prev{
+    color: white;
+    background-color: #9c9c9c;
+}
+
+.page_content_wrapper .btn-prev:hover{
+    background-color: #c1bcbc;
+}
+
+/* -------- One to many ---------- */
+
+.removeBtnWrp{
+    display: none;
+}
+
+.buttonWrp .btnConteiner{
+    width: 100%;
+    text-align: right;
+}
+
 
 .page_content_wrapper .text1{
     margin-top: 2px;
@@ -595,16 +620,6 @@
     width: 100%;
 }
 
-/* -------- One to many ---------- */
-
-.removeBtnWrp{
-    display: none;
-}
-
-.buttonWrp .btnConteiner{
-    width: 100%;
-    text-align: right;
-}
 
 
 .section_show{
@@ -614,3 +629,4 @@
 .section_hide{
     display: none;
 }
+
