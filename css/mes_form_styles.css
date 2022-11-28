@@ -276,13 +276,15 @@
     background-color: #D5EFFA;
 }
 
-.page_content_wrapper table input[type="text"]{
+.page_content_wrapper table input[type="text"],
+.page_content_wrapper table input[type="date"]{
     background-color: #D5EFFA;
     border-radius: 0;
     border: solid 1px #999999;
 }
 
 .page_content_wrapper table input[type="text"]:focus,
+.page_content_wrapper table input[type="date"]:focus,
 .page_content_wrapper .input_group select:focus{
     background-color:white;
     border-radius: 0;
