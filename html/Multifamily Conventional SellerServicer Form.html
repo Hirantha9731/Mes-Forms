@@ -200,7 +200,7 @@ underwriting functions for conventional multifamily and commercial mortgages.
         </div>
 
         <div class="page_content">
-            <div class="oneToMany_content_wrp">
+            <div class="oneToManySec">
                 <div class="data_table">
                     <div class="table_row text_center_align text_bold">
                         <div class="col-3 table_cell">Name</div>
@@ -209,21 +209,24 @@ underwriting functions for conventional multifamily and commercial mortgages.
                         <div class="col-2 table_cell">Years with applicant</div>
                         <div class="col-2 table_cell">Years of housing experience</div>
                     </div>
-
-                    <div class="table_row input_group">
+                    
+                    <div class="table_row input_group repeatSec">
                         <div class="col-3 table_cell"><input type="text" id="MFC_ConOrigUW_Name" name="MFC_ConOrigUW_Name"></div>
                         <div class="col-3 table_cell"><input type="text" id="MFC_ConOrigUW_Title" name="MFC_ConOrigUW_Title"></div>
                         <div class="col-2 table_cell"><input type="text" id="MFC_ConOrigUW_Email" name="MFC_ConOrigUW_Email"></div>
                         <div class="col-2 table_cell"><input type="text" id="MFC_ConOrigUW_ApplYrs" name="MFC_ConOrigUW_ApplYrs"></div>
                         <div class="col-2 table_cell"><input type="text" id="MFC_ConOrigUW_HousingExpYrs" name="MFC_ConOrigUW_HousingExpYrs"></div>
                     </div>
+                    
                 </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add Personnel</button>
-
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Personnel</button>
+                
+                <div class="buttonWrp mt-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Personnel</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Personnel</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -337,7 +340,7 @@ conventional multifamily and commercial mortgages.
         </div>
 
         <div class="page_content">
-            <div class="oneToMany_content_wrp">
+            <div class="oneToManySec">
                 <div class="data_table">
                     <div class="table_row text-center text_bold">
                         <div class="col-2 table_cell">Name</div>
@@ -347,22 +350,31 @@ conventional multifamily and commercial mortgages.
                         <div class="col-2 table_cell">Years of servicing Experience</div>
                         <div class="col-2 table_cell">Years of default management experience</div>
                     </div>
-        
-                    <div class="table_row input_group">
+                    
+                    <div class="table_row repeatSec input_group">
                         <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_Name" name="MFC_ConvSvcP_Name"></div>
-                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_Title" name="MFC_ConvSvcP_Title"></div>
-                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_Email" name="MFC_ConvSvcP_Email"></div>
-                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_ApplYrs" name="MFC_ConvSvcP_ApplYrs"></div>
-                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_SvcExpYrs" name="MFC_ConvSvcP_SvcExpYrs"></div>
-                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_DMExpYrs" name="MFC_ConvSvcP_DMExpYrs"></div>
+                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_Title" name="MFC_ConvSvcP_Title">
+                        </div>
+                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_Email" name="MFC_ConvSvcP_Email">
+                        </div>
+                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_ApplYrs" name="MFC_ConvSvcP_ApplYrs">
+                        </div>
+                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_SvcExpYrs"
+                                name="MFC_ConvSvcP_SvcExpYrs"></div>
+                        <div class="col-2 table_cell"><input type="text" id="MFC_ConvSvcP_DMExpYrs"
+                                name="MFC_ConvSvcP_DMExpYrs"></div>
                     </div>
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add Servicing Personnel</button>
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Servicing Personnel</button>
-                </div>
+                    
+                </div>            
+            
+                <div class="buttonWrp mt-2 ">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Servicing Personnel</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Servicing Personnel</button>
+                    </div>
+                </div>            
             </div>
         </div>
 
@@ -871,40 +883,43 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
 conventional multifamily servicing operations.
              </p>
 
-             <div class="oneToMany_content_wrp">
-                <div class="data_table">
+            <div class="oneToManySec">
+                <div class="data_table repeatSec mt-4">                    
                     <div class="table_row text_bold">
                         <div class="col-8 table_cell input_group">
-                           <label class="font-weight-bold">Name</label>
-                           <input type="text" id="MFC_SvcContact_Name" name="MFC_SvcContact_Name">
+                            <label class="font-weight-bold">Name</label>
+                            <input type="text" id="MFC_SvcContact_Name" name="MFC_SvcContact_Name">
                         </div>
                         <div class="col-4 table_cell input_group">
-                           <label class="font-weight-bold">Title</label>
-                           <input type="text" id="MFC_SvcContact_Title" name="MFC_SvcContact_Title">
+                            <label class="font-weight-bold">Title</label>
+                            <input type="text" id="MFC_SvcContact_Title" name="MFC_SvcContact_Title">
                         </div>
-                        
+        
                     </div>
         
                     <div class="table_row">
                         <div class="col-4 table_cell input_group">
-                           <label class="font-weight-bold">Telephone Number</label>
-                           <input type="text" id="MFC_SvcContact_Telephone" name="MFC_SvcContact_Telephone">
+                            <label class="font-weight-bold">Telephone Number</label>
+                            <input type="text" id="MFC_SvcContact_Telephone" name="MFC_SvcContact_Telephone">
                         </div>
                         <div class="col-4 table_cell input_group">
-                           <label class="font-weight-bold">Email</label>
-                           <input type="text" id="MFC_SvcContact_Email" name="MFC_SvcContact_Email">
+                            <label class="font-weight-bold">Email</label>
+                            <input type="text" id="MFC_SvcContact_Email" name="MFC_SvcContact_Email">
                         </div>
                         <div class="col-4 table_cell input_group">
-                           <label class="font-weight-bold">Web Address</label>
-                           <input type="text" id="MFC_SvcContact_WebAddress" name="MFC_SvcContact_WebAddress">
-                       </div>
+                            <label class="font-weight-bold">Web Address</label>
+                            <input type="text" id="MFC_SvcContact_WebAddress" name="MFC_SvcContact_WebAddress">
+                        </div>
+                    </div>                    
+                </div>            
+            
+                <div class="buttonWrp mt-2 ">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Servicing Contact</button>
                     </div>
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add Servicing Contact</button>        
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Servicing Contact</button>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Servicing Contact</button>
+                    </div>
                 </div>
             </div>
          
@@ -919,45 +934,51 @@ conventional multifamily servicing operations.
                 Please list the names, titles and telephone numbers of firms/attorneys and title companies used for loan closings.
               </p>
  
-              <div class="oneToMany_content_wrp">
-                 <div class="data_table">
-                     <div class="table_row text_bold">
-                         <div class="col-8 table_cell input_group">
+            <div class="oneToManySec">
+                <div class="data_table repeatSec mt-4">                    
+                    <div class="table_row text_bold">
+                        <div class="col-8 table_cell input_group">
                             <label class="font-weight-bold">Name</label>
                             <input type="text" id="MFC_AttComp_Name" name="MFC_AttComp_Name">
-                         </div>
-                         <div class="col-4 table_cell input_group">
+                        </div>
+                        <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Title</label>
                             <input type="text" id="MFC_AttComp_Title" name="MFC_AttComp_Title">
-                         </div>
-                         
-                     </div>
-         
-                     <div class="table_row">
-                         <div class="col-4 table_cell input_group">
+                        </div>
+        
+                    </div>
+        
+                    <div class="table_row">
+                        <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Telephone Number</label>
                             <input type="text" id="MFC_AttComp_Telephone" name="MFC_AttComp_Telephone">
-                         </div>
-                         <div class="col-4 table_cell input_group">
+                        </div>
+                        <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Email</label>
                             <input type="text" id="MFC_AttComp_Email" name="MFC_AttComp_Email">
-                         </div>
-                         <div class="col-4 table_cell input_group">
+                        </div>
+                        <div class="col-4 table_cell input_group">
                             <label class="font-weight-bold">Web Address</label>
                             <input type="text" id="MFC_AttComp_WebAddress" name="MFC_AttComp_WebAddress">
                         </div>
-                     </div>
-                 </div>
-                 <div class="flex_wrp content_right mt-2">
-                     <button>Add Attorneys</button>        
-                 </div>
-                 <div class="flex_wrp content_right mt-2">
-                     <button>Remove Attorneys</button>
-                 </div>
-             </div>
+                    </div>                    
+                </div>
+            
+                <div class="buttonWrp mt-2 ">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Attorneys</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Attorneys</button>
+                    </div>
+                </div>
+            </div>
           
           </div>
- 
+          
+        <div class="content_right flex_wrp mt-4 mb-2">-->
+            <button type="submit" value="Submit Form" class="btn-primary saveFloat">Save Form</button>
+        </div>
 
     </section>
     
@@ -982,6 +1003,125 @@ conventional multifamily servicing operations.
                     }                    
                 }
             });
+
+            // ------------ Repeate sections Js  -----------------
+
+            $(".addRecord").on("click", function(e){
+                var parentWrp = $(this).closest(".oneToManySec");
+                var repeatSec= $(parentWrp).find(".repeatSec");
+                var dupElement = $(repeatSec[repeatSec.length - 1]).clone();
+                
+                $(dupElement).find(':text').each(function(){
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
+                    }else{
+
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }   
+                    
+                    $(this).val('');
+                });
+
+                $(dupElement).find('select').each(function(){
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
+                    }else{
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }                      
+                });
+
+                $(dupElement).find(':radio').each(function(){
+                    var elementId = $(this).attr('id');
+                    var elementName = $(this).attr('name');
+                    var idSplitArr = elementId.split('_');
+                    var nameSplitArr = elementName.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_Id_"+ 1;
+                        elementName = elementName+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementName });
+                    }else{
+
+                        var newID = "";
+                        var newName = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        nameSplitArr[nameSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        nameSplitArr.forEach(function (value, index, array) {
+                            if(index < nameSplitArr.length - 1){
+                                newName = newName.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        elementName = newName + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementName });
+                    }   
+                    
+                    $(this).prop("checked", false)
+                });
+                
+                $(repeatSec[repeatSec.length - 1]).after(dupElement);
+
+                if($(parentWrp).find(".repeatSec").length > 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','block');
+                }                
+
+                e.preventDefault();
+            });
+
+            // ------------ Remove Record button -----------
+
+            $(".removeRecord").on("click", function(e){
+                var parentWrp = $(this).closest(".oneToManySec");
+                var repeatSec= $(parentWrp).find(".repeatSec");
+                if(repeatSec.length > 1){                    
+                    $(repeatSec).last().remove();                    
+                }
+
+                if($(parentWrp).find(".repeatSec").length <= 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','none');
+                }
+
+                e.preventDefault();
+            
+            });
+
+
         });
 
     </script>
