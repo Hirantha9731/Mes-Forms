@@ -813,78 +813,84 @@
                 controlled by, or is under common control with an enterprise.) Add additional rows as necessary
             </p>
 
-            <div class="page_content">
-                <div class="row">
-                    <div class="col-8 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Name of Firm</label>
-                            <input type="text" id="BI_Affiliate_FirmName" name="BI_Affiliate_FirmName">
+            <div class="oneToManySec page_content">
+                <div class="repeatSec mt-4">
+                    <div class="row">
+                        <div class="col-8 section_sub_text border_left_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Name of Firm</label>
+                                <input type="text" id="BI_Affiliate_FirmName" name="BI_Affiliate_FirmName">
+                            </div>
+                        </div>
+                        <div class="col-4 section_sub_text ">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Relationship to Applicant</label>
+                                <input type="text" id="BI_Affiliate_Relationship" name="BI_Affiliate_Relationship">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 section_sub_text ">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Relationship to Applicant</label>
-                            <input type="text" id="BI_Affiliate_Relationship" name="BI_Affiliate_Relationship">
+                    <div class="row">
+                        <div class="col-12 section_sub_text border_left_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Address</label>
+                                <input type="text" id="BI_Affiliate_Address" name="BI_Affiliate_Address">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Address</label>
-                            <input type="text" id="BI_Affiliate_Address" name="BI_Affiliate_Address">
+            
+                    <div class="row">
+                        <div class="col-3 section_sub_text border_left_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Federal Reserve ID(RSSD ID)</label>
+                                <input type="text" id="BI_Affiliate_FRID" name="BI_Affiliate_FRID">
+                            </div>
+                        </div>
+                        <div class="col-3 section_sub_text">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Tax Identification Number</label>
+                                <input type="text" id="BI_Affiliate_TIN" name="BI_Affiliate_TIN">
+                            </div>
+                        </div>
+                        <div class="col-3 section_sub_text">
+                            <div class="input_group">
+                                <label class="font-weight-bold">FHA ID</label>
+                                <input type="text" id="BI_Affiliate_FHAID" name="BI_Affiliate_FHAID">
+                            </div>
+                        </div>
+                        <div class="col-3 section_sub_text">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Seller / Servicer (If applicable)</label>
+                                <input type="text" id="BI_Affiliate_SS" name="BI_Affiliate_SS">
+                            </div>
                         </div>
                     </div>
-                </div>
+            
+                    <div class="row">
+                        <div class="col-6 section_sub_text border_left_1 border_bottom_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Email</label>
+                                <input type="text" id="BI_Affiliate_Email" name="BI_Affiliate_Email">
+                            </div>
+                        </div>
+                        <div class="col-6 section_sub_text border_bottom_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Web Address</label>
+                                <input type="text" id="BI_Affiliate_WebAddress" name="BI_Affiliate_WebAddress">
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+                
 
-                <div class="row">
-                    <div class="col-3 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Federal Reserve ID(RSSD ID)</label>
-                            <input type="text" id="BI_Affiliate_FRID" name="BI_Affiliate_FRID">
-                        </div>
+                <div class="row buttonWrp mt-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Affiliate</button>
                     </div>
-                    <div class="col-3 section_sub_text">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Tax Identification Number</label>
-                            <input type="text" id="BI_Affiliate_TIN" name="BI_Affiliate_TIN">
-                        </div>
-                    </div>
-                    <div class="col-3 section_sub_text">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">FHA ID</label>
-                            <input type="text" id="BI_Affiliate_FHAID" name="BI_Affiliate_FHAID">
-                        </div>
-                    </div>
-                    <div class="col-3 section_sub_text">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Seller / Servicer (If applicable)</label>
-                            <input type="text" id="BI_Affiliate_SS" name="BI_Affiliate_SS">
-                        </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Affiliate</button>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1 border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Email</label>
-                            <input type="text" id="BI_Affiliate_Email" name="BI_Affiliate_Email">
-                        </div>
-                    </div>
-                    <div class="col-6 section_sub_text border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Web Address</label>
-                            <input type="text" id="BI_Affiliate_WebAddress" name="BI_Affiliate_WebAddress">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row content_right mt-2 mr-2">
-                    <div>
-                        <button>Add Affiliate</button>
-                    </div>
-                </div>
-
+            
             </div>
 
 
@@ -899,53 +905,61 @@
 
 
             <div class="page_content">
-                <div class="row">
-                    <div class="col-8 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Name</label>
-                            <input type="text" id="BI_Executive_Name" name="BI_Executive_Name">
+                <div class="oneToManySec">
+                    <div class="repeatSec">
+                        <div class="row">
+                            <div class="col-8 section_sub_text border_left_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Name</label>
+                                    <input type="text" id="BI_Executive_Name" name="BI_Executive_Name">
+                                </div>
+                            </div>
+                            <div class="col-4 section_sub_text">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Title</label>
+                                    <input type="text" id="BI_Executive_Title" name="BI_Executive_Title">
+                                </div>
+                            </div>
                         </div>
+                
+                        <div class="row">
+                            <div class="col-3 section_sub_text border_left_1 border_bottom_1">
+                
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Separately email D.O.B</label>
+                                </div>
+                            </div>
+                            <div class="col-5 section_sub_text border_bottom_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Email</label>
+                                    <input type="text" id="BI_Executive_Email" name="BI_Executive_Email">
+                                </div>
+                            </div>
+                            <div class="col-4 section_sub_text border_bottom_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Ownership Percentage</label>
+                                    <input type="text" id="BI_Executive_OwnershipPct" name="BI_Executive_OwnershipPct">
+                                </div>
+                            </div>
+                        </div>
+                
+                        <p class="mt-2">*Stockholders with holdings of 10 percent or more</p>
+                        <p>*Chief executive officer, chief operating officer, chief financial officer, or the equivalent of each of
+                            these positions and other members
+                            of the Board of Directors
+                        </p>
+                
                     </div>
-                    <div class="col-4 section_sub_text">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Title</label>
-                            <input type="text" id="BI_Executive_Title" name="BI_Executive_Title">
+                
+                    <div class="row buttonWrp mt-2 ">
+                        <div class="btnConteiner">
+                            <button class="addRecord">Add Principal or Management Executive</button>
+                        </div>
+                        <div class="btnConteiner removeBtnWrp mt-2">
+                            <button class="removeRecord">Remove Principal or Management Executive</button>
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-3 section_sub_text border_left_1 border_bottom_1">
-
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Separately email D.O.B</label>
-                        </div>
-                    </div>
-                    <div class="col-5 section_sub_text border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Email</label>
-                            <input type="text" id="BI_Executive_Email" name="BI_Executive_Email">
-                        </div>
-                    </div>
-                    <div class="col-4 section_sub_text border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Ownership Percentage</label>
-                            <input type="text" id="BI_Executive_OwnershipPct" name="BI_Executive_OwnershipPct">
-                        </div>
-                    </div>
-                </div>
-
-                <p class="mt-2">*Stockholders with holdings of 10 percent or more</p>
-                <p>*Chief executive officer, chief operating officer, chief financial officer, or the equivalent of each of these positions and other members
-                    of the Board of Directors
-                </p>
-
-                <div class="row content_right mt-2 mr-2">
-                    <div>
-                        <button>Add Principal or Management Executive</button>
-                    </div>
-                </div>
-
                 <p class="mt-4">
                     For the following, please indicate whom from your organization you would like designated to fulfill these roles. This may or may not be
                     an official title within your organization
@@ -1284,74 +1298,76 @@
                     </strong>
                 </p>
 
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1 border_right_0">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Name of Organization</label>
-                            <input type="text" id="BI_Org_Name" name="BI_Org_Name">
+                <div class="oneToManySec">
+                    <div class="repeatSec mt-4">
+                        <div class="row">
+                            <div class="col-6 section_sub_text border_left_1 border_right_0">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Name of Organization</label>
+                                    <input type="text" id="BI_Org_Name" name="BI_Org_Name">
+                                </div>
+                            </div>
+                            <div class="col-6 section_sub_text border_left_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Relationship to Applicant</label>
+                                    <input type="text" id="BI_Org_Relationship" name="BI_Org_Relationship">
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-6 section_sub_text border_left_1 border_right_0">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Address</label>
+                                    <input type="text" id="BI_Org_Address" name="BI_Org_Address">
+                                </div>
+                            </div>
+                            <div class="col-6 section_sub_text border_left_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Position / Title at other Entity</label>
+                                    <input type="text" id="BI_Org_Title" name="BI_Org_Title">
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-6 section_sub_text border_left_1 border_right_0">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Seller/Servicer Number</label>
+                                    <input type="text" id="BI_Org_SSNo" name="BI_Org_SSNo">
+                                </div>
+                            </div>
+                            <div class="col-6 section_sub_text border_left_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Ownership Percentage of other Entity</label>
+                                    <input type="text" id="BI_Org_OwnershipPct" name="BI_Org_OwnershipPct">
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-6 section_sub_text border_left_1 border_right_0 border_bottom_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Email</label>
+                                    <input type="text" id="BI_Org_Email" name="BI_Org_Email">
+                                </div>
+                            </div>
+                            <div class="col-6 section_sub_text border_left_1 border_bottom_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Web Address</label>
+                                    <input type="text" id="BI_Org_WebAddress" name="BI_Org_WebAddress">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Relationship to Applicant</label>
-                            <input type="text" id="BI_Org_Relationship" name="BI_Org_Relationship">
+                
+                    <div class="row buttonWrp mt-2">
+                        <div class="btnConteiner">
+                            <button class="addRecord">Add Organization</button>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1 border_right_0">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Address</label>
-                            <input type="text" id="BI_Org_Address" name="BI_Org_Address">
+                        <div class="btnConteiner removeBtnWrp mt-2">
+                            <button class="removeRecord">Remove Organization</button>
                         </div>
-                    </div>
-                    <div class="col-6 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Position / Title at other Entity</label>
-                            <input type="text" id="BI_Org_Title" name="BI_Org_Title">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1 border_right_0">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Seller/Servicer Number</label>
-                            <input type="text" id="BI_Org_SSNo" name="BI_Org_SSNo">
-                        </div>
-                    </div>
-                    <div class="col-6 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Ownership Percentage of other Entity</label>
-                            <input type="text" id="BI_Org_OwnershipPct" name="BI_Org_OwnershipPct">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1 border_right_0 border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Email</label>
-                            <input type="text" id="BI_Org_Email" name="BI_Org_Email">
-                        </div>
-                    </div>
-                    <div class="col-6 section_sub_text border_left_1 border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Web Address</label>
-                            <input type="text" id="BI_Org_WebAddress" name="BI_Org_WebAddress">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row content_right mt-2 mr-2">
-                    <div>
-                        <button>Add Organization</button>
-                    </div>
-                </div>
-                <div class="row content_right mt-2 mr-2">
-                    <div>
-                        <button>Remove Organization</button>
                     </div>
                 </div>
             </div>
@@ -1582,41 +1598,46 @@
                 </strong>
             </p>
 
-            <div class="row">
-                <div class="col-12 input_group">
-                    <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BI_CustAcc_Type" name="BI_CustAcc_Type"> P&I</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BI_CustAcc_Type" name="BI_CustAcc_Type"> Escrow</label></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page_content">
-                <div class="row">
-                    <div class="col-6 section_sub_text border_bottom_1 border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Name</label>
-                            <input type="text" id="BI_CustAcc_Name" name="BI_CustAcc_Name">
+            <div class="oneToManySec">
+                <div class="repeatSec">
+                    <div class="row">
+                        <div class="col-12 input_group">
+                            <div class="radio_group_wrp">
+                                <div class="group_item"><label><input type="radio" value="1" id="BI_CustAcc_Type"
+                                            name="BI_CustAcc_Type"> P&I</label></div>
+                                <div class="group_item"><label><input type="radio" value="0" id="BI_CustAcc_Type"
+                                            name="BI_CustAcc_Type"> Escrow</label></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 section_sub_text border_bottom_1 border_right_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Address</label>
-                            <input type="text" id="BI_CustAcc_Address" name="BI_CustAcc_Address">
+            
+                    <div class="page_content">
+                        <div class="row">
+                            <div class="col-6 section_sub_text border_bottom_1 border_left_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Name</label>
+                                    <input type="text" id="BI_CustAcc_Name" name="BI_CustAcc_Name">
+                                </div>
+                            </div>
+                            <div class="col-6 section_sub_text border_bottom_1 border_right_1">
+                                <div class="input_group">
+                                    <label class="font-weight-bold">Address</label>
+                                    <input type="text" id="BI_CustAcc_Address" name="BI_CustAcc_Address">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button>Add Custodial Account</button>
+            
+                <div class="row buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Custodial Account</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Custodial Account</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button>Remove Custodial Account</button>
-                </div>
+            
             </div>
 
 
@@ -1753,75 +1774,78 @@
                 </strong>
             </p>
 
-            <div class="page_content">
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Name</label>
-                            <input type="text" id="BI_WHL_Name" name="BI_WHL_Name">
+            <div class="page_content oneToManySec ">
+            
+                <div class="repeatSec mt-4">
+            
+                    <div class="row">
+                        <div class="col-6 section_sub_text border_left_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Name</label>
+                                <input type="text" id="BI_WHL_Name" name="BI_WHL_Name">
+                            </div>
+                        </div>
+                        <div class="col-6 section_sub_text border_right_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Contact Person</label>
+                                <input type="text" id="BI_WHL_Contact" name="BI_WHL_Contact">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 section_sub_text border_right_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Contact Person</label>
-                            <input type="text" id="BI_WHL_Contact" name="BI_WHL_Contact">
+            
+                    <div class="row">
+                        <div class="col-12 section_sub_text border_left_1 border_left_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Address</label>
+                                <input type="text" id="BI_WHL_Address" name="BI_WHL_Address">
+                            </div>
                         </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-6 section_sub_text border_left_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Telephone Number</label>
+                                <input type="text" id="BI_WHL_Telephone" name="BI_WHL_Telephone">
+                            </div>
+                        </div>
+                        <div class="col-6 section_sub_text border_right_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Credit Limit ($)</label>
+                                <input type="text" id="BI_WHL_CrLimit" name="BI_WHL_CrLimit">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="row">
+                        <div class="col-6 section_sub_text border_left_1 border_bottom_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Email</label>
+                                <input type="text" id="BI_WHL_Email" name="BI_WHL_Email">
+                            </div>
+                        </div>
+                        <div class="col-6 section_sub_text border_right_1 border_bottom_1">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Web Address</label>
+                                <input type="text" id="BI_WHL_WebAddress" name="BI_WHL_WebAddress">
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="row buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Lender</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Lender</button>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 section_sub_text border_left_1 border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Address</label>
-                            <input type="text" id="BI_WHL_Address" name="BI_WHL_Address">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Telephone Number</label>
-                            <input type="text" id="BI_WHL_Telephone" name="BI_WHL_Telephone">
-                        </div>
-                    </div>
-                    <div class="col-6 section_sub_text border_right_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Credit Limit ($)</label>
-                            <input type="text" id="BI_WHL_CrLimit" name="BI_WHL_CrLimit">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-6 section_sub_text border_left_1 border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Email</label>
-                            <input type="text" id="BI_WHL_Email" name="BI_WHL_Email">
-                        </div>
-                    </div>
-                    <div class="col-6 section_sub_text border_right_1 border_bottom_1">
-                        <div class="input_group">
-                            <label  class="font-weight-bold">Web Address</label>
-                            <input type="text" id="BI_WHL_WebAddress" name="BI_WHL_WebAddress">
-                        </div>
-                    </div>
-                </div>
-
+            
             </div>
-
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button>Add Lender</button>
-                </div>
-            </div>
-
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button>Remove Lender</button>
-                </div>
-            </div>
+            
 
             <div class="row justify-content-center section_header mt-2">Exceptions</div>
 
@@ -2248,7 +2272,8 @@
             </p>
 
 
-            <div class="page_content">
+            <div class="page_content oneToManySec">
+            
                 <div class="row">
                     <div class="col-3 section_sub_text border_left_1">
                         <label>Amount</label>
@@ -2257,30 +2282,29 @@
                         <label>Type and Explanation</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-3 section_sub_text border_left_1 border_bottom_1">
-                        <label>$ &nbsp;</label>
-                        <input type="text" class="text1" id="BI_ContLiabilities_Amount" name="BI_ContLiabilities_Amount">
+                <div class="repeatSec">
+                    <div class="row">
+                        <div class="col-3 section_sub_text border_left_1 border_bottom_1">
+                            <label>$ &nbsp;</label>
+                            <input type="text" class="text1" id="BI_ContLiabilities_Amount" name="BI_ContLiabilities_Amount">
+                        </div>
+                        <div class="col-9 section_sub_text border_bottom_1">
+                            <input type="text" class="text3" id="BI_ContLiabilities_Explain" name="BI_ContLiabilities_Explain">
+                        </div>
                     </div>
-                    <div class="col-9 section_sub_text border_bottom_1">
-                        <input type="text" class="text3" id="BI_ContLiabilities_Explain" name="BI_ContLiabilities_Explain">
+                </div>
+            
+                <div class="row buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Contingent Liabilities</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Contingent Liabilities</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button>Add Contingent Liabilities</button>
-                </div>
-            </div>
-
-            <div class="row content_right mt-2 mr-2">
-                <div>
-                    <button>Remove Contingent Liabilities</button>
-                </div>
-            </div>
-
-
+           
             <div class="row justify-content-center section_header mt-4">Audit Report</div>
 
             <div class="row">
@@ -3601,6 +3625,43 @@
                         elementId = newID + repeatSec.length;
                         $(this).attr({'id': elementId , 'name':elementId });
                     }                      
+                });
+
+                $(dupElement).find(':radio').each(function(){
+                    var elementId = $(this).attr('id');
+                    var elementName = $(this).attr('name');
+                    var idSplitArr = elementId.split('_');
+                    var nameSplitArr = elementName.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_Id_"+ 1;
+                        elementName = elementName+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementName });
+                    }else{
+
+                        var newID = "";
+                        var newName = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        nameSplitArr[nameSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        nameSplitArr.forEach(function (value, index, array) {
+                            if(index < nameSplitArr.length - 1){
+                                newName = newName.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        elementName = newName + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementName });
+                    }   
+                    
+                    $(this).prop("checked", false)
                 });
                 
                 $(repeatSec[repeatSec.length - 1]).after(dupElement);
