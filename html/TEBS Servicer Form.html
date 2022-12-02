@@ -827,8 +827,8 @@ required to submit Form 1055, Mortgage Bankers Financial Reporting Form, after t
                 </div>
                 <div class="if_yes page_data_row">
                     <label class="font-weight-bold">Please complete chart below, add additional sheets if necessary.</label>
-                    <div class="oneToMany_content_wrp">
-                        <div class="data_table">
+                    <div class="oneToManySec">
+                        <div class="repeatSec data_table mt-4">
                             <div class="table_row text_center_align text_bold">
                                 <div class="col-6 table_cell">
                                     <div class="input_group_inline page_data_row ">
@@ -893,17 +893,19 @@ required to submit Form 1055, Mortgage Bankers Financial Reporting Form, after t
                                         <input type="text" id="TEBS_PermMFMtg_PortfolioPCT" name="TEBS_PermMFMtg_PortfolioPCT">
                                     </div>
                                 </div>
-                            </div>
-                
+                            </div>                
                             
                         </div>
-                        <div class="flex_wrp content_right mt-2">
-                            <button>Add Sheet</button>
-                
+
+                        <div class="buttonWrp mt-2 ">
+                            <div class="btnConteiner">
+                                <button class="addRecord">Add Sheet</button>
+                            </div>
+                            <div class="btnConteiner removeBtnWrp mt-2">
+                                <button class="removeRecord">Remove Sheet</button>
+                            </div>
                         </div>
-                        <div class="flex_wrp content_right mt-2">
-                            <button>Remove Sheet</button>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -916,8 +918,9 @@ required to submit Form 1055, Mortgage Bankers Financial Reporting Form, after t
                 </div>
                 <div class="if_yes page_data_row">
                     <label class="font-weight-bold">Please complete chart below, add additional sheets if necessary.</label>
-                    <div class="oneToMany_content_wrp">
-                        <div class="data_table">
+                    <div class="oneToManySec">
+
+                        <div class="repeatSec data_table mt-4">
                             <div class="table_row text_center_align text_bold">
                                 <div class="col-6 table_cell">
                                     <div class="input_group_inline page_data_row ">
@@ -982,17 +985,18 @@ required to submit Form 1055, Mortgage Bankers Financial Reporting Form, after t
                                         <input type="text" id="TEBS_PermComMtg_PortfolioPCT" name="TEBS_PermComMtg_PortfolioPCT">
                                     </div>
                                 </div>
-                            </div>
-                
+                            </div>                
                             
                         </div>
-                        <div class="flex_wrp content_right mt-2">
-                            <button>Add Sheet</button>
-                
+                        <div class="buttonWrp mt-2 ">
+                            <div class="btnConteiner">
+                                <button class="addRecord">Add Sheet</button>
+                            </div>
+                            <div class="btnConteiner removeBtnWrp mt-2">
+                                <button class="removeRecord">Remove Sheet</button>
+                            </div>
                         </div>
-                        <div class="flex_wrp content_right mt-2">
-                            <button>Remove Sheet</button>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1221,8 +1225,8 @@ administration, default management (delinquency and foreclosure), REO servicing,
 TEBS.
             </p>
 
-            <div class="oneToMany_content_wrp">
-                <div class="data_table">
+            <div class="oneToManySec">
+                <div class="data_table repeatSec mt-4">
                     <div class="table_row text_bold">
                         <div class="col-6 table_cell input_group">
                            <label class="font-weight-bold">Name</label>
@@ -1250,11 +1254,13 @@ TEBS.
                        </div>
                     </div>
                 </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add personal</button>        
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Personal</button>
+                <div class="buttonWrp mt-2 ">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Personnel</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Personnel</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1720,8 +1726,8 @@ October 31. The mortgage would be considered 60 days (2 payments) delinquent if 
 SBL multifamily servicing operations.
             </p>
 
-            <div class="oneToMany_content_wrp">
-               <div class="data_table">
+            <div class="oneToManySec">
+               <div class="data_table repeatSec mt-4">
                    <div class="table_row text_bold">
                        <div class="col-8 table_cell input_group">
                           <label class="font-weight-bold">Name</label>
@@ -1741,21 +1747,169 @@ SBL multifamily servicing operations.
                        </div>
                    </div>
                </div>
-               <div class="flex_wrp content_right mt-2">
-                   <button>Add Servicing Contact</button>        
-               </div>
-               <div class="flex_wrp content_right mt-2">
-                   <button>Remove Servicing Contact</button>
-               </div>
+               
+               <div class="buttonWrp mt-2 ">
+                <div class="btnConteiner">
+                    <button class="addRecord">Add Servicing Contact</button>
+                </div>
+                <div class="btnConteiner removeBtnWrp mt-2">
+                    <button class="removeRecord">Remove Servicing Contact</button>
+                </div>
+                </div>
            </div>
         
+        </div>
+
+        <div class="content_right flex_wrp mt-4 mb-2">
+            <button type="submit" value="Submit Form" class="saveFloat">Save Form</button>
         </div>
 
     </section>
 
 
     <script src="../Js/jquery-3.6.1.min.js"></script>
-    <script src="../Js/mes_form.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('input[type="radio"]').click(function(){
+                if ($(this).is(':checked'))
+                {
+                    var parent = $(this).parents(".input_group");
+                    
+                    if($(this).val() == 1){
+                        parent.find(".if_yes").css("display", "block");
+                        parent.find(".if_no").css("display", "none");
+                        parent.find(".input_wrp").css("display", "block");
+                    }else if($(this).val() == 0){
+                        parent.find(".if_yes").css("display", "none");
+                        parent.find(".if_no").css("display", "block");
+                        parent.find(".input_wrp").css("display", "block");
+                         
+                    }                    
+                }
+            });
+
+             // ------------ Repeate sections Js  -----------------
+
+             $(".addRecord").on("click", function(e){
+                var parentWrp = $(this).closest(".oneToManySec");
+                var repeatSec= $(parentWrp).find(".repeatSec");
+                var dupElement = $(repeatSec[repeatSec.length - 1]).clone();
+                
+                $(dupElement).find(':text').each(function(){
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
+                    }else{
+
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }   
+                    
+                    $(this).val('');
+                });
+
+                $(dupElement).find('select').each(function(){
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
+                    }else{
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }                      
+                });
+
+                $(dupElement).find(':radio').each(function(){
+                    var elementId = $(this).attr('id');
+                    var elementName = $(this).attr('name');
+                    var idSplitArr = elementId.split('_');
+                    var nameSplitArr = elementName.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_Id_"+ 1;
+                        elementName = elementName+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementName });
+                    }else{
+
+                        var newID = "";
+                        var newName = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        nameSplitArr[nameSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        nameSplitArr.forEach(function (value, index, array) {
+                            if(index < nameSplitArr.length - 1){
+                                newName = newName.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        elementName = newName + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementName });
+                    }   
+                    
+                    $(this).prop("checked", false)
+                });
+                
+                $(repeatSec[repeatSec.length - 1]).after(dupElement);
+
+                if($(parentWrp).find(".repeatSec").length > 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','block');
+                }                
+
+                e.preventDefault();
+            });
+
+            // ------------ Remove Record button -----------
+
+            $(".removeRecord").on("click", function(e){
+                var parentWrp = $(this).closest(".oneToManySec");
+                var repeatSec= $(parentWrp).find(".repeatSec");
+                if(repeatSec.length > 1){                    
+                    $(repeatSec).last().remove();                    
+                }
+
+                if($(parentWrp).find(".repeatSec").length <= 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','none');
+                }
+
+                e.preventDefault();
+            
+            });
+
+
+        });
+
+    </script>
 
 </body>
 </html>

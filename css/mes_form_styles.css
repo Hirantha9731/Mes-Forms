@@ -200,14 +200,18 @@
     /* border: solid black 1px ; */
     border-bottom: solid black 1px;
     padding: 10px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .page_content_wrapper .applicant_table:last-child{
     border-bottom: none;
 }
 
-.page_content_wrapper .table_header,table th{
+.page_content_wrapper table{
+    width: 100%;
+}
+
+.page_content_wrapper .table_header,.page_content_wrapper table th{
     font-weight: bold;
     font-size: 12px;
     text-decoration: underline;
@@ -296,7 +300,7 @@
     background-color:white;
 }
 
-.page_content_wrapper .input_group input[type="date"],
+.page_content_wrapper .input_group input[type="date"]:focus,
 .page_content_wrapper .input_group input[type="text"]:focus {
     background-color:white;
 }
