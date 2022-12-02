@@ -233,7 +233,7 @@ underwriting functions for SBL multifamily and mortgages.
         </div>
 
         <div class="page_content">
-            <div class="oneToMany_content_wrp">
+            <div class="oneToManySec">
                 <div class="data_table">
                     <div class="table_row text_center_align text_bold">
                         <div class="col-3 table_cell">Name</div>
@@ -242,20 +242,23 @@ underwriting functions for SBL multifamily and mortgages.
                         <div class="col-3 table_cell">Years of experience</div>
                     </div>
         
-                    <div class="table_row">
+                    <div class="repeatSec table_row">
                         <div class="col-3 table_cell input_group"><input type="text" id="SBL_OrigUW_Name" name="SBL_OrigUW_Name"></div>
                         <div class="col-3 table_cell input_group"><input type="text" id="SBL_OrigUW_Title" name="SBL_OrigUW_Title"></div>
                         <div class="col-3 table_cell input_group"><input type="text" id="SBL_OrigUW_ApplYrs" name="SBL_OrigUW_ApplYrs"></div>
                         <div class="col-3 table_cell input_group"><input type="text" id="SBL_OrigUW_ExpYrs" name="SBL_OrigUW_ExpYrs"></div>
                     </div>
                 </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add Personnel</button>
-        
+                
+                <div class="row buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Personnel</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Personnel</button>
+                    </div>
                 </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Personnel</button>
-                </div>
+
             </div>
         </div>
 
@@ -363,7 +366,7 @@ conventional multifamily and commercial mortgages.
         </div>
 
         <div class="page_content">
-            <div class="oneToMany_content_wrp">
+            <div class="oneToManySec">
                 <div class="data_table">
                     <div class="table_row text-center text_bold">
                         <div class="col-2 table_cell">Name</div>
@@ -374,7 +377,7 @@ conventional multifamily and commercial mortgages.
                         <div class="col-2 table_cell">Years of default management experience</div>
                     </div>
         
-                    <div class="table_row">
+                    <div class="repeatSec table_row">
                         <div class="col-2 table_cell input_group"><input type="text" id="SBL_SvcPersonnel_Name" name="SBL_SvcPersonnel_Name"></div>
                         <div class="col-2 table_cell input_group"><input type="text" id="SBL_SvcPersonnel_Title" name="SBL_SvcPersonnel_Title"></div>
                         <div class="col-2 table_cell input_group"><input type="text" id="SBL_SvcPersonnel_Email" name="SBL_SvcPersonnel_Email"></div>
@@ -383,11 +386,14 @@ conventional multifamily and commercial mortgages.
                         <div class="col-2 table_cell input_group"><input type="text" id="SBL_SvcPersonnel_DMExpYrs" name="SBL_SvcPersonnel_DMExpYrs"></div>
                     </div>
                 </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add Servicing Personnel</button>        
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Servicing Personnel</button>
+                
+                <div class="row buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Servicing Personnel</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Servicing Personnel</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -889,8 +895,8 @@ October 31. The mortgage would be considered 60 days (two payments) delinquent i
 SBL multifamily servicing operations.
              </p>
 
-             <div class="oneToMany_content_wrp">
-                <div class="data_table">
+             <div class="oneToManySec">
+                <div class="repeatSec data_table mt-4">
                     <div class="table_row text_bold">
                         <div class="col-8 table_cell input_group">
                            <label class="font-weight-bold">Name</label>
@@ -918,11 +924,14 @@ SBL multifamily servicing operations.
                        </div>
                     </div>
                 </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Add Servicing Contact</button>        
-                </div>
-                <div class="flex_wrp content_right mt-2">
-                    <button>Remove Servicing Contact</button>
+                
+                <div class="buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Servicing Contact</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Servicing Contact</button>
+                    </div>
                 </div>
             </div>
          
@@ -937,8 +946,8 @@ SBL multifamily servicing operations.
                 Please list the names, titles and telephone numbers of firms/attorneys and title companies used for loan closings.
               </p>
  
-              <div class="oneToMany_content_wrp">
-                 <div class="data_table">
+              <div class="oneToManySec">
+                 <div class="repeatSec data_table mt-4">
                      <div class="table_row text_bold">
                          <div class="col-8 table_cell input_group">
                             <label class="font-weight-bold">Name</label>
@@ -966,12 +975,16 @@ SBL multifamily servicing operations.
                         </div>
                      </div>
                  </div>
-                 <div class="flex_wrp content_right mt-2">
-                     <button>Add Attorneys</button>        
-                 </div>
-                 <div class="flex_wrp content_right mt-2">
-                     <button>Remove Attorneys</button>
-                 </div>
+                 
+                 <div class="buttonWrp mt-2 mr-2">
+                    <div class="btnConteiner">
+                        <button class="addRecord">Add Attorneys</button>
+                    </div>
+                    <div class="btnConteiner removeBtnWrp mt-2">
+                        <button class="removeRecord">Remove Attorneys</button>
+                    </div>
+                </div>
+
              </div>
           
           </div>
@@ -1000,6 +1013,125 @@ SBL multifamily servicing operations.
                     }                    
                 }
             });
+
+             // ------------ Repeate sections Js  -----------------
+
+             $(".addRecord").on("click", function(e){
+                var parentWrp = $(this).closest(".oneToManySec");
+                var repeatSec= $(parentWrp).find(".repeatSec");
+                var dupElement = $(repeatSec[repeatSec.length - 1]).clone();
+                
+                $(dupElement).find(':text').each(function(){
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
+                    }else{
+
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }   
+                    
+                    $(this).val('');
+                });
+
+                $(dupElement).find('select').each(function(){
+                    var elementId = $(this).attr('id');
+                    var idSplitArr = elementId.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementId });
+                    }else{
+                        var newID = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementId });
+                    }                      
+                });
+
+                $(dupElement).find(':radio').each(function(){
+                    var elementId = $(this).attr('id');
+                    var elementName = $(this).attr('name');
+                    var idSplitArr = elementId.split('_');
+                    var nameSplitArr = elementName.split('_');
+                    var dupNum = idSplitArr[idSplitArr.length - 1]
+                    
+                    if(isNaN(dupNum) || dupNum == undefined){ 
+                        elementId = elementId+"_Id_"+ 1;
+                        elementName = elementName+"_"+ 1;
+                        $(this).attr({'id': elementId , 'name' : elementName });
+                    }else{
+
+                        var newID = "";
+                        var newName = "";
+                        idSplitArr[idSplitArr.length - 1] = "";
+                        nameSplitArr[nameSplitArr.length - 1] = "";
+                        idSplitArr.forEach(function (value, index, array) {
+                            if(index < idSplitArr.length - 1){
+                                newID = newID.concat(value , "_");
+                            }                            
+                        });
+
+                        nameSplitArr.forEach(function (value, index, array) {
+                            if(index < nameSplitArr.length - 1){
+                                newName = newName.concat(value , "_");
+                            }                            
+                        });
+
+                        elementId = newID + repeatSec.length;
+                        elementName = newName + repeatSec.length;
+                        $(this).attr({'id': elementId , 'name':elementName });
+                    }   
+                    
+                    $(this).prop("checked", false)
+                });
+                
+                $(repeatSec[repeatSec.length - 1]).after(dupElement);
+
+                if($(parentWrp).find(".repeatSec").length > 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','block');
+                }                
+
+                e.preventDefault();
+            });
+
+            // ------------ Remove Record button -----------
+
+            $(".removeRecord").on("click", function(e){
+                var parentWrp = $(this).closest(".oneToManySec");
+                var repeatSec= $(parentWrp).find(".repeatSec");
+                if(repeatSec.length > 1){                    
+                    $(repeatSec).last().remove();                    
+                }
+
+                if($(parentWrp).find(".repeatSec").length <= 1){
+                    $(parentWrp).find(".removeBtnWrp").css('display','none');
+                }
+
+                e.preventDefault();
+            
+            });
+
+
         });
 
     </script>
