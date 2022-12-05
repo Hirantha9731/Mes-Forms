@@ -11,7 +11,20 @@ $(document).ready(function () {
             } else if ($(this).val() == 0) {
                 parent.find(".if_yes").css("display", "none");
                 parent.find(".if_no").css("display", "block");
+            } else if ($(this).val() == 10){
+                parent.find(".if_other_checked").css("display", "none");
+            } else if ($(this).val() == 20){
+                parent.find(".if_other_checked").css("display", "none");
+            } else if ($(this).val() == 30){
+                parent.find(".if_other_checked").css("display", "none");
+            } else if ($(this).val() == 40){
+                parent.find(".if_other_checked").css("display", "none");
+            } else if ($(this).val() == 50){
+                parent.find(".if_other_checked").css("display", "none");
+            } else if ($(this).val() == 60){
+                parent.find(".if_other_checked").css("display", "block");
             }
+
             parent.find(".explainArea").css("display", "block");
         }
     });

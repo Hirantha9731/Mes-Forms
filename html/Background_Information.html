@@ -575,68 +575,39 @@
                 </div>
 
                 <div class="col-6 section_sub_text border_right_0 flex_wrp">
-                    <div class="col-12">
+                    <div class="col-12 input_group">
                         <strong>Check the legal entity type:</strong>
                     </div>
-                    <div class="checkbox_parent_input_group">
-                        <div class="col-3">
 
-                            <div class="checkBox_wrp">
-                                <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Corp"
-                                    name="BI_LegalEntity_Corp">
-                                <label>
-                                    Corporation
-                                </label>
-                            </div>
-                            <div class="checkBox_wrp">
-                                <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Ptnship"
-                                    name="BI_LegalEntity_Ptnship">
-                                <label>
-                                    Partnership
-                                </label>
-                            </div>
-
-                            <div class="checkbox_input_group">
-                                <div class="checkBox_wrp">
-                                    <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Other"
-                                        name="BI_LegalEntity_Other">
-                                    <label>
-                                        Other
-                                    </label>
-                                </div>
-                                <div class="if_check">
-                                    <label class="font-weight-bold">Please Explain</label>
-                                    <input type="text" id="BI_LegalEntity_Other_Explain"
-                                        name="BI_LegalEntity_Other_Explain">
-                                </div>
-                            </div>
+                    <div class="radio_group_wrp">
+                        <div class="group_item">
+                            <input type="radio" value="10" id="BI_LegalEntity_Corp" name="BI_LegalEntity">
+                            <label> Corporation</label>
                         </div>
-
-
-                        <div class="col-5">
-                            <div class="checkBox_wrp">
-                                <input type="checkbox" class="radioCheck" id="BI_LegalEntity_Propship"
-                                    name="BI_LegalEntity_Propship">
-                                <label>
-                                    Proprietorship
-                                </label>
-                            </div>
-                            <div class="checkBox_wrp">
-                                <input type="checkbox" class="radioCheck" id="BI_LegalEntity_LP"
-                                    name="BI_LegalEntity_LP">
-                                <label>
-                                    Limited Partnership
-                                </label>
-                            </div>
-                            <div class="checkBox_wrp">
-                                <input type="checkbox" class="radioCheck" id="BI_LegalEntity_LLC"
-                                    name="BI_LegalEntity_LLC">
-                                <label>
-                                    Limited Liability Company
-                                </label>
-                            </div>
+                        <div class="group_item">
+                            <input type="radio" value="20" id="BI_LegalEntity_Ptnship" name="BI_LegalEntity">
+                            <label> Partnership</label>
                         </div>
-                        </span>
+                        <div class="group_item">
+                            <input type="radio" value="30" id="BI_LegalEntity_Propship" name="BI_LegalEntity">
+                            <label> Proprietorship</label>
+                        </div>
+                        <div class="group_item">
+                            <input type="radio" value="40" id="BI_LegalEntity_LP" name="BI_LegalEntity">
+                            <label> Limited Partnership</label>
+                        </div>
+                        <div class="group_item">
+                            <input type="radio" value="50" id="BI_LegalEntity_LLC" name="BI_LegalEntity">
+                            <label> Limited Liability Company</label>
+                        </div>
+                        <div class="group_item">
+                            <input type="radio" value="60" id="BI_LegalEntity_Other" name="BI_LegalEntity">
+                            <label> Other</label>
+                        </div>
+                        <div class="if_other_checked">
+                            <label class="font-weight-bold">Please Explain</label>
+                            <input type="text" id="BI_LegalEntity_Other_Explain" name="BI_ControlContract_Explain">
+                        </div>
                     </div>
                 </div>
             </div>
