@@ -574,40 +574,45 @@
                     </div>
                 </div>
 
-                <div class="col-6 section_sub_text border_right_0 flex_wrp">
-                    <div class="col-12 input_group">
-                        <strong>Check the legal entity type:</strong>
+                <div class="col-6 section_sub_text input_group border_right_0 ">
+                    <div class="col-12 ">
+                        <p><strong>Check the legal entity type:</strong></p>
                     </div>
 
-                    <div class="radio_group_wrp">
-                        <div class="group_item">
-                            <input type="radio" value="10" id="BI_LegalEntity_Corp" name="BI_LegalEntity">
-                            <label> Corporation</label>
+                    <div class="radio_group_wrp col-12 padding_lr_0">
+                        <div class="col-6">
+                            <div class="group_item">
+                                <label><input type="radio" value="10" id="BI_LegalEntity_Corp" name="BI_LegalEntity">
+                                 Corporation</label>
+                            </div>
+                            <div class="group_item">
+                                <label><input type="radio" value="20" id="BI_LegalEntity_Ptnship" name="BI_LegalEntity">
+                                 Partnership</label>
+                            </div>
+                            <div class="group_item">
+                                <label><input type="radio" value="30" id="BI_LegalEntity_Propship" name="BI_LegalEntity">
+                                 Proprietorship</label>
+                            </div>
                         </div>
-                        <div class="group_item">
-                            <input type="radio" value="20" id="BI_LegalEntity_Ptnship" name="BI_LegalEntity">
-                            <label> Partnership</label>
+                        
+                        <div class="col-6">
+                            <div class="group_item">
+                            <label><input type="radio" value="40" id="BI_LegalEntity_LP" name="BI_LegalEntity">
+                             Limited Partnership</label>
+                            </div>
+                            <div class="group_item">
+                                <label><input type="radio" value="50" id="BI_LegalEntity_LLC" name="BI_LegalEntity">
+                                 Limited Liability Company</label>
+                            </div>
+                            <div class="group_item">
+                                <label><input type="radio" value="Other" id="BI_LegalEntity_Other" name="BI_LegalEntity">
+                                 Other</label>
+                            </div>
                         </div>
-                        <div class="group_item">
-                            <input type="radio" value="30" id="BI_LegalEntity_Propship" name="BI_LegalEntity">
-                            <label> Proprietorship</label>
-                        </div>
-                        <div class="group_item">
-                            <input type="radio" value="40" id="BI_LegalEntity_LP" name="BI_LegalEntity">
-                            <label> Limited Partnership</label>
-                        </div>
-                        <div class="group_item">
-                            <input type="radio" value="50" id="BI_LegalEntity_LLC" name="BI_LegalEntity">
-                            <label> Limited Liability Company</label>
-                        </div>
-                        <div class="group_item">
-                            <input type="radio" value="60" id="BI_LegalEntity_Other" name="BI_LegalEntity">
-                            <label> Other</label>
-                        </div>
-                        <div class="if_other_checked">
-                            <label class="font-weight-bold">Please Explain</label>
-                            <input type="text" id="BI_LegalEntity_Other_Explain" name="BI_ControlContract_Explain">
-                        </div>
+                    </div>
+                    <div class="col-12 if_other">
+                        <label class="font-weight-bold">Please Explain</label>
+                        <input type="text" id="BI_LegalEntity_Other_Explain" name="BI_ControlContract_Explain">
                     </div>
                 </div>
             </div>
@@ -3822,6 +3827,12 @@
                     } else if ($(this).val() == 0) {
                         parent.find(".if_yes").css("display", "none");
                         parent.find(".if_no").css("display", "block");
+                    } else if ($(this).val() == "Other") {
+                        parent.find(".if_other").css("display", "block");
+                        // parent.find(".if_no").css("display", "none");
+                    }
+                    else{
+                        parent.find(".if_other").css("display", "none");
                     }
                 }
             });
