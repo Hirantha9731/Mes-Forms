@@ -872,13 +872,21 @@
                     } else if ($(this).val() == 0) {
                         parent.find(".if_yes").css("display", "none");
                         parent.find(".if_no").css("display", "block");
+                    } else if ($(this).val() == "Other") {
+                        parent.find(".if_other").css("display", "block");
                     }
+                    else {
+                        parent.find(".if_other").css("display", "none");
+                    }
+
+                    parent.find(".input_wrp").css("display", "block");
                 }
             });
 
 
             // ------------ Repeate sections Js  -----------------
 
+            // ------------ Add Record button -----------
             $(".addRecord").on("click", function(e){
                 var parentWrp = $(this).closest(".oneToManySec");
                 var repeatSec= $(parentWrp).find(".repeatSec");
@@ -938,8 +946,7 @@
                     $(parentWrp).find(".removeBtnWrp").css('display','block');
                 }                
 
-                e.preventDefault();
-                
+                e.preventDefault();                
                 
             });
 
