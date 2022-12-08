@@ -964,31 +964,31 @@
             // -------------- LIHTC JS ----------------
 
             $(document).on("focusout", ".GrossEq", function(e) {
-               $("#totalGrossEquity").val(ColumnCalc(this));                  
+               $("#totalGrossEquity").val(ColumnCalc(this, "" , 2));                  
             });
 
             $(document).on("focusout", ".FinalClosing", function(e) {
-                $("#totalFinalClosing").val(ColumnCalc(this));    
+                $("#totalFinalClosing").val(ColumnCalc(this , "" , 2));    
             });
 
             $(document).on("focusout", ".IRRF", function(e) {
-                $("#totalIrrForecasted").val(ColumnCalc(this));    
+                $("#totalIrrForecasted").val(ColumnCalc(this , "%" , 0));    
             });
 
             $(document).on("focusout", ".IRRC", function(e) {
-                $("#totalIrrCurrent").val(ColumnCalc(this));    
+                $("#totalIrrCurrent").val(ColumnCalc(this , "%" , 0));    
             });
 
             $(document).on("focusout", ".TCF", function(e) {
-                $("#netTotalCreditForecast").val(ColumnCalc(this));    
+                $("#netTotalCreditForecast").val(ColumnCalc(this , "$" , 0));    
             });
 
             $(document).on("focusout", ".TCT", function(e) {
-                $("#netTotalCreditCurrent").val(ColumnCalc(this));  
+                $("#netTotalCreditCurrent").val(ColumnCalc(this , "$" , 0));  
             });
             
 
-            function ColumnCalc(selector){
+            function ColumnCalc(selector, format = '', decimalPlaces = 0){
                 var ObName = $(selector).prop("className");
                 var selectObject =  $(".FundPerf_table").find("."+ObName);
                 var total = 0 ;
@@ -999,6 +999,20 @@
                         total = value + parseFloat(total);
                     } 
                 });
+
+                total = total.toFixed(decimalPlaces);
+                
+                switch (format) {
+                case "$":
+                    total = "$"+total;
+                    break;
+                case "%":
+                total = total + "%";
+                    break;
+                default:
+                total = total + "";
+                }
+                
                 return total;
             }         
 
