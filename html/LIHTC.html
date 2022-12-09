@@ -459,7 +459,7 @@
                             </div>
                             <div class="col-2 table_cell">
                                 <div class="input_group">
-                                    <input type="text" id="totalFinalClosing">
+                                    <input type="text"  id="totalFinalClosing">
                                 </div>
                             </div>
                             <div class="col-2 table_cell">
@@ -474,7 +474,7 @@
                             </div>
                             <div class="col-1 table_cell">
                                 <div class="input_group">
-                                    <input type="text" id="netTotalCreditForecast">
+                                    <input type="text"  id="netTotalCreditForecast">
                                 </div>
                             </div>
                             <div class="col-1 table_cell">
@@ -879,7 +879,7 @@
                         parent.find(".if_other").css("display", "none");
                     }
 
-                    parent.find(".input_wrp").css("display", "block");
+                    parent.find(".explainArea").css("display", "block");
                 }
             });
 
@@ -969,6 +969,12 @@
 
             
             // -------------- LIHTC JS ----------------
+            $("#totalGrossEquity").val(ColumnCalc(".GrossEq", "" , 2)); 
+            $("#totalFinalClosing").val(ColumnCalc(".FinalClosing" , "" , 2)); 
+            $("#totalIrrForecasted").val(ColumnCalc(".IRRF" , "%" , 0)); 
+            $("#totalIrrCurrent").val(ColumnCalc(".IRRC" , "%" , 0));
+            $("#netTotalCreditForecast").val(ColumnCalc(".TCF", "$" , 0));
+            $("#netTotalCreditCurrent").val(ColumnCalc(".TCT" , "$" , 0));
 
             $(document).on("focusout", ".GrossEq", function(e) {
                $("#totalGrossEquity").val(ColumnCalc(this, "" , 2));                  
@@ -999,7 +1005,6 @@
                 var ObName = $(selector).prop("className");
                 var selectObject =  $(".FundPerf_table").find("."+ObName);
                 var total = 0 ;
-
                 selectObject.each(function(i,e){
                     var value = parseFloat($(e).val());
                     if(!isNaN(value) ){

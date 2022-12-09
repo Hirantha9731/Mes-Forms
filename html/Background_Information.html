@@ -27,113 +27,119 @@
 
             <p class="mt-2">Is the applicant an existing Freddie Mac Multifamily Seller/Servicer or a new applicant?</p>
 
-            <div class="row">
-                <div class="col-6">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_SellerStatus" name="BI_SellerStatus">
-                        <label>
-                            Existing Seller/Servicer (check all that apply and include Seller/Servicer number)
-                        </label>
+            <div class="input_group padding_tb_15">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="radio_group_wrp">
+                            <label>
+                            <input type="radio" value="1" id="BI_SellerStatus" name="BI_SellerStatus">
+                            
+                                Existing Seller/Servicer (check all that apply and include Seller/Servicer number)
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="col-4">
+                        <div class="radio_group_wrp">
+                            <label>
+                            <input type="radio" value="0" id="BI_SellerStatus" name="BI_SellerStatus">
+                            
+                                New Applicant
+                            </label>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-4">
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_SellerStatus" name="BI_SellerStatus">
-                        <label>
-                            New Applicant
-                        </label>
+            
+                <div class="if_yes">
+                    <div class="row mt-4">
+            
+                        <div class="col-3">
+                            Conventional Seller/Servicer
+                        </div>
+            
+                        <div class="col-2">
+                            <input type="checkbox" id="BI_Conv" name="BI_Conv">
+                        </div>
+            
+                        <div class="col-2 text_right_align">
+                            Seller/Servicer No.:
+                        </div>
+            
+                        <div class="col-4">
+                            <input type="text" id="BI_SSNo_1" name="BI_SSNo_1" class="SellerServicer_text">
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-
-                <div class="col-3">
-                    Conventional Seller/Servicer
-                </div>
-
-                <div class="col-2">
-                    <input type="checkbox" id="BI_Conv" name="BI_Conv">
-                </div>
-
-                <div class="col-2 text_right_align">
-                    Seller/Servicer No.:
-                </div>
-
-                <div class="col-4">
-                    <input type="text" id="BI_SSNo_1" name="BI_SSNo_1" class="SellerServicer_text">
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-3">
-                    Targeted Affordable Housing Seller/Servicer
-                </div>
-
-                <div class="col-2">
-                    <input type="checkbox" id="BI_TAH" name="BI_TAH">
-                </div>
-
-                <div class="col-2 text_right_align">
-                    Seller/Servicer No.:
-                </div>
-
-                <div class="col-4">
-                    <input type="text" id="BI_SSNo_2" name="BI_SSNo_2" class="SellerServicer_text">
-
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-3">
-                    Structured Transaction Seller and/or Servicer
-                </div>
-
-                <div class="col-2">
-                    <input type="checkbox" id="BI_STS" name="BI_STS">
-                </div>
-
-                <div class="col-2 text_right_align">
-                    Seller/Servicer No.:
-                </div>
-
-                <div class="col-4">
-                    <input type="text" id="BI_SSNo_3" name="BI_SSNo_3" class="SellerServicer_text">
-
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-3">
-                    Small Balance Loans Seller/Servicer
-                </div>
-
-                <div class="col-2">
-                    <input type="checkbox" id="BI_SBL" name="BI_SBL">
-                </div>
-
-                <div class="col-2 text_right_align">
-                    Seller/Servicer No.:
-                </div>
-
-                <div class="col-4">
-                    <input type="text" id="BI_SSNo_4" name="BI_SSNo_4" class="SellerServicer_text">
-
-                </div>
-            </div>
-
-            <div class="row mb-2">
-
-                <div class="col-3">
-                    LIHTC Syndicator
-                </div>
-
-                <div class="col-2">
-                    <input type="checkbox" id="BI_LIHTC" name="BI_LIHTC">
+            
+                    <div class="row">
+            
+                        <div class="col-3">
+                            Targeted Affordable Housing Seller/Servicer
+                        </div>
+            
+                        <div class="col-2">
+                            <input type="checkbox" id="BI_TAH" name="BI_TAH">
+                        </div>
+            
+                        <div class="col-2 text_right_align">
+                            Seller/Servicer No.:
+                        </div>
+            
+                        <div class="col-4">
+                            <input type="text" id="BI_SSNo_2" name="BI_SSNo_2" class="SellerServicer_text">
+            
+                        </div>
+                    </div>
+            
+                    <div class="row">
+            
+                        <div class="col-3">
+                            Structured Transaction Seller and/or Servicer
+                        </div>
+            
+                        <div class="col-2">
+                            <input type="checkbox" id="BI_STS" name="BI_STS">
+                        </div>
+            
+                        <div class="col-2 text_right_align">
+                            Seller/Servicer No.:
+                        </div>
+            
+                        <div class="col-4">
+                            <input type="text" id="BI_SSNo_3" name="BI_SSNo_3" class="SellerServicer_text">
+            
+                        </div>
+                    </div>
+            
+                    <div class="row">
+            
+                        <div class="col-3">
+                            Small Balance Loans Seller/Servicer
+                        </div>
+            
+                        <div class="col-2">
+                            <input type="checkbox" id="BI_SBL" name="BI_SBL">
+                        </div>
+            
+                        <div class="col-2 text_right_align">
+                            Seller/Servicer No.:
+                        </div>
+            
+                        <div class="col-4">
+                            <input type="text" id="BI_SSNo_4" name="BI_SSNo_4" class="SellerServicer_text">
+            
+                        </div>
+                    </div>
+            
+                    <div class="row mb-2">
+            
+                        <div class="col-3">
+                            LIHTC Syndicator
+                        </div>
+            
+                        <div class="col-2">
+                            <input type="checkbox" id="BI_LIHTC" name="BI_LIHTC">
+                        </div>
+                    </div>
                 </div>
             </div>
 
