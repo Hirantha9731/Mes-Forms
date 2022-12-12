@@ -102,13 +102,23 @@
     padding-bottom: 15px !important;
 }
 
-.page_header_row .page_header{
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
+.page_header_row{
     background-color: #87be3c;
+}
+
+.page_header_row .page_header{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;    
     padding-top: 10px;
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-items: center; */
+}
+
+.page_header_row .logo_wrp{
+    text-align: right;
 }
 
 .page_content_wrapper{
