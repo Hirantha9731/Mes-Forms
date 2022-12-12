@@ -1418,26 +1418,18 @@
             <div class="page_content">
                 <p><strong>Please check one of the following:</strong></p>
 
-                <div class="checkBox_wrp">
-                    <input type="checkbox" id="BI_InstType_FII" name="BI_InstType_FII">
-                    <label>
-                        A Federally Insured Institution that is:
-                    </label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="1" id="BI_InstType_FII" name="BI_InstType_FII"> A Federally Insured Institution that is:</label></div>
                 </div>
 
-                <div class="checkBox_wrp">
-                    <input type="checkbox" id="BI_InstType_MB" name="BI_InstType_MB">
-                    <label>
-                        A Mortgage Banker that is:
-                    </label>
-                </div>
-                <div class="checkBox_wrp">
-                    <input type="checkbox" id="BI_InstType_Other" name="BI_InstType_Other">
-                    <label>
-                        Other
-                    </label>
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="2" id="BI_InstType_MB" name="BI_InstType_MB"> A Mortgage Banker that is:</label></div>
                 </div>
 
+                <div class="radio_group_wrp">
+                    <div class="group_item"><label><input type="radio" value="3" id="BI_InstType_Other" name="BI_InstType_Other"> Other</label></div>
+                </div>
+                
                 <div class="row mt-2">
                     <div class="col-6 section_sub_text border_bottom_1 border_left_1">
                         <div class="input_group">
@@ -2413,54 +2405,34 @@
             <div class="row">
                 <div class="col-12">
                     <p class="mt-2"><strong>Audit opinion as of most recent fiscal year-end:</strong></p>
-                    <div class="checkBox_wrp">
-                        <input type="radio" id="BI_AR_Opinion" name="BI_AR_Opinion" value="1">
-                        <label>
-                            &nbsp;Unqualified
-                        </label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_AR_Opinion" name="BI_AR_Opinion"> Unqualified</label></div>
                     </div>
 
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_AR_Opinion" name="BI_AR_Opinion" value="2">
-                        <label>
-                            Disclaimer
-                        </label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="2" id="BI_AR_Opinion" name="BI_AR_Opinion"> Disclaimer</label></div>
                     </div>
 
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_AR_Opinion" name="BI_AR_Opinion" value="3">
-                        <label>
-                            Qualified
-                        </label>
-                    </div>
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_AR_Opinion" name="BI_AR_Opinion" value="4">
-                        <label>
-                            Adverse
-                        </label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="3" id="BI_AR_Opinion" name="BI_AR_Opinion"> Qualified</label></div>
                     </div>
 
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_AR_Opinion" name="BI_AR_Opinion" value="5">
-                        <label>
-                            Unqualified with explanatory language
-                        </label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="4" id="BI_AR_Opinion" name="BI_AR_Opinion"> Adverse</label></div>
+                    </div>
+
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="5" id="BI_AR_Opinion" name="BI_AR_Opinion"> Unqualified with explanatory language</label></div>
                     </div>
 
                     <p class="mt-2"><strong>Audit opinion applicable to:</strong></p>
 
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_AR_Applicable" name="BI_AR_Applicable">
-                        <label>
-                            Applicant
-                        </label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_AR_Applicable" name="BI_AR_Applicable"> Applicant</label></div>
                     </div>
 
-                    <div class="checkBox_wrp">
-                        <input type="checkbox" id="BI_AR_Applicable" name="BI_AR_Applicable">
-                        <label>
-                            Applicant's Parent Compan
-                        </label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="2" id="BI_AR_Applicable" name="BI_AR_Applicable">  Applicant's Parent Compan</label></div>
                     </div>
 
                     <p class="mt-2"><strong>Has the applicant changed independent public accountants in the past 12
