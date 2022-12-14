@@ -1417,19 +1417,24 @@
 
             <div class="row justify-content-center section_header">Institution Type</div>
 
-            <div class="page_content">
+            <div class="page_content input_group">
                 <p><strong>Please check one of the following:</strong></p>
 
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="1" id="BI_InstType_FII" name="BI_InstType_FII"> A Federally Insured Institution that is:</label></div>
+                    <div class="group_item"><label><input type="radio" value="1" id="BI_InstType_FII" name="BI_InstituteType"> A Federally Insured Institution that is:</label></div>
                 </div>
 
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="2" id="BI_InstType_MB" name="BI_InstType_MB"> A Mortgage Banker that is:</label></div>
+                    <div class="group_item"><label><input type="radio" value="2" id="BI_InstType_MB" name="BI_InstituteType"> A Mortgage Banker that is:</label></div>
                 </div>
 
                 <div class="radio_group_wrp">
-                    <div class="group_item"><label><input type="radio" value="3" id="BI_InstType_Other" name="BI_InstType_Other"> Other</label></div>
+                    <div class="group_item"><label><input type="radio" value="Other" id="BI_InstType_Other" name="BI_InstituteType"> Other</label></div>
+                </div>
+
+                <div class="col-12 if_other">
+                    <label class="font-weight-bold">Please Explain</label>
+                    <input type="text" id="BI_InstType_Other_Explain" name="BI_InstType_Other_Explain">
                 </div>
                 
                 <div class="row mt-2">
