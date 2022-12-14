@@ -424,8 +424,8 @@
 
 /* ----------- Save Button styles -------- */
 
-.page_content_wrapper .saveFloat {
-    /*display: none;*/
+.page_content_wrapper .saveFloat2 {
+    display: block;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -440,7 +440,7 @@
      opacity: 0.9;
   }
   
-  .page_content_wrapper .saveFloat:hover {
+  .page_content_wrapper .saveFloat2:hover {
     background-color: #555;
     color: white;
      opacity: 1;
@@ -668,7 +668,6 @@
 .data_table .table_row input[type=text], table td input[type=text]{
     width: 100%;
 }
-
 
 
 .section_show{
