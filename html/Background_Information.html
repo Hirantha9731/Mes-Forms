@@ -131,17 +131,6 @@
             
                         </div>
                     </div>
-            
-                    <div class="row mb-2">
-            
-                        <div class="col-3">
-                            LIHTC Syndicator
-                        </div>
-            
-                        <div class="col-2">
-                            <input type="checkbox" id="BI_LIHTC" name="BI_LIHTC">
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -645,12 +634,22 @@
                             <label class="font-weight-bold text-center">Parent</label>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-2">
                         <div class="input_group">
                             <label class="font-weight-bold text-center">Name</label>
                         </div>
                     </div>
                     <div class="col-2">
+                        <div class="input_group">
+                            <label class="font-weight-bold text-center">Address</label>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="input_group">
+                            <label class="font-weight-bold text-center">Zip Code</label>
+                        </div>
+                    </div>
+                    <div class="col-1">
                         <div class="input_group">
                             <label class="font-weight-bold text-center">City</label>
                         </div>
@@ -660,7 +659,7 @@
                             <label class="font-weight-bold text-center">State</label>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-2">
                         <div class="input_group">
                             <label class="font-weight-bold text-center">Tax I.D Number</label>
                         </div>
@@ -678,13 +677,25 @@
                         </div>
                     </div>
             
-                    <div class="col-3 section_sub_text border_bottom_1">
+                    <div class="col-2 section_sub_text border_bottom_1">
                         <div class="input_group">
                             <input type="text" id="BI_ParentName" name="BI_ParentName">
                         </div>
                     </div>
-            
+
                     <div class="col-2 section_sub_text border_bottom_1">
+                        <div class="input_group">
+                            <input type="text" id="BI_ParentAddress" name="BI_ParentAddress">
+                        </div>
+                    </div>
+
+                    <div class="col-1 section_sub_text border_bottom_1">
+                        <div class="input_group">
+                            <input type="text" id="BI_ParentZip" name="BI_ParentZip">
+                        </div>
+                    </div>
+            
+                    <div class="col-1 section_sub_text border_bottom_1">
                         <div class="input_group">
                             <input type="text" id="BI_ParentCity" name="BI_ParentCity">
                         </div>
@@ -748,7 +759,7 @@
                         </div>
                     </div>
             
-                    <div class="col-3 section_sub_text border_right_0 border_bottom_1">
+                    <div class="col-2 section_sub_text border_right_0 border_bottom_1">
                         <div class="input_group">
                             <input type="text" id="BI_ParentTIN" name="BI_ParentTIN">
                         </div>
@@ -832,37 +843,104 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 section_sub_text border_left_1">
+                        <div class="col-3 section_sub_text border_left_1">
                             <div class="input_group">
                                 <label class="font-weight-bold">Address</label>
                                 <input type="text" id="BI_Affiliate_Address" name="BI_Affiliate_Address">
                             </div>
                         </div>
+
+                        <div class="col-3 section_sub_text">
+                            <div class="input_group">
+                                <label class="font-weight-bold">City</label>
+                                <input type="text" id="BI_Affiliate_City" name="BI_Affiliate_City">
+                            </div>
+                        </div>
+
+                        <div class="col-3 section_sub_text">
+                            <div class="input_group">
+                                <label class="font-weight-bold">State</label>
+                                <select id="Ack_State" name="BI_Affiliate_State" class="select_option">
+                                    <option selected>Select State</option>
+                                    <option value="1">Alabama</option>
+                                    <option value="2">Alaska</option>
+                                    <option value="3">Arizona</option>
+                                    <option value="4">Arkansas</option>
+                                    <option value="5">California</option>
+                                    <option value="6">Colorado</option>
+                                    <option value="7">Connecticut</option>
+                                    <option value="8">Delaware</option>
+                                    <option value="9">District of Columbia</option>
+                                    <option value="10">Florida</option>
+                                    <option value="11">Idaho</option>
+                                    <option value="12">Indiana</option>
+                                    <option value="13">Iowa</option>
+                                    <option value="14">kansas</option>
+                                    <option value="15">kentucky</option>
+                                    <option value="16">Louisiana</option>
+                                    <option value="17">Maine</option>
+                                    <option value="18">Montana</option>
+                                    <option value="19">Nebraska</option>
+                                    <option value="20">Nevada</option>
+                                    <option value="21">New Hampshire</option>
+                                    <option value="22">New Jersey</option>
+                                    <option value="23">New Mexico</option>
+                                    <option value="24">New York</option>
+                                    <option value="25">New York</option>
+                                    <option value="27">North Carolina</option>
+                                    <option value="28">North Dakota</option>
+                                    <option value="29">Ohio</option>
+                                    <option value="30">Oklahoma</option>
+                                    <option value="31">Oregon</option>
+                                    <option value="32">Oklahoma</option>
+                                    <option value="33">Maryland</option>
+                                    <option value="34">Massachusetts</option>
+                                    <option value="35">Michigan</option>
+                                    <option value="36">Mississippi</option>
+                                    <option value="37">Missouri</option>
+                                    <option value="38">Pennsylvania</option>
+                                    <option value="39">Rhode Island</option>
+                                    <option value="40">South Carolina</option>
+                                    <option value="41">South Dakota</option>
+                                    <option value="42">Tennessee</option>
+                                    <option value="43">Texas</option>
+                                    <option value="44">Utah</option>
+                                    <option value="45">Vermont</option>
+                                    <option value="46">Virginia</option>
+                                    <option value="47">Washington</option>
+                                    <option value="48">West Virginia</option>
+                                    <option value="49">Wisconsin</option>
+                                    <option value="50">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-3 section_sub_text">
+                            <div class="input_group">
+                                <label class="font-weight-bold">Zip Code</label>
+                                <input type="text" id="BI_Affiliate_Zip" name="BI_Affiliate_Zip">
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="row">
-                        <div class="col-3 section_sub_text border_left_1">
+                        <div class="col-4 section_sub_text border_left_1">
                             <div class="input_group">
                                 <label class="font-weight-bold">Federal Reserve ID(RSSD ID)</label>
                                 <input type="text" id="BI_Affiliate_FRID" name="BI_Affiliate_FRID">
                             </div>
                         </div>
-                        <div class="col-3 section_sub_text">
+                        <div class="col-4 section_sub_text">
                             <div class="input_group">
                                 <label class="font-weight-bold">Tax Identification Number</label>
                                 <input type="text" id="BI_Affiliate_TIN" name="BI_Affiliate_TIN">
                             </div>
                         </div>
-                        <div class="col-3 section_sub_text">
+                        <div class="col-4 section_sub_text">
                             <div class="input_group">
                                 <label class="font-weight-bold">FHA ID</label>
                                 <input type="text" id="BI_Affiliate_FHAID" name="BI_Affiliate_FHAID">
-                            </div>
-                        </div>
-                        <div class="col-3 section_sub_text">
-                            <div class="input_group">
-                                <label class="font-weight-bold">Seller / Servicer (If applicable)</label>
-                                <input type="text" id="BI_Affiliate_SS" name="BI_Affiliate_SS">
                             </div>
                         </div>
                     </div>
@@ -917,7 +995,7 @@
                         <div class="row">
                             <div class="col-8 section_sub_text border_left_1">
                                 <div class="input_group">
-                                    <label class="font-weight-bold">Name</label>
+                                    <label class="font-weight-bold">Full Name</label>
                                     <input type="text" id="BI_Executive_Name" name="BI_Executive_Name">
                                 </div>
                             </div>
@@ -979,7 +1057,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_FMEC_Name" name="BI_FMEC_Name">
                         </div>
                     </div>
@@ -1010,7 +1088,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_FMCSO_Name" name="BI_FMCSO_Name">
                         </div>
                     </div>
@@ -1055,7 +1133,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CCO_Name" name="BI_CCO_Name">
                         </div>
                     </div>
@@ -1087,7 +1165,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CEO_Name" name="BI_CEO_Name">
                         </div>
                     </div>
@@ -1118,7 +1196,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CFO_Name" name="BI_CFO_Name">
                         </div>
                     </div>
@@ -1149,7 +1227,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CIRO_Name" name="BI_CIRO_Name">
                         </div>
                     </div>
@@ -1180,7 +1258,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CIC_Name" name="BI_CIC_Name">
                         </div>
                     </div>
@@ -1211,7 +1289,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CU_Name" name="BI_CU_Name">
                         </div>
                     </div>
@@ -1242,7 +1320,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_CA_Name" name="BI_CA_Name">
                         </div>
                     </div>
@@ -1273,7 +1351,7 @@
                 <div class="row">
                     <div class="col-6 section_sub_text border_left_1 border_right_0">
                         <div class="input_group">
-                            <label class="font-weight-bold">Name</label>
+                            <label class="font-weight-bold">Full Name</label>
                             <input type="text" id="BI_RO_Name" name="BI_RO_Name">
                         </div>
                     </div>
@@ -1452,13 +1530,13 @@
                 <div class="row mt-2">
                     <div class="col-6 section_sub_text border_bottom_1 border_left_1">
                         <div class="input_group">
-                            <label class="font-weight-bold">Established in (year):</label>
+                            <label class="font-weight-bold">Established in year:</label>
                             <input type="text" id="BI_InstType_EstYear" name="BI_InstType_EstYear">
                         </div>
                     </div>
                     <div class="col-6 section_sub_text border_bottom_1">
                         <div class="input_group">
-                            <label class="font-weight-bold">State</label>
+                            <label class="font-weight-bold">Established Under the laws of the state of :</label>
                             <select name="sort" id="BI_InstType_State" name="BI_InstType_State" class="select_option">
                                 <option selected>Select State</option>
                                 <option value="1">Alabama</option>
@@ -1601,8 +1679,7 @@
             <div class="row mt-2">
                 <div class="col-12">
                     <div class="input_group">
-                        <label class="font-weight-bold">Please state where the applicant is approved to conduct business
-                            in the United States:</label>
+                        <label class="font-weight-bold">Please list where the applicant is approved to conduct business in the United States:</label>
                         <input type="text" id="BI_ApprvOthr_Locations" name="BI_ApprvOthr_Locations">
                     </div>
                 </div>
@@ -1891,45 +1968,6 @@
 
 
             <div class="row justify-content-center section_header mt-2">Exceptions</div>
-
-            <p class="mt-2">
-                <strong>Has the applicant, in the past or present, had a HUD suspension or indemnification to HUD
-                    against loss?</strong>
-            </p>
-
-            <div class="row">
-                <div class="col-12 input_group">
-                    <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BI_Excpt_1" name="BI_Excpt_1">
-                                Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BI_Excpt_1" name="BI_Excpt_1">
-                                No</label></div>
-                    </div>
-                    <div class="if_yes">
-                        <label class="font-weight-bold">Please Explain</label>
-                        <input type="text" id="BI_Excpt_1_Explain" name="BI_Excpt_1_Explain">
-                    </div>
-                </div>
-            </div>
-
-            <p class="mt-2">
-                <strong>Has the applicant, in the past or present, had a Fannie Mae suspension?</strong>
-            </p>
-
-            <div class="row">
-                <div class="col-12 input_group">
-                    <div class="radio_group_wrp">
-                        <div class="group_item"><label><input type="radio" value="1" id="BI_Excpt_2" name="BI_Excpt_2">
-                                Yes</label></div>
-                        <div class="group_item"><label><input type="radio" value="0" id="BI_Excpt_2" name="BI_Excpt_2">
-                                No</label></div>
-                    </div>
-                    <div class="if_yes">
-                        <label class="font-weight-bold">Please Explain</label>
-                        <input type="text" id="BI_Excpt_2_Explain" name="BI_Excpt_2_Explain">
-                    </div>
-                </div>
-            </div>
 
             <p class="mt-2">
                 <strong>Has the applicant, in the past or present, had unfavorable findings by HUD, Fannie Mae, any
@@ -2315,17 +2353,17 @@
                 </div>
 
                 <div class="col-3 section_sub_text">
-                    <label>Quarter/Year &nbsp;</label>
+                    <label>Most recent quarter (please specify): &nbsp;</label>
                     <input type="text" class="text1" id="BI_NW_Year1" name="BI_NW_Year1">
                 </div>
 
                 <div class="col-3 section_sub_text">
-                    <label>Quarter/Year &nbsp;</label>
+                    <label>Prior quarter (please specify): &nbsp;</label>
                     <input type="text" class="text1" id="BI_NW_Year2" name="BI_NW_Year2">
                 </div>
 
                 <div class="col-3 section_sub_text border_right_0">
-                    <label>Quarter/Year &nbsp;</label>
+                    <label>Prior fiscal year-end (please specify): &nbsp;</label>
                     <input type="text" class="text1" id="BI_NW_Year3" name="BI_NW_Year3">
                 </div>
             </div>
@@ -2529,44 +2567,184 @@
                     </div>
                 </div>
 
-                <li><strong>Are there clear and appropriate levels in terms of approving or declining loans? Are these
-                        approval levels documented in the
-                        company's policies and procedures? Are these approval levels specific as to who is responsible
-                        for making decisions on an
-                        individual basis (i.e. chief underwriter)? How does the company ensure compliance with these
-                        required approval levels?</strong>
+
+                <li><strong>Are there clear and appropriate levels in terms of approving or declining loans? Are these approval levels documented in the company's policies and procedures?
+                    Are these approval levels specific as to who is responsible for making decisions on an individual basis
+                    (i.e. chief underwriter)? How does the company ensure compliance with these required approval levels?</strong>
                 </li>
 
-                <div class="input_group">
-                    <input type="text" id="BI_CorpStruct_3" name="BI_CorpStruct_3">
+                <div class="row">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_CorpStruct_3"
+                                                                  name="BI_CorpStruct_3"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_CorpStruct_3"
+                                                                  name="BI_CorpStruct_3"> No</label></div>
+                        </div>
+                        <div class="if_no">
+                            <label class="font-weight-bold">If No, Please Explain</label>
+                            <input type="text" id="BI_CorpStruct_3_Explain" name="BI_CorpStruct_3_Explain">
+                        </div>
+                    </div>
                 </div>
+
+
+                <li><strong>Are these approval levels documented in the company's policies and procedures?</strong></li>
+
+                <div class="row">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_CorpStruct_4"
+                                                                  name="BI_CorpStruct_4"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_CorpStruct_4"
+                                                                  name="BI_CorpStruct_4"> No</label></div>
+                        </div>
+                        <div class="if_no">
+                            <label class="font-weight-bold">If No, Please Explain</label>
+                            <input type="text" id="BI_CorpStruct_4_Explain" name="BI_CorpStruct_4_Explain">
+                        </div>
+                    </div>
+                </div>
+
+                <li><strong>Are these approval levels specific as to who is responsible for making decisions on an individual basis (i.e. chief underwriter)?</strong></li>
+
+                <div class="row">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_CorpStruct_5"
+                                                                  name="BI_CorpStruct_5"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_CorpStruct_5"
+                                                                  name="BI_CorpStruct_5"> No</label></div>
+                        </div>
+                        <div class="if_no">
+                            <label class="font-weight-bold">If No, Please Explain</label>
+                            <input type="text" id="BI_CorpStruct_5_Explain" name="BI_CorpStruct_5_Explain">
+                        </div>
+                    </div>
+                </div>
+
+
+                <li><strong>How does the company ensure compliance with these required approval levels?</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_CorpStruct_6" name="BI_CorpStruct_6">
+                </div>
+
+
+
+
             </ol>
 
             <div class="row justify-content-center section_header mt-2">Internal Control</div>
 
             <ol class="mt-2">
 
-                <li><strong>At a portfolio level, what management reports are used and/or what meetings are held in
-                        order to monitor the overall risk issues
-                        through the review of data or information as well as the risk culture and practices? What kind
-                        of information is available
-                        (geographic concentrations, maturities, business sectors, etc.)? Please provide
-                        examples.</strong>
+                <li><strong>At a portfolio level, what management reports are used and/or what meetings are held in order to monitor the overall risk issues
+                    through the review of data or information as well as the risk culture and practices?</strong>
                 </li>
 
                 <div class="input_group">
                     <input type="text" id="BI_InternalControls_1" name="BI_InternalControls_1">
                 </div>
 
-                <li><strong>Please describe your approach towards managing risk at your organization.</strong>
-                </li>
+                <li><strong>Please describe your approach towards managing risk at your organization.</strong></li>
 
                 <div class="input_group">
                     <input type="text" id="BI_InternalControls_2" name="BI_InternalControls_2">
                 </div>
+
+                <li><strong>What internal audit, or quality control processes are in place?</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_InternalControls_3" name="BI_InternalControls_3">
+                </div>
+
+                <li><strong>Are any functions contracted out or sub-serviced?</strong></li>
+
+                <div class="row">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_InternalControls_4"
+                                                                  name="BI_InternalControls_4"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_InternalControls_4"
+                                                                  name="BI_InternalControls_4"> No</label></div>
+                        </div>
+                        <div class="if_yes">
+                            <label class="font-weight-bold">If so, how do you monitor sub-servicer or vendor performance?  (Examples: accounting services, appraisers, brokers, environmental
+                                and engineering consultants, fee inspectors, flood certification services, insurance consultants, tax services, UCC tracking services, etc.)</label>
+                            <input type="text" id="BI_InternalControls_4_Explain" name="BI_InternalControls_4_Explain">
+                        </div>
+                    </div>
+                </div>
+
+                <li><strong>How do you ensure that training is sufficient for new hires?</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_InternalControls_5" name="BI_InternalControls_5">
+                </div>
+
+                <li><strong>What ongoing training is provided?</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_InternalControls_6" name="BI_InternalControls_6">
+                </div>
+
+                <li><strong>Describe your screening and hiring practices for new employees.</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_InternalControls_7" name="BI_InternalControls_7">
+                </div>
+
+                <li><strong>Do you have a SOC1/SOC2?</strong></li>
+
+                <div class="row">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_InternalControls_8"
+                                                                  name="BI_InternalControls_8"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_InternalControls_8"
+                                                                  name="BI_InternalControls_8"> No</label></div>
+                        </div>
+                        <div class="if_yes">
+                            <label class="font-weight-bold">If so, did you have any material issues and what were they?</label>
+                            <input type="text" id="BI_InternalControls_8_Explained" name="BI_InternalControls_8_Explained">
+                        </div>
+                    </div>
+                </div>
+
+
+                <li><strong>Is your company in compliance with Regulation AB/USAP, if applicable?</strong></li>
+
+                <div class="row">
+                    <div class="col-12 input_group">
+                        <div class="radio_group_wrp">
+                            <div class="group_item"><label><input type="radio" value="1" id="BI_InternalControls_9"
+                                                                  name="BI_InternalControls_9"> Yes</label></div>
+                            <div class="group_item"><label><input type="radio" value="0" id="BI_InternalControls_9"
+                                                                  name="BI_InternalControls_9"> No</label></div>
+                        </div>
+                        <div class="if_yes">
+                            <label class="font-weight-bold">Were any material items noted?</label>
+                            <input type="text" id="BI_InternalControls_9_Explained" name="BI_InternalControls_9_Explained">
+                        </div>
+                    </div>
+                </div>
+
+                <li><strong>How will you monitor compliance with Freddie Mac’s eligibility requirements?</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_InternalControls_10" name="BI_InternalControls_10">
+                </div>
+
+                <li><strong>What kind of information is available (geographic concentrations, maturities, business sectors, etc.)? Please provide examples.</strong></li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_InternalControls_11" name="BI_InternalControls_11">
+                </div>
+
             </ol>
         </section>
-        <!-- page 6 endes here -->
+        <!-- page 6 ends here -->
 
         <p style="page-break-after: always;"></p>
         <p style="page-break-before: always;">&nbsp;</p>
@@ -2578,15 +2756,12 @@
 
             <ol class="mt-2">
 
-                <li><strong>Does the company have specific lending policies that clarify investor standards, or that
-                        place additional limitations on staff's
-                        latitude versus what other investors permit? Are there separate standards for different lending
-                        programs?</strong>
+                <li><strong>Does the company have specific lending policies that clarify investor standards, or that place additional limitations on staff's
+                    latitude versus what other investors permit?</strong>
                 </li>
 
                 <div class="input_group">
                     <input type="text" id="BI_Underwriting_1" name="BI_Underwriting_1">
-                    <!--field maped-->
                 </div>
 
                 <li><strong>Are there policies in place that ensure that lending policies and practices stay in line
@@ -2596,7 +2771,6 @@
 
                 <div class="input_group">
                     <input type="text" id="BI_Underwriting_2" name="BI_Underwriting_2">
-                    <!--field maped-->
                 </div>
             </ol>
 
