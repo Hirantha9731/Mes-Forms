@@ -95,7 +95,8 @@
                     <div class="row">
             
                         <div class="col-3">
-                            Structured Transaction Seller and/or Servicer
+                            Small Balance Loans Seller/Servicer
+
                         </div>
             
                         <div class="col-2">
@@ -115,7 +116,7 @@
                     <div class="row">
             
                         <div class="col-3">
-                            Small Balance Loans Seller/Servicer
+                            Structured Transaction Seller and/or Servicer
                         </div>
             
                         <div class="col-2">
@@ -1537,7 +1538,7 @@
                     <div class="col-6 section_sub_text border_bottom_1">
                         <div class="input_group">
                             <label class="font-weight-bold">Established Under the laws of the state of :</label>
-                            <select name="sort" id="BI_InstType_State" name="BI_InstType_State" class="select_option">
+                            <select id="BI_InstType_State" name="BI_InstType_State" class="select_option">
                                 <option selected>Select State</option>
                                 <option value="1">Alabama</option>
                                 <option value="2">Alaska</option>
@@ -2354,17 +2355,17 @@
 
                 <div class="col-3 section_sub_text">
                     <label>Most recent quarter (please specify): &nbsp;</label>
-                    <input type="text" class="text1" id="BI_NW_Year1" name="BI_NW_Year1">
+                    <input type="text" class="text2 ml-16" id="BI_NW_Year1" name="BI_NW_Year1">
                 </div>
 
                 <div class="col-3 section_sub_text">
                     <label>Prior quarter (please specify): &nbsp;</label>
-                    <input type="text" class="text1" id="BI_NW_Year2" name="BI_NW_Year2">
+                    <input type="text" class="text2 ml-16" id="BI_NW_Year2" name="BI_NW_Year2">
                 </div>
 
                 <div class="col-3 section_sub_text border_right_0">
                     <label>Prior fiscal year-end (please specify): &nbsp;</label>
-                    <input type="text" class="text1" id="BI_NW_Year3" name="BI_NW_Year3">
+                    <input type="text" class="text2 ml-16" id="BI_NW_Year3" name="BI_NW_Year3">
                 </div>
             </div>
 
@@ -2772,6 +2773,29 @@
                 <div class="input_group">
                     <input type="text" id="BI_Underwriting_2" name="BI_Underwriting_2">
                 </div>
+
+                <li><strong>Are there separate standards for different lending programs?</strong>
+                </li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_Underwriting_3" name="BI_Underwriting_3">
+                </div>
+
+                <li><strong>How does the applicant ensure that policies and procedures are followed?</strong>
+                </li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_Underwriting_4" name="BI_Underwriting_4">
+                </div>
+
+                <li><strong>How does the applicant ensure that policies and procedures are updated regularly?</strong>
+                </li>
+
+                <div class="input_group">
+                    <input type="text" id="BI_Underwriting_5" name="BI_Underwriting_5">
+                </div>
+
+
             </ol>
 
             <div class="row justify-content-center section_header">Insurance and Deduction Requirements</div>
@@ -2807,28 +2831,26 @@
             <div class="row">
                 <div class="col-5">
                     <p><strong>
-                            Total dollar amount of mortgage originations during fiscal year.
+                        Total dollar amount of mortgage originations in the past fiscal year.
                         </strong></p>
                 </div>
 
                 <div class="col-4">
                     <label class="mr-5">$</label>
                     <input type="text" class="text2" id="BI_CorpIns_MtgOrigAmount" name="BI_CorpIns_MtgOrigAmount">
-                    <!--field maped-->
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-5">
                     <p><strong>
-                            Total unpaid principal balance (UPB) of entire mortgage servicing portfolio
+                        Total unpaid principal balance (UPB) of entire mortgage servicing portfolio.
                         </strong></p>
                 </div>
 
                 <div class="col-4">
                     <label class="mr-5">$</label>
                     <input type="text" class="text2" id="BI_CorpIns_UPB" name="BI_CorpIns_UPB">
-                    <!--field maped-->
                 </div>
             </div>
 
@@ -2842,7 +2864,6 @@
                 <div class="col-4">
                     <label class="mr-5">$</label>
                     <input type="text" class="text2" id="BI_CorpIns_MtgAmountSold" name="BI_CorpIns_MtgAmountSold">
-                    <!--field maped-->
                 </div>
             </div>
 
@@ -3339,6 +3360,76 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>6. Have any phishing events occurred that compromised data?</label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_26" name="BI_InfoSec_26">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>7. Is there a process to report phishing events to investors or business partners?</label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_27" name="BI_InfoSec_27">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>8. Is the Business Continuity Plan tested annually?</label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_28" name="BI_InfoSec_28">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>9. If the Business Continutity Plan failed, please explain why</label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_29" name="BI_InfoSec_29">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>10. How does management evaluate the effectiveness of their control structure over the enterprise's internal data system(s) (automated and manual)</label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_30" name="BI_InfoSec_30">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>11. What are the key internal data control points? </label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_31" name="BI_InfoSec_31">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 section_sub_text border_right_0">
+
+                    <label>12. How are they tested?</label>
+                    <div class="input_group">
+                        <input type="text" id="BI_InfoSec_32" name="BI_InfoSec_32">
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- page 8 ends here -->
 
@@ -3396,11 +3487,43 @@
             </div>
 
             <div class="row">
-                <div class="col-12 section_sub_text border_right_0 border_bottom_1">
+                <div class="col-12 section_sub_text border_right_0">
 
                     <label>4. What control(s) are in place for onboarding and vetting contractors?</label>
                     <div class="input_group">
                         <input type="text" id="BI_VM_4" name="BI_VM_4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 input_group section_sub_text border_right_0">
+                    <label>5. Do you currently outsource any business functions overseas?</label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_VM_5"
+                                                              name="BI_VM_5"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_VM_5"
+                                                              name="BI_VM_5"> No</label></div>
+                    </div>
+                    <div class="if_yes">
+                        <label class="font-weight-bold">If Yes, Please Explain.</label>
+                        <input type="text" id="BI_VM_5_Explained" name="BI_VM_5_Explained">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 input_group section_sub_text border_right_0">
+                    <label>6. Do you use any vendors that rely on overseas personnel?</label>
+                    <div class="radio_group_wrp">
+                        <div class="group_item"><label><input type="radio" value="1" id="BI_VM_6"
+                                                              name="BI_VM_6"> Yes</label></div>
+                        <div class="group_item"><label><input type="radio" value="0" id="BI_VM_6"
+                                                              name="BI_VM_6"> No</label></div>
+                    </div>
+                    <div class="if_yes">
+                        <label class="font-weight-bold">If so, how do you ensure continued data security?</label>
+                        <input type="text" id="BI_VM_6_Explained" name="BI_VM_6_Explained">
                     </div>
                 </div>
             </div>
@@ -3488,8 +3611,7 @@
                             </div>
                         </div>
 
-                        <li><strong>What (if any) automated screening tools are used to conduct OFAC watchlist
-                                searches?</strong></li>
+                        <li><strong>What automated screening tools are used to conduct OFAC watchlist searches?</strong></li>
                         <div class="input_group">
                             <input type="text" id="BI_Compliance_4a_Explain" name="BI_Compliance_4a_Explain">
                         </div>
@@ -3702,8 +3824,8 @@
                                         name="BI_Compliance_10"> No</label></div>
                         </div>
                         <div class="if_yes">
-                            <label class="font-weight-bold mt-2">If Yes, what regulatory body examines you for AML
-                                program compliance? (Check all that are applicable)
+                            <label class="font-weight-bold mt-2">If Yes, what regulatory body examines you for AML program compliance?
+                                (Check all that are applicable)
                             </label>
 
                             <div class="row">
